@@ -1,13 +1,25 @@
+import Image from "next/image";
 import Link from "next/link";
+import { getRecentInstagramPosts } from "@/lib/instagram";
 
-const OFFERS = [
+const FALLBACK_OFFERS = [
   { name: "Rind Steak", unit: "pro kg", oldPrice: "33.90", price: "23.90" },
   { name: "Rindsragout", unit: "pro kg", oldPrice: "22.90", price: "18.90" },
   { name: "Hackfleisch", unit: "pro kg", oldPrice: "14.90", price: "12.90" },
   { name: "Poulet", unit: "pro kg", oldPrice: null, price: "11.90" },
 ];
 
-export default function Offers() {
+const INSTAGRAM_HANDLE_URL = "https://www.instagram.com/ali.supermarkt.gmbh/";
+
+function formatDate(iso: string) {
+  return new Intl.DateTimeFormat("de-CH", { day: "2-digit", month: "short" }).format(
+    new Date(iso)
+  );
+}
+
+export default async function Offers() {
+  const posts = await getRecentInstagramPosts(3);
+
   return (
     <section className="bg-white py-16 md:py-24" id="angebote">
       <div className="mx-auto max-w-6xl px-6">
@@ -17,11 +29,11 @@ export default function Offers() {
               Unsere Angebote
             </span>
             <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-charcoal sm:text-4xl">
-              Diese Woche im Angebot
+              {posts ? "Unsere letzten Aktionen" : "Diese Woche im Angebot"}
             </h2>
           </div>
           <Link
-            href="https://www.instagram.com/ali.supermarkt.gmbh/"
+            href={INSTAGRAM_HANDLE_URL}
             target="_blank"
             rel="noopener"
             className="inline-flex items-center gap-2 rounded-xl border border-charcoal/15 bg-white px-6 py-3.5 text-base font-semibold text-charcoal transition hover:border-charcoal/30"
@@ -33,33 +45,73 @@ export default function Offers() {
           </Link>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4">
-          {OFFERS.map((offer) => (
-            <div
-              key={offer.name}
-              className="flex flex-col gap-2 rounded-2xl border border-charcoal/8 p-5"
-            >
-              <span className="font-heading text-base font-bold text-charcoal">
-                {offer.name}
-              </span>
-              {offer.oldPrice && (
-                <span className="text-sm text-charcoal/40 line-through">
-                  CHF {offer.oldPrice}
-                </span>
-              )}
-              <span className="font-heading text-2xl font-extrabold text-tomato">
-                CHF {offer.price}
-              </span>
-              <span className="text-xs text-charcoal/50">{offer.unit}</span>
+        {posts ? (
+          <>
+            <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-3">
+              {posts.map((post) => (
+                <Link
+                  key={post.id}
+                  href={post.permalink}
+                  target="_blank"
+                  rel="noopener"
+                  className="group overflow-hidden rounded-2xl border border-charcoal/8"
+                >
+                  <div className="relative aspect-square overflow-hidden">
+                    <Image
+                      src={post.mediaUrl}
+                      alt={post.caption?.slice(0, 80) ?? "Instagram-Beitrag von Ali Supermarkt"}
+                      fill
+                      sizes="(min-width: 1024px) 320px, 90vw"
+                      className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                      unoptimized
+                    />
+                  </div>
+                  <div className="p-4">
+                    <p className="line-clamp-2 text-sm text-charcoal/75">
+                      {post.caption ?? "Neuer Beitrag auf Instagram"}
+                    </p>
+                    <p className="mt-2 text-xs font-medium text-charcoal/45">
+                      {formatDate(post.timestamp)}
+                    </p>
+                  </div>
+                </Link>
+              ))}
             </div>
-          ))}
-        </div>
-
-        <p className="mt-6 flex items-center gap-2 text-xs text-charcoal/45">
-          <span className="h-1.5 w-1.5 rounded-full bg-fresh-green" />
-          Preise aus vergangenen Wochenaktionen – aktuelle Angebote finden Sie
-          auf Instagram.
-        </p>
+            <p className="mt-6 flex items-center gap-2 text-xs text-charcoal/45">
+              <span className="h-1.5 w-1.5 rounded-full bg-fresh-green" />
+              Direkt von Instagram &#8211; automatisch aktualisiert.
+            </p>
+          </>
+        ) : (
+          <>
+            <div className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4">
+              {FALLBACK_OFFERS.map((offer) => (
+                <div
+                  key={offer.name}
+                  className="flex flex-col gap-2 rounded-2xl border border-charcoal/8 p-5"
+                >
+                  <span className="font-heading text-base font-bold text-charcoal">
+                    {offer.name}
+                  </span>
+                  {offer.oldPrice && (
+                    <span className="text-sm text-charcoal/40 line-through">
+                      CHF {offer.oldPrice}
+                    </span>
+                  )}
+                  <span className="font-heading text-2xl font-extrabold text-tomato">
+                    CHF {offer.price}
+                  </span>
+                  <span className="text-xs text-charcoal/50">{offer.unit}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 flex items-center gap-2 text-xs text-charcoal/45">
+              <span className="h-1.5 w-1.5 rounded-full bg-fresh-green" />
+              Preise aus vergangenen Wochenaktionen &#8211; aktuelle Angebote
+              finden Sie auf Instagram.
+            </p>
+          </>
+        )}
       </div>
     </section>
   );
