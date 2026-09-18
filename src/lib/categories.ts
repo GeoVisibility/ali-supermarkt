@@ -15,7 +15,15 @@ export const CATEGORIES: Category[] = [
     description:
       "An unserer Fleischtheke wählen wir täglich aus, was frisch und Halal-zertifiziert ist.",
     img: "/images/et.webp",
-    highlights: ["Rindfleisch", "Lammfleisch", "Geflügel", "Wurstwaren"],
+    highlights: [
+      "Rindfleisch",
+      "Kalbfleisch",
+      "Lammfleisch",
+      "Geflügel",
+      "Wurstwaren",
+      "Ziege (auf Bestellung)",
+      "Schaf (auf Bestellung)",
+    ],
   },
   {
     slug: "obst-gemuese",

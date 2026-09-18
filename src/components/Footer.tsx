@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const NAV_COLUMN = [
@@ -21,15 +22,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
           {/* Brand */}
           <div>
-            <div className="flex flex-col leading-none">
-              <span className="font-heading text-xl font-extrabold tracking-tight text-cream">
-                ALI
-              </span>
-              <span className="mt-1 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-cream/50">
-                <span className="h-px w-3 bg-fresh-green" />
-                Supermarkt
-              </span>
-            </div>
+            <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-cream p-1.5">
+              <Image
+                src="/images/logo.png"
+                alt="Ali Supermarkt"
+                width={200}
+                height={200}
+                className="h-full w-full object-contain"
+              />
+            </span>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-cream/55">
               Frisch. Halal. International. Nah. – Ihr internationaler
               Supermarkt in Flamatt.

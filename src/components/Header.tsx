@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { CATEGORIES } from "@/lib/categories";
@@ -18,13 +19,16 @@ export default function Header() {
     <header className="sticky top-4 z-50 px-4">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 rounded-full border border-white/10 bg-charcoal/85 px-6 py-3 shadow-lg shadow-charcoal/20 backdrop-blur-md">
         {/* Logo */}
-        <Link href="/#top" className="flex flex-col leading-none shrink-0">
-          <span className="font-heading text-xl font-extrabold tracking-tight text-cream">
-            ALI
-          </span>
-          <span className="mt-0.5 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-cream/60">
-            <span className="h-px w-3 bg-fresh-green" />
-            Supermarkt
+        <Link href="/#top" className="flex shrink-0 items-center">
+          <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-cream p-1 sm:h-12 sm:w-12">
+            <Image
+              src="/images/logo.png"
+              alt="Ali Supermarkt"
+              width={200}
+              height={200}
+              className="h-full w-full object-contain"
+              priority
+            />
           </span>
         </Link>
 

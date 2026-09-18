@@ -1,7 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const MEAT_TYPES = ["Rindfleisch", "Lammfleisch", "Geflügel", "Wurstwaren", "weitere Produkte"];
+const MEAT_TYPES = [
+  "Rindfleisch",
+  "Kalbfleisch",
+  "Lammfleisch",
+  "Geflügel",
+  "Wurstwaren",
+  "Ziege (auf Bestellung)",
+  "Schaf (auf Bestellung)",
+];
 
 const TRUST_POINTS = [
   "Halal-zertifiziert",

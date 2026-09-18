@@ -17,6 +17,10 @@ const MEAT_TYPES = [
     desc: "Saftiges Rindfleisch für Braten, Steaks und Gulasch – täglich frisch zugeschnitten.",
   },
   {
+    name: "Kalbfleisch",
+    desc: "Zartes Kalbfleisch für feine Braten und Schnitzel.",
+  },
+  {
     name: "Lammfleisch",
     desc: "Zartes Lammfleisch, ideal für traditionelle Gerichte und den Grill.",
   },
@@ -27,6 +31,14 @@ const MEAT_TYPES = [
   {
     name: "Wurstwaren",
     desc: "Ausgewählte Wurstspezialitäten aus Halal-Fleisch.",
+  },
+  {
+    name: "Ziege",
+    desc: "Auf Bestellung erhältlich – sprechen Sie unser Team an der Theke an.",
+  },
+  {
+    name: "Schaf",
+    desc: "Auf Bestellung erhältlich – sprechen Sie unser Team an der Theke an.",
   },
 ];
 
