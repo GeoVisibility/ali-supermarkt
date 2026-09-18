@@ -1,0 +1,129 @@
+import Link from "next/link";
+
+const NAV_COLUMN = [
+  { label: "Startseite", href: "/#top" },
+  { label: "Sortiment", href: "/#sortiment" },
+  { label: "Halal Fleisch", href: "/#halal-fleisch" },
+  { label: "Angebote", href: "/#angebote" },
+  { label: "Über uns", href: "/#ueber-uns" },
+  { label: "Kontakt", href: "/#kontakt" },
+];
+
+const LEGAL_COLUMN = [
+  { label: "Impressum", href: "/impressum" },
+  { label: "Datenschutz", href: "/datenschutz" },
+];
+
+export default function Footer() {
+  return (
+    <footer className="bg-charcoal text-cream/70">
+      <div className="mx-auto max-w-6xl px-6 py-14">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
+          {/* Brand */}
+          <div>
+            <div className="flex flex-col leading-none">
+              <span className="font-heading text-xl font-extrabold tracking-tight text-cream">
+                ALI
+              </span>
+              <span className="mt-1 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-cream/50">
+                <span className="h-px w-3 bg-fresh-green" />
+                Supermarkt
+              </span>
+            </div>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-cream/55">
+              Frisch. Halal. International. Nah. – Ihr internationaler
+              Supermarkt in Flamatt.
+            </p>
+          </div>
+
+          {/* Nav */}
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-cream/40">
+              Seite
+            </h4>
+            <ul className="mt-4 flex flex-col gap-2.5 text-sm">
+              {NAV_COLUMN.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href} className="transition hover:text-cream">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-cream/40">
+              Kontakt
+            </h4>
+            <ul className="mt-4 flex flex-col gap-2.5 text-sm">
+              <li>Bernstrasse 25</li>
+              <li>3175 Wünnewil-Flamatt</li>
+              <li>
+                <a href="tel:+41796483072" className="transition hover:text-cream">
+                  +41 79 648 30 72
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@ali-supermarkt.ch"
+                  className="transition hover:text-cream"
+                >
+                  info@ali-supermarkt.ch
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Social + legal */}
+          <div>
+            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-cream/40">
+              Social
+            </h4>
+            <ul className="mt-4 flex flex-col gap-2.5 text-sm">
+              <li>
+                <Link
+                  href="https://www.instagram.com/ali.supermarkt.gmbh/"
+                  target="_blank"
+                  rel="noopener"
+                  className="transition hover:text-cream"
+                >
+                  Instagram
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61576730932399"
+                  target="_blank"
+                  rel="noopener"
+                  className="transition hover:text-cream"
+                >
+                  Facebook
+                </Link>
+              </li>
+            </ul>
+
+            <h4 className="mt-6 text-xs font-semibold uppercase tracking-[0.14em] text-cream/40">
+              Rechtliches
+            </h4>
+            <ul className="mt-4 flex flex-col gap-2.5 text-sm">
+              {LEGAL_COLUMN.map((link) => (
+                <li key={link.label}>
+                  <Link href={link.href} className="transition hover:text-cream">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-12 border-t border-cream/10 pt-6 text-xs text-cream/40">
+          © {new Date().getFullYear()} Ali Supermarkt GmbH. Alle Rechte
+          vorbehalten.
+        </div>
+      </div>
+    </footer>
+  );
+}

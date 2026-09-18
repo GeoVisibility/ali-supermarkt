@@ -36,6 +36,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# project-local artifacts (not part of the app)
+/resimler/
+ali-supermarkt-site.zip
+/ali-supermarkt-site/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
