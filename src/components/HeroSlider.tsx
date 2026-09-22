@@ -3,30 +3,41 @@
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 
-const SLIDES = [
-  { src: "/images/manav.webp", alt: "Frisches Obst und Gemüse im Regal von Ali Supermarkt" },
-  { src: "/images/et.webp", alt: "Frische Halal-Fleischauswahl von Ali Supermarkt" },
-  { src: "/images/icecek.webp", alt: "Internationale Getränke im Regal von Ali Supermarkt" },
-  { src: "/images/bakliyat.webp", alt: "Hülsenfrüchte und Grundnahrungsmittel bei Ali Supermarkt" },
-  { src: "/images/kuruyemis.webp", alt: "Trockenfrüchte und Nüsse bei Ali Supermarkt" },
+export type Slide = { src: string; alt: string };
+
+const DEFAULT_SLIDES: Slide[] = [
+  { src: "/images/obst-gemuese/obst-gemuese-01.webp", alt: "Frisches Obst und Gemüse im Regal von Ali Supermarkt" },
+  { src: "/images/kasap/lammkoteletts-theke.webp", alt: "Frische Halal-Fleischauswahl von Ali Supermarkt" },
+  { src: "/images/getraenke/getraenke-01.webp", alt: "Gekühlte Getränke im Kühlregal von Ali Supermarkt" },
+  { src: "/images/internationale-spezialitaeten/internationale-spezialitaeten-01.webp", alt: "Salça, Konserven und internationale Spezialitäten bei Ali Supermarkt" },
+  { src: "/images/grundnahrungsmittel/grundnahrungsmittel-01.webp", alt: "Reis, Teigwaren und Grundnahrungsmittel bei Ali Supermarkt" },
+  { src: "/images/suesses-knabbereien/suesses-knabbereien-01.webp", alt: "Süsses und Knabbereien bei Ali Supermarkt" },
 ];
 
 const AUTOPLAY_MS = 4500;
 
-export default function HeroSlider() {
+export default function HeroSlider({
+  slides = DEFAULT_SLIDES,
+  className = "aspect-[4/5] shadow-charcoal/10 sm:aspect-[5/4] lg:aspect-[4/5]",
+  priority = true,
+}: {
+  slides?: Slide[];
+  className?: string;
+  priority?: boolean;
+}) {
   const [index, setIndex] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const goTo = useCallback((next: number) => {
-    setIndex(((next % SLIDES.length) + SLIDES.length) % SLIDES.length);
-  }, []);
+    setIndex(((next % slides.length) + slides.length) % slides.length);
+  }, [slides.length]);
 
   const restartTimer = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
-      setIndex((i) => (i + 1) % SLIDES.length);
+      setIndex((i) => (i + 1) % slides.length);
     }, AUTOPLAY_MS);
-  }, []);
+  }, [slides.length]);
 
   useEffect(() => {
     restartTimer();
@@ -49,14 +60,14 @@ export default function HeroSlider() {
   };
 
   return (
-    <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl shadow-xl shadow-charcoal/10 sm:aspect-[5/4] lg:aspect-[4/5]">
-      {SLIDES.map((slide, i) => (
+    <div className={`relative w-full overflow-hidden rounded-3xl shadow-xl ${className}`}>
+      {slides.map((slide, i) => (
         <Image
           key={slide.src}
           src={slide.src}
           alt={slide.alt}
           fill
-          priority={i === 0}
+          priority={priority && i === 0}
           sizes="(min-width: 1024px) 480px, 100vw"
           className={`object-cover transition-opacity duration-700 ease-in-out ${
             i === index ? "opacity-100" : "opacity-0"
@@ -94,7 +105,7 @@ export default function HeroSlider() {
 
       {/* dot pagination */}
       <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-2">
-        {SLIDES.map((slide, i) => (
+        {slides.map((slide, i) => (
           <button
             key={slide.src}
             type="button"

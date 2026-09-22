@@ -24,7 +24,7 @@ export default function HalalMeat() {
         {/* Photo */}
         <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl shadow-black/20 lg:aspect-[5/4]">
           <Image
-            src="/images/et.webp"
+            src="/images/kasap/lammkoteletts-theke.webp"
             alt="Frische Fleischauswahl an der Halal-Theke von Ali Supermarkt"
             fill
             sizes="(min-width: 1024px) 480px, 100vw"

@@ -3,45 +3,90 @@ import Image from "next/image";
 export default function OurStory() {
   return (
     <section className="bg-white py-16 md:py-24" id="ueber-uns">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
-        {/* Badge */}
-        <div className="flex justify-center lg:order-2 lg:justify-end">
-          <div className="flex aspect-square w-56 flex-col items-center justify-center rounded-full bg-deep-green text-cream shadow-md shadow-deep-green/20 sm:w-64">
-            <span className="font-heading text-6xl font-extrabold sm:text-7xl">1</span>
-            <span className="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-cream/75">
-              Jahr in Flamatt
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+          {/* Owner photo */}
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-3xl shadow-xl shadow-charcoal/10 lg:max-w-none">
+            <Image
+              src="/images/kader-inhaberin.webp"
+              alt="Kader, Inhaberin der Ali Supermarkt GmbH, vor dem Laden in Flamatt"
+              fill
+              sizes="(min-width: 1024px) 420px, (min-width: 640px) 384px, 100vw"
+              className="object-cover"
+            />
+            <span className="absolute bottom-4 left-4 rounded-full bg-deep-green px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-cream shadow-md shadow-deep-green/20">
+              Seit Mai 2025 in Flamatt
             </span>
+          </div>
+
+          {/* Message */}
+          <div>
+            <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
+              Über uns
+            </span>
+            <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-charcoal sm:text-4xl">
+              Eine neue Generation. Eine neue Vision.
+            </h2>
+
+            <div className="mt-6 flex max-w-xl flex-col gap-4 text-base leading-relaxed text-charcoal/70">
+              <p>
+                Seit Mai 2025 führe ich die Ali Supermarkt GmbH mit viel
+                Leidenschaft und einer klaren Vision: Ich möchte zeigen, dass
+                ein internationaler Supermarkt modern, vielfältig und
+                gleichzeitig persönlich sein kann.
+              </p>
+              <p>
+                Als junge und dynamische Inhaberin ist es mein Ziel, frischen
+                Wind in den internationalen Lebensmittelhandel zu bringen.
+                Dabei verbinde ich die Vielfalt verschiedener Kulturen mit
+                einem modernen Einkaufserlebnis, guter Qualität und
+                persönlicher Nähe zu unseren Kundinnen und Kunden.
+              </p>
+              <p>
+                Als Familienbetrieb sind uns Herzlichkeit, Vertrauen und ein
+                respektvoller Umgang besonders wichtig. Bei uns sollen sich
+                alle willkommen fühlen – unabhängig davon, ob sie vertraute
+                Produkte aus ihrer Heimat suchen oder neue Spezialitäten aus
+                aller Welt entdecken möchten.
+              </p>
+              <p>
+                Ich freue mich, gemeinsam mit meiner Familie die Ali Supermarkt
+                GmbH weiterzuentwickeln und Sie persönlich bei uns begrüssen zu
+                dürfen.
+              </p>
+            </div>
+
+            <div className="mt-8 border-l-2 border-fresh-green pl-4">
+              <p className="font-heading text-xl font-bold text-charcoal">Kader</p>
+              <p className="mt-0.5 text-sm text-charcoal/60">
+                Inhaberin der Ali Supermarkt GmbH
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* Copy */}
-        <div className="lg:order-1">
-          <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
-            Unsere Geschichte
-          </span>
-          <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-charcoal sm:text-4xl">
-            Seit 2025 in Flamatt
-          </h2>
-
-          <p className="mt-5 max-w-lg text-base leading-relaxed text-charcoal/70">
-            Seit Mai 2025 sind wir für unsere Kundinnen und Kunden in Flamatt
-            da. Was als kleines lokales Geschäft begann, ist mit unserer
-            Nachbarschaft gewachsen – Woche für Woche, Einkauf für Einkauf.
-          </p>
-          <p className="mt-4 max-w-lg text-base leading-relaxed text-charcoal/70">
-            Auf vielfachen Wunsch haben wir zudem die Bewilligung für den
-            Sonntagsverkauf erhalten – seither sind wir auch sonntags für Sie
-            da.
-          </p>
-
-          <div className="mt-8 overflow-hidden rounded-2xl">
-            <Image
-              src="/images/recel-ev-dekorasyonu.webp"
-              alt="Blick in den Verkaufsraum von Ali Supermarkt in Flamatt"
-              width={900}
-              height={520}
-              className="h-auto w-full object-cover"
-            />
+        {/* Storefront */}
+        <div className="relative mt-14 aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-xl shadow-charcoal/10 sm:aspect-[21/9]">
+          <Image
+            src="/images/ladenfront.webp"
+            alt="Eingang von Ali Supermarkt an der Bernstrasse 25 in Flamatt"
+            fill
+            sizes="(min-width: 1152px) 1100px, 100vw"
+            className="object-cover object-top"
+          />
+          <div
+            aria-hidden
+            className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/10 to-transparent"
+          />
+          <div className="absolute inset-x-0 bottom-0 p-6 sm:p-10">
+            <p className="font-heading text-xl font-extrabold text-cream sm:text-2xl">
+              Jetzt auch sonntags für Sie da
+            </p>
+            <p className="mt-2 max-w-lg text-sm leading-relaxed text-cream/80 sm:text-base">
+              Auf vielfachen Wunsch haben wir die Bewilligung für den
+              Sonntagsverkauf erhalten – Sie finden uns an der Bernstrasse 25
+              in Flamatt.
+            </p>
           </div>
         </div>
       </div>

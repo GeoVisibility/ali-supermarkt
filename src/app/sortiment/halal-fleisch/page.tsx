@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
+import HeroSlider from "@/components/HeroSlider";
 import Footer from "@/components/Footer";
 import { Breadcrumb, RelatedCategories } from "@/components/CategoryExtras";
 
@@ -40,6 +40,17 @@ const MEAT_TYPES = [
     name: "Schaf",
     desc: "Auf Bestellung erhältlich – sprechen Sie unser Team an der Theke an.",
   },
+];
+
+const HERO_SLIDES = [
+  { src: "/images/kasap/lammkoteletts-theke.webp", alt: "Lammkoteletts und abgepacktes Fleisch an der Theke" },
+  { src: "/images/kasap/rindsfilet.webp", alt: "Frisches Rindsfilet an der Halal-Fleischtheke von Ali Supermarkt" },
+  { src: "/images/kasap/lammkrone.webp", alt: "Lammkrone mit Kräutern an der Fleischtheke" },
+  { src: "/images/kasap/lammrack.webp", alt: "Mariniertes Lammrack auf Eis" },
+  { src: "/images/kasap/sucuk.webp", alt: "Sucuk und Wurstwaren aus Halal-Fleisch" },
+  { src: "/images/kasap/fleischtheke-hackfleisch.webp", alt: "Fleischtheke mit Hackfleisch und frischen Teilstücken" },
+  { src: "/images/kasap/mariniert-theke.webp", alt: "Mariniertes Fleisch in der Auslage" },
+  { src: "/images/kasap/halal-theke.webp", alt: "Halal-Fleischtheke von Ali Supermarkt in Flamatt" },
 ];
 
 const TRUST_POINTS = [
@@ -83,16 +94,10 @@ export default function HalalFleischPage() {
       <section className="pt-6 pb-16 md:pb-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl shadow-charcoal/10 lg:aspect-[5/4]">
-              <Image
-                src="/images/et.webp"
-                alt="Frische Fleischauswahl an der Halal-Theke von Ali Supermarkt"
-                fill
-                sizes="(min-width: 1024px) 480px, 100vw"
-                className="object-cover"
-                priority
-              />
-            </div>
+            <HeroSlider
+              slides={HERO_SLIDES}
+              className="aspect-[4/3] shadow-charcoal/10 lg:aspect-[5/4]"
+            />
 
             <div>
               <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">

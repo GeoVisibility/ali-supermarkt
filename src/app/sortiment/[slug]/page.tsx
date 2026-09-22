@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
+import HeroSlider from "@/components/HeroSlider";
 import Footer from "@/components/Footer";
 import { Breadcrumb, RelatedCategories } from "@/components/CategoryExtras";
 import { CATEGORIES, getCategory } from "@/lib/categories";
@@ -44,16 +45,23 @@ export default async function CategoryPage({
       <section className="pt-6 pb-16 md:pb-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl shadow-charcoal/10 lg:aspect-[5/4]">
-              <Image
-                src={category.img}
-                alt={category.title}
-                fill
-                sizes="(min-width: 1024px) 480px, 100vw"
-                className="object-cover"
-                priority
+            {category.slides?.length ? (
+              <HeroSlider
+                slides={category.slides}
+                className="aspect-[4/3] shadow-charcoal/10 lg:aspect-[5/4]"
               />
-            </div>
+            ) : (
+              <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl shadow-charcoal/10 lg:aspect-[5/4]">
+                <Image
+                  src={category.img}
+                  alt={category.title}
+                  fill
+                  sizes="(min-width: 1024px) 480px, 100vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            )}
 
             <div>
               <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">

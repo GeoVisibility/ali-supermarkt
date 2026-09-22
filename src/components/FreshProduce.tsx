@@ -54,7 +54,7 @@ export default function FreshProduce() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl shadow-xl shadow-charcoal/10 sm:aspect-[21/9]">
           <Image
-            src="/images/manav.webp"
+            src="/images/obst-gemuese/obst-gemuese-02.webp"
             alt="Frisches Obst- und Gemüseregal bei Ali Supermarkt in Flamatt"
             fill
             sizes="(min-width: 1152px) 1100px, 100vw"
