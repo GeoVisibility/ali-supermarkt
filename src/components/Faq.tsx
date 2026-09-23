@@ -123,10 +123,10 @@ export default function Faq() {
       />
       <div className="mx-auto max-w-3xl px-6">
         <div className="text-center">
-          <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
+          <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
             Häufige Fragen
           </span>
-          <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-charcoal sm:text-4xl">
+          <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
             Gut zu wissen
           </h2>
         </div>
@@ -137,7 +137,7 @@ export default function Faq() {
             return (
               <div
                 key={item.q}
-                className="overflow-hidden rounded-2xl border border-charcoal/8"
+                className="overflow-hidden rounded-2xl border border-smoke/8"
               >
                 <button
                   type="button"
@@ -145,11 +145,11 @@ export default function Faq() {
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
                 >
-                  <span className="font-heading text-[15px] font-bold text-charcoal sm:text-base">
+                  <span className="font-heading text-[15px] font-bold text-ink sm:text-base">
                     {item.q}
                   </span>
                   <span
-                    className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-fresh-green/12 text-deep-green transition-transform duration-300 ${
+                    className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-orange/12 text-orange-dark transition-transform duration-300 ${
                       isOpen ? "rotate-45" : ""
                     }`}
                   >
@@ -165,13 +165,13 @@ export default function Faq() {
                 >
                   <div className="overflow-hidden">
                     <div className="px-5 pb-4">
-                      <p className="text-sm leading-relaxed text-charcoal/65">
+                      <p className="text-sm leading-relaxed text-ink/65">
                         {item.a}
                       </p>
                       {item.href ? (
                         <Link
                           href={item.href}
-                          className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-deep-green transition hover:gap-2.5"
+                          className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-dark transition hover:gap-2.5"
                         >
                           {item.hrefLabel}
                           <svg aria-hidden viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-none stroke-current stroke-[2.4]">

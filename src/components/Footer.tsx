@@ -18,12 +18,12 @@ const LEGAL_COLUMN = [
 
 export default function Footer() {
   return (
-    <footer className="bg-charcoal text-cream/70">
+    <footer className="bg-ink text-white/70">
       <div className="mx-auto max-w-6xl px-6 py-14">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
           {/* Brand */}
           <div>
-            <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-cream p-1.5">
+            <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-mist p-1.5">
               <Image
                 src="/images/logo.png"
                 alt="Ali Supermarkt"
@@ -32,7 +32,7 @@ export default function Footer() {
                 className="h-full w-full object-contain"
               />
             </span>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-cream/55">
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/55">
               Frisch. Halal. International. Nah. – Ihr internationaler
               Supermarkt in Flamatt.
             </p>
@@ -40,13 +40,13 @@ export default function Footer() {
 
           {/* Nav */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-cream/40">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/40">
               Seite
             </h4>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
               {NAV_COLUMN.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="transition hover:text-cream">
+                  <a href={link.href} className="transition hover:text-white">
                     {link.label}
                   </a>
                 </li>
@@ -56,7 +56,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-cream/40">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/40">
               Kontakt
             </h4>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
@@ -65,14 +65,14 @@ export default function Footer() {
                 {BUSINESS.postalCode} {BUSINESS.city}
               </li>
               <li>
-                <a href={BUSINESS.phoneHref} className="transition hover:text-cream">
+                <a href={BUSINESS.phoneHref} className="transition hover:text-white">
                   {BUSINESS.phone}
                 </a>
               </li>
               <li>
                 <a
                   href={`mailto:${BUSINESS.email}`}
-                  className="transition hover:text-cream"
+                  className="transition hover:text-white"
                 >
                   {BUSINESS.email}
                 </a>
@@ -82,7 +82,7 @@ export default function Footer() {
 
           {/* Social + legal */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-cream/40">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/40">
               Social
             </h4>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
@@ -91,7 +91,7 @@ export default function Footer() {
                   href={BUSINESS.instagram}
                   target="_blank"
                   rel="noopener"
-                  className="transition hover:text-cream"
+                  className="transition hover:text-white"
                 >
                   Instagram
                 </Link>
@@ -101,7 +101,7 @@ export default function Footer() {
                   href={BUSINESS.facebook}
                   target="_blank"
                   rel="noopener"
-                  className="transition hover:text-cream"
+                  className="transition hover:text-white"
                 >
                   Facebook
                 </Link>
@@ -111,20 +111,20 @@ export default function Footer() {
                   href={BUSINESS.tiktok}
                   target="_blank"
                   rel="noopener"
-                  className="transition hover:text-cream"
+                  className="transition hover:text-white"
                 >
                   TikTok
                 </Link>
               </li>
             </ul>
 
-            <h4 className="mt-6 text-xs font-semibold uppercase tracking-[0.14em] text-cream/40">
+            <h4 className="mt-6 text-xs font-semibold uppercase tracking-[0.14em] text-white/40">
               Rechtliches
             </h4>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
               {LEGAL_COLUMN.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="transition hover:text-cream">
+                  <Link href={link.href} className="transition hover:text-white">
                     {link.label}
                   </Link>
                 </li>
@@ -133,7 +133,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-cream/10 pt-6 text-xs text-cream/40">
+        <div className="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
           © {new Date().getFullYear()} Ali Supermarkt GmbH. Alle Rechte
           vorbehalten.
         </div>

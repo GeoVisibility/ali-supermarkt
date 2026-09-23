@@ -13,10 +13,10 @@ export default function Offers() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-xl">
-            <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
+            <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
               Unsere Angebote
             </span>
-            <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-charcoal sm:text-4xl">
+            <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
               Beispiele aus unseren Wochenaktionen
             </h2>
           </div>
@@ -24,7 +24,7 @@ export default function Offers() {
             href="https://www.instagram.com/ali.supermarkt.gmbh/"
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center gap-2 rounded-xl border border-charcoal/15 bg-white px-6 py-3.5 text-base font-semibold text-charcoal transition hover:border-charcoal/30"
+            className="inline-flex items-center gap-2 rounded-xl border border-smoke/15 bg-white px-6 py-3.5 text-base font-semibold text-ink transition hover:border-smoke/30"
           >
             Alle Angebote ansehen
             <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current stroke-[2.2]">
@@ -37,26 +37,26 @@ export default function Offers() {
           {OFFERS.map((offer) => (
             <div
               key={offer.name}
-              className="flex flex-col gap-2 rounded-2xl border border-charcoal/8 p-5"
+              className="flex flex-col gap-2 rounded-2xl border border-smoke/8 p-5"
             >
-              <span className="font-heading text-base font-bold text-charcoal">
+              <span className="font-heading text-base font-bold text-ink">
                 {offer.name}
               </span>
               {offer.oldPrice && (
-                <span className="text-sm text-charcoal/40 line-through">
+                <span className="text-sm text-ink/40 line-through">
                   CHF {offer.oldPrice}
                 </span>
               )}
-              <span className="font-heading text-2xl font-extrabold text-tomato">
+              <span className="font-heading text-2xl font-extrabold text-orange-dark">
                 CHF {offer.price}
               </span>
-              <span className="text-xs text-charcoal/50">{offer.unit}</span>
+              <span className="text-xs text-ink/50">{offer.unit}</span>
             </div>
           ))}
         </div>
 
-        <p className="mt-6 flex items-center gap-2 text-xs text-charcoal/45">
-          <span className="h-1.5 w-1.5 rounded-full bg-fresh-green" />
+        <p className="mt-6 flex items-center gap-2 text-xs text-ink/45">
+          <span className="h-1.5 w-1.5 rounded-full bg-orange" />
           Beispielpreise aus vergangenen Wochenaktionen – die aktuellen
           Angebote finden Sie auf Instagram und im Laden.
         </p>

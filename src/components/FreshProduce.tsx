@@ -50,9 +50,9 @@ const HIGHLIGHTS = [
 
 export default function FreshProduce() {
   return (
-    <section className="bg-cream py-16 md:py-24" id="frisch">
+    <section className="bg-mist py-16 md:py-24" id="frisch">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl shadow-xl shadow-charcoal/10 sm:aspect-[21/9]">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl shadow-xl shadow-ink/10 sm:aspect-[21/9]">
           <Image
             src="/images/obst-gemuese/obst-gemuese-02.webp"
             alt="Frisches Obst- und Gemüseregal bei Ali Supermarkt in Flamatt"
@@ -62,16 +62,16 @@ export default function FreshProduce() {
           />
           <div
             aria-hidden
-            className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/10 to-transparent"
+            className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent"
           />
           <div className="absolute inset-x-0 bottom-0 p-6 sm:p-10">
-            <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
+            <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange">
               Frische Ware
             </span>
-            <h2 className="mt-2 max-w-md font-heading text-2xl font-extrabold leading-tight tracking-tight text-cream sm:text-3xl lg:text-4xl">
+            <h2 className="mt-2 max-w-md font-heading text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl">
               Jeden Tag frisch ausgewählt
             </h2>
-            <p className="mt-2 max-w-md text-sm leading-relaxed text-cream/80 sm:text-base">
+            <p className="mt-2 max-w-md text-sm leading-relaxed text-white/80 sm:text-base">
               Unsere Obst- und Gemüseauswahl wird täglich neu bestückt – für
               Geschmack, der stimmt.
             </p>
@@ -82,12 +82,12 @@ export default function FreshProduce() {
           {HIGHLIGHTS.map((item) => (
             <div
               key={item.label}
-              className="flex items-center gap-3 rounded-xl border border-charcoal/8 bg-white px-4 py-3.5"
+              className="flex items-center gap-3 rounded-xl border border-smoke/8 bg-white px-4 py-3.5"
             >
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-fresh-green/12 text-deep-green">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange/12 text-orange-dark">
                 {item.icon}
               </span>
-              <span className="text-sm font-semibold text-charcoal">
+              <span className="text-sm font-semibold text-ink">
                 {item.label}
               </span>
             </div>

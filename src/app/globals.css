@@ -1,7 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  /* Ali Supermarkt Brand Kit */
+  /* Ali Supermarkt Brand Kit – Farben aus dem Logo */
+  --color-ink: #141414; /* Schwarz */
+  --color-smoke: #3a3a3a; /* Füme, wie der Einkaufswagen im Logo */
+  --color-mist: #f4f3f1; /* helles Füme für Abschnitte */
+  --color-orange: #ea5d32; /* Orange aus dem Schriftzug */
+  --color-orange-dark: #c0431d; /* für Text und Buttons auf hellem Grund */
+
+  /* Altbestand: wird noch auf den Kategorieseiten verwendet */
   --color-deep-green: #173f35;
   --color-fresh-green: #6faf45;
   --color-cream: #f7f2e8;
@@ -10,6 +17,12 @@
 }
 
 @theme inline {
+  --color-ink: var(--color-ink);
+  --color-smoke: var(--color-smoke);
+  --color-mist: var(--color-mist);
+  --color-orange: var(--color-orange);
+  --color-orange-dark: var(--color-orange-dark);
+
   --color-deep-green: var(--color-deep-green);
   --color-fresh-green: var(--color-fresh-green);
   --color-cream: var(--color-cream);
@@ -21,6 +34,6 @@
 }
 
 body {
-  background: var(--color-cream);
-  color: var(--color-charcoal);
+  background: #fff;
+  color: var(--color-ink);
 }

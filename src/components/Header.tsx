@@ -17,10 +17,10 @@ export default function Header() {
 
   return (
     <header className="sticky top-4 z-50 px-4">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 rounded-full border border-white/10 bg-charcoal/85 px-6 py-3 shadow-lg shadow-charcoal/20 backdrop-blur-md">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 rounded-full border border-white/10 bg-ink/85 px-6 py-3 shadow-lg shadow-ink/20 backdrop-blur-md">
         {/* Logo */}
         <Link href="/#top" className="flex shrink-0 items-center">
-          <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-cream p-1 sm:h-12 sm:w-12">
+          <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-mist p-1 sm:h-12 sm:w-12">
             <Image
               src="/images/logo.png"
               alt="Ali Supermarkt"
@@ -38,7 +38,7 @@ export default function Header() {
           <div className="group relative">
             <Link
               href="/#sortiment"
-              className="inline-flex items-center gap-1 py-2 text-[15px] font-medium text-cream/90 transition hover:text-cream"
+              className="inline-flex items-center gap-1 py-2 text-[15px] font-medium text-white/90 transition hover:text-white"
             >
               Sortiment
               <svg
@@ -50,12 +50,12 @@ export default function Header() {
               </svg>
             </Link>
 
-            <div className="invisible absolute left-1/2 top-full grid w-64 -translate-x-1/2 translate-y-1 grid-cols-1 gap-0.5 rounded-2xl border border-white/10 bg-charcoal/95 p-2 opacity-0 shadow-lg shadow-charcoal/30 backdrop-blur-md transition-all duration-150 group-hover:visible group-hover:translate-y-2 group-hover:opacity-100">
+            <div className="invisible absolute left-1/2 top-full grid w-64 -translate-x-1/2 translate-y-1 grid-cols-1 gap-0.5 rounded-2xl border border-white/10 bg-ink/95 p-2 opacity-0 shadow-lg shadow-ink/30 backdrop-blur-md transition-all duration-150 group-hover:visible group-hover:translate-y-2 group-hover:opacity-100">
               {CATEGORIES.map((cat) => (
                 <Link
                   key={cat.slug}
                   href={`/sortiment/${cat.slug}`}
-                  className="rounded-xl px-3 py-2 text-sm text-cream/85 transition hover:bg-white/8 hover:text-cream"
+                  className="rounded-xl px-3 py-2 text-sm text-white/85 transition hover:bg-white/8 hover:text-white"
                 >
                   {cat.title}
                 </Link>
@@ -67,7 +67,7 @@ export default function Header() {
             <Link
               key={link.label}
               href={link.href}
-              className="text-[15px] font-medium text-cream/90 transition hover:text-cream"
+              className="text-[15px] font-medium text-white/90 transition hover:text-white"
             >
               {link.label}
             </Link>
@@ -77,7 +77,7 @@ export default function Header() {
         {/* CTA */}
         <Link
           href="/#kontakt"
-          className="hidden shrink-0 rounded-full bg-fresh-green px-5 py-2.5 text-sm font-semibold text-deep-green transition hover:brightness-95 md:inline-flex"
+          className="hidden shrink-0 rounded-full bg-orange-dark px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-95 md:inline-flex"
         >
           Jetzt kontaktieren
         </Link>
@@ -88,7 +88,7 @@ export default function Header() {
           aria-label={open ? "Menü schliessen" : "Menü öffnen"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex h-9 w-9 items-center justify-center rounded-full text-cream md:hidden"
+          className="inline-flex h-9 w-9 items-center justify-center rounded-full text-white md:hidden"
         >
           <svg aria-hidden viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-current stroke-2">
             {open ? (
@@ -102,14 +102,14 @@ export default function Header() {
 
       {/* Mobile menu panel */}
       {open && (
-        <div className="mx-auto mt-2 max-w-6xl rounded-3xl border border-white/10 bg-charcoal/95 p-4 shadow-lg shadow-charcoal/20 backdrop-blur-md md:hidden">
+        <div className="mx-auto mt-2 max-w-6xl rounded-3xl border border-white/10 bg-ink/95 p-4 shadow-lg shadow-ink/20 backdrop-blur-md md:hidden">
           <nav className="flex flex-col gap-1">
             <div>
               <button
                 type="button"
                 onClick={() => setMobileSortOpen((v) => !v)}
                 aria-expanded={mobileSortOpen}
-                className="flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-[15px] font-medium text-cream/90 transition hover:bg-white/5 hover:text-cream"
+                className="flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-[15px] font-medium text-white/90 transition hover:bg-white/5 hover:text-white"
               >
                 Sortiment
                 <svg
@@ -129,7 +129,7 @@ export default function Header() {
                       key={cat.slug}
                       href={`/sortiment/${cat.slug}`}
                       onClick={() => setOpen(false)}
-                      className="rounded-lg px-3 py-2 text-sm text-cream/75 transition hover:bg-white/5 hover:text-cream"
+                      className="rounded-lg px-3 py-2 text-sm text-white/75 transition hover:bg-white/5 hover:text-white"
                     >
                       {cat.title}
                     </Link>
@@ -143,7 +143,7 @@ export default function Header() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-xl px-3 py-2.5 text-[15px] font-medium text-cream/90 transition hover:bg-white/5 hover:text-cream"
+                className="rounded-xl px-3 py-2.5 text-[15px] font-medium text-white/90 transition hover:bg-white/5 hover:text-white"
               >
                 {link.label}
               </Link>
@@ -151,7 +151,7 @@ export default function Header() {
             <Link
               href="/#kontakt"
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-xl bg-fresh-green px-3 py-2.5 text-center text-sm font-semibold text-deep-green"
+              className="mt-2 rounded-xl bg-orange-dark px-3 py-2.5 text-center text-sm font-semibold text-white"
             >
               Jetzt kontaktieren
             </Link>

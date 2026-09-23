@@ -70,13 +70,13 @@ const CARDS: Card[] = [
 
 export default function WhyUs() {
   return (
-    <section className="bg-cream py-16 md:py-24" id="warum-ali">
+    <section className="bg-mist py-16 md:py-24" id="warum-ali">
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-xl">
-          <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
+          <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
             Warum Ali Supermarkt?
           </span>
-          <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-charcoal sm:text-4xl">
+          <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
             Fünf Gründe für Ali Supermarkt
           </h2>
         </div>
@@ -87,15 +87,15 @@ export default function WhyUs() {
               key={card.title}
               className={`flex flex-col gap-4 rounded-2xl p-6 ${
                 card.highlight
-                  ? "bg-deep-green text-cream shadow-md shadow-deep-green/20 sm:col-span-2 lg:col-span-1"
-                  : "border border-charcoal/8 bg-white text-charcoal"
+                  ? "bg-ink text-white shadow-md shadow-ink/20 sm:col-span-2 lg:col-span-1"
+                  : "border border-smoke/8 bg-white text-ink"
               }`}
             >
               <span
                 className={`flex h-11 w-11 items-center justify-center rounded-full ${
                   card.highlight
-                    ? "bg-cream/15 text-cream"
-                    : "bg-fresh-green/12 text-deep-green"
+                    ? "bg-mist/15 text-white"
+                    : "bg-orange/12 text-orange-dark"
                 }`}
               >
                 {card.icon}
@@ -103,14 +103,14 @@ export default function WhyUs() {
               <div>
                 <h3
                   className={`font-heading text-base font-bold ${
-                    card.highlight ? "text-cream" : "text-charcoal"
+                    card.highlight ? "text-white" : "text-ink"
                   }`}
                 >
                   {card.title}
                 </h3>
                 <p
                   className={`mt-1.5 text-sm leading-relaxed ${
-                    card.highlight ? "text-cream/80" : "text-charcoal/65"
+                    card.highlight ? "text-white/80" : "text-ink/65"
                   }`}
                 >
                   {card.desc}
