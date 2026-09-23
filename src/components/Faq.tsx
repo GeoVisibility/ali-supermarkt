@@ -73,6 +73,12 @@ const FAQS: Faq[] = [
     hrefLabel: "Zur Metzgerei",
   },
   {
+    q: "Woher kommt das Rindfleisch bei Ali Supermarkt?",
+    a: "Unser Rindfleisch beziehen wir von Melka Group (MELKA Viande Sàrl) aus Moudon im Kanton Waadt, einem Schweizer Lieferanten für Halal-Fleisch. Zur Herkunft einzelner Produkte beraten wir Sie gerne an der Theke.",
+    href: "/sortiment/halal-fleisch",
+    hrefLabel: "Zur Metzgerei",
+  },
+  {
     q: "Gibt es Milchprodukte wie Käse, Joghurt und Ayran?",
     a: "Ja. Im Kühlregal finden Sie Milch, Butter, Rahm, Joghurt in verschiedenen Grössen sowie Käsesorten von Weichkäse in Salzlake bis Kaşar. Ayran und gekühlte Desserts gehören ebenfalls dazu.",
     href: "/sortiment/milchprodukte",

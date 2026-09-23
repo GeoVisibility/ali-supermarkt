@@ -41,6 +41,15 @@ export const BUSINESS = {
     "https://www.google.com/maps/dir/?api=1&destination=Bernstrasse+25%2C+3175+Flamatt%2C+Switzerland",
 } as const;
 
+/** Lieferant für unser Rindfleisch. */
+export const BEEF_SUPPLIER = {
+  name: "Melka Group",
+  legalName: "MELKA Viande Sàrl",
+  city: "Moudon",
+  region: "Kanton Waadt",
+  url: "https://www.melkagroup.ch/",
+} as const;
+
 /** Öffnungszeiten für die Anzeige (zusammengefasste Tage). */
 export const OPENING_HOURS = [
   { day: "Montag – Donnerstag", time: "08:00 – 19:00" },

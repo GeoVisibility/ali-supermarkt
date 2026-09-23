@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import HeroSlider from "@/components/HeroSlider";
 import QuickFacts from "@/components/QuickFacts";
 import { WhatsAppLink } from "@/components/WhatsAppButton";
+import { BEEF_SUPPLIER } from "@/lib/business";
 import Footer from "@/components/Footer";
 import { Breadcrumb, RelatedCategories } from "@/components/CategoryExtras";
 
@@ -70,6 +71,10 @@ const FAQS = [
   {
     q: "Kann ich Fleisch für eine grössere Menge vorbestellen?",
     a: "Ja, sprechen Sie unser Team an der Theke an oder schreiben Sie uns vorab über WhatsApp – wir bereiten Ihre Bestellung gerne vor.",
+  },
+  {
+    q: "Woher kommt Ihr Rindfleisch?",
+    a: "Unser Rindfleisch beziehen wir von Melka Group (MELKA Viande Sàrl) aus Moudon im Kanton Waadt, einem Schweizer Lieferanten für Halal-Fleisch.",
   },
   {
     q: "Bieten Sie auch Wurstwaren an?",
@@ -180,8 +185,49 @@ export default function HalalFleischPage() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Lieferant */}
       <section className="bg-white py-16 md:py-24">
+        <div className="mx-auto max-w-3xl px-6">
+          <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
+            Herkunft
+          </span>
+          <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
+            Unser Rindfleisch kommt von {BEEF_SUPPLIER.name}
+          </h2>
+
+          <div className="mt-6 flex flex-col gap-4 text-base leading-relaxed text-ink/70">
+            <p>
+              Beim Fleisch zählt für uns, woher es kommt. Unser Rindfleisch
+              beziehen wir von der {BEEF_SUPPLIER.legalName} ({BEEF_SUPPLIER.name})
+              aus {BEEF_SUPPLIER.city} im {BEEF_SUPPLIER.region} – einem
+              Schweizer Lieferanten, der auf Halal-Fleisch spezialisiert ist und
+              Metzgereien und Lebensmittelgeschäfte in der ganzen Schweiz
+              beliefert.
+            </p>
+            <p>
+              So wissen Sie bei jedem Stück, das wir an unserer Theke
+              zuschneiden, woher es stammt. Haben Sie Fragen zur Herkunft eines
+              Produkts? Sprechen Sie uns an der Theke an – wir geben Ihnen gerne
+              Auskunft.
+            </p>
+          </div>
+
+          <a
+            href={BEEF_SUPPLIER.url}
+            target="_blank"
+            rel="noopener"
+            className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-dark transition hover:gap-2.5"
+          >
+            Website von {BEEF_SUPPLIER.name}
+            <svg aria-hidden viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-none stroke-current stroke-[2.4]">
+              <path d="m9 5 7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="border-t border-smoke/8 bg-white py-16 md:py-24">
         {/* eslint-disable-next-line react/no-danger */}
         <script
           type="application/ld+json"

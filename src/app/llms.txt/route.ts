@@ -46,6 +46,7 @@ ${sortiment}
 - Ist sonntags geöffnet? Ja, sonntags von 10:00 bis 16:00 Uhr.
 - Gibt es türkische und internationale Lebensmittel? Ja, unter anderem Salça, eingelegtes Gemüse, Weinblätter, Tee, Gewürze, Oliven und Olivenöl.
 - Kann man vorbestellen? Ja, telefonisch oder per WhatsApp unter ${BUSINESS.phone}. Ziege und Schaf gibt es auf Bestellung.
+- Woher kommt das Rindfleisch? Von Melka Group (MELKA Viande Sàrl) aus Moudon im Kanton Waadt, einem Schweizer Lieferanten für Halal-Fleisch.
 - Gibt es Parkplätze? Ja, kostenlose Parkplätze direkt beim Geschäft.
 - Wie ist die Anreise mit dem ÖV? Der Bahnhof Flamatt liegt rund 300 Meter entfernt (etwa 5 Minuten zu Fuss).
 - Wer führt das Geschäft? Kader Yurteri, Inhaberin der Ali Supermarkt GmbH, seit Mai 2025.

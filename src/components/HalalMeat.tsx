@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BEEF_SUPPLIER } from "@/lib/business";
 
 const MEAT_TYPES = [
   "Rindfleisch",
@@ -44,6 +45,20 @@ export default function HalalMeat() {
             An unserer Fleischtheke wählen wir täglich aus, was frisch und
             Halal&#8209;zertifiziert ist. Unser Team berät Sie gerne persönlich
             – vom passenden Stück bis zur Zubereitung.
+          </p>
+          <p className="mt-4 max-w-lg text-base leading-relaxed text-white/75">
+            Unser Rindfleisch beziehen wir von{" "}
+            <a
+              href={BEEF_SUPPLIER.url}
+              target="_blank"
+              rel="noopener"
+              className="font-semibold text-orange underline underline-offset-4"
+            >
+              {BEEF_SUPPLIER.name}
+            </a>{" "}
+            ({BEEF_SUPPLIER.legalName}) aus {BEEF_SUPPLIER.city} im{" "}
+            {BEEF_SUPPLIER.region} – einem Schweizer Lieferanten für
+            Halal-Fleisch.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">
