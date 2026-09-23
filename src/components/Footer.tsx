@@ -19,7 +19,7 @@ const LEGAL_COLUMN = [
 export default function Footer() {
   return (
     <footer className="bg-ink text-white/70">
-      <div className="mx-auto max-w-6xl px-6 py-14">
+      <div className="mx-auto max-w-6xl px-6 pt-14 pb-24">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
           {/* Brand */}
           <div>
@@ -134,9 +134,22 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-6 text-xs text-white/55">
-          © {new Date().getFullYear()} Ali Supermarkt GmbH. Alle Rechte
-          vorbehalten.
+        <div className="mt-12 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            © {new Date().getFullYear()} Ali Supermarkt GmbH. Alle Rechte
+            vorbehalten.
+          </p>
+          <p>
+            Gestaltung und Umsetzung:{" "}
+            <Link
+              href="https://growusagency.com/"
+              target="_blank"
+              rel="noopener"
+              className="font-medium text-white/75 underline underline-offset-2 transition hover:text-white"
+            >
+              Growus Agency
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
