@@ -31,7 +31,7 @@ export function Breadcrumb({ title, slug }: { title: string; slug: string }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="mx-auto max-w-6xl px-6">
-        <ol className="flex flex-wrap items-center gap-1.5 text-xs text-ink/50">
+        <ol className="flex flex-wrap items-center gap-1.5 text-xs text-ink/65">
           <li>
             <Link href="/" className="transition hover:text-orange-dark">
               Startseite

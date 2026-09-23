@@ -11,7 +11,8 @@ export function GET() {
   const hours = OPENING_HOURS.map((h) => `- ${h.day}: ${h.time} Uhr`).join("\n");
 
   const sortiment = CATEGORIES.map(
-    (c) => `- ${c.title}: ${c.highlights.join(", ")} (${SITE_URL}/sortiment/${c.slug})`,
+    (c) =>
+      `- [${c.title}](${SITE_URL}/sortiment/${c.slug}): ${c.highlights.join(", ")}`,
   ).join("\n");
 
   const body = `# ${BUSINESS.legalName}
@@ -25,9 +26,9 @@ export function GET() {
 - Region: Sensebezirk, Kanton Freiburg (FR)
 - Koordinaten: ${BUSINESS.latitude}, ${BUSINESS.longitude}
 - Telefon: ${BUSINESS.phone}
-- WhatsApp: ${BUSINESS.whatsapp}
-- E-Mail: ${BUSINESS.email}
-- Website: ${SITE_URL}
+- WhatsApp: [${BUSINESS.phone}](${BUSINESS.whatsapp})
+- E-Mail: [${BUSINESS.email}](mailto:${BUSINESS.email})
+- Website: [alisupermarkt.ch](${SITE_URL})
 - UID: ${BUSINESS.uid}
 - Inhaberin: ${BUSINESS.owner}
 - Eröffnet: Mai 2025
@@ -40,9 +41,15 @@ ${hours}
 
 ${sortiment}
 
+## Weitere Seiten
+
+- [Startseite](${SITE_URL})
+- [Impressum](${SITE_URL}/impressum)
+- [Datenschutz](${SITE_URL}/datenschutz)
+
 ## Häufige Fragen
 
-- Gibt es Halal-Fleisch? Ja, die Fleischtheke führt ausschliesslich Halal-zertifiziertes Fleisch: Rind, Kalb, Lamm, Geflügel und Wurstwaren. Ziege und Schaf auf Bestellung.
+- Gibt es Halal-Fleisch? Ja, die [Fleischtheke](${SITE_URL}/sortiment/halal-fleisch) führt ausschliesslich Halal-zertifiziertes Fleisch: Rind, Kalb, Lamm, Geflügel und Wurstwaren. Ziege und Schaf auf Bestellung.
 - Ist sonntags geöffnet? Ja, sonntags von 10:00 bis 16:00 Uhr.
 - Gibt es türkische und internationale Lebensmittel? Ja, unter anderem Salça, eingelegtes Gemüse, Weinblätter, Tee, Gewürze, Oliven und Olivenöl.
 - Kann man vorbestellen? Ja, telefonisch oder per WhatsApp unter ${BUSINESS.phone}. Ziege und Schaf gibt es auf Bestellung.
@@ -53,10 +60,12 @@ ${sortiment}
 
 ## Profile
 
-- Instagram: ${BUSINESS.instagram}
-- Facebook: ${BUSINESS.facebook}
-- TikTok: ${BUSINESS.tiktok}
-- Google: ${BUSINESS.googleProfile}
+- [Instagram](${BUSINESS.instagram})
+- [Facebook](${BUSINESS.facebook})
+- [TikTok](${BUSINESS.tiktok})
+- [Google-Profil](${BUSINESS.googleProfile})
+- [local.ch](${BUSINESS.localCh})
+- [search.ch](${BUSINESS.searchCh})
 
 ## Hinweise
 

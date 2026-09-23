@@ -43,19 +43,19 @@ export default function Offers() {
                 {offer.name}
               </span>
               {offer.oldPrice && (
-                <span className="text-sm text-ink/40 line-through">
+                <span className="text-sm text-ink/65 line-through">
                   CHF {offer.oldPrice}
                 </span>
               )}
               <span className="font-heading text-2xl font-extrabold text-orange-dark">
                 CHF {offer.price}
               </span>
-              <span className="text-xs text-ink/50">{offer.unit}</span>
+              <span className="text-xs text-ink/65">{offer.unit}</span>
             </div>
           ))}
         </div>
 
-        <p className="mt-6 flex items-center gap-2 text-xs text-ink/45">
+        <p className="mt-6 flex items-center gap-2 text-xs text-ink/65">
           <span className="h-1.5 w-1.5 rounded-full bg-orange" />
           Beispielpreise aus vergangenen Wochenaktionen – die aktuellen
           Angebote finden Sie auf Instagram und im Laden.

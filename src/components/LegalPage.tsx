@@ -18,7 +18,7 @@ export default function LegalPage({
 
       <nav aria-label="Breadcrumb" className="pt-28 pb-2">
         <div className="mx-auto max-w-3xl px-6">
-          <ol className="flex flex-wrap items-center gap-1.5 text-xs text-ink/50">
+          <ol className="flex flex-wrap items-center gap-1.5 text-xs text-ink/65">
             <li>
               <Link href="/" className="transition hover:text-orange-dark">
                 Startseite
@@ -35,7 +35,7 @@ export default function LegalPage({
           <h1 className="font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
             {title}
           </h1>
-          <p className="mt-3 text-sm text-ink/55">Stand: {updated}</p>
+          <p className="mt-3 text-sm text-ink/65">Stand: {updated}</p>
 
           <div className="mt-10 flex flex-col gap-8">{children}</div>
         </div>

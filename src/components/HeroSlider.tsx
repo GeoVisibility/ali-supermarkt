@@ -112,8 +112,9 @@ export default function HeroSlider({
         </svg>
       </button>
 
-      {/* dot pagination */}
-      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-2">
+      {/* dot pagination – der Punkt bleibt klein, die Schaltfläche ist 24x36px
+          gross, damit sie sich auf dem Handy sicher treffen lässt. */}
+      <div className="absolute bottom-0 left-1/2 flex -translate-x-1/2 items-center">
         {slides.map((slide, i) => (
           <button
             key={slide.src}
@@ -121,12 +122,18 @@ export default function HeroSlider({
             onClick={() => handleDot(i)}
             aria-label={`Bild ${i + 1} anzeigen`}
             aria-current={i === index}
-            className={`h-1.5 rounded-full transition-all duration-300 ${
-              i === index ? "w-6 bg-white" : "w-1.5 bg-white/55 hover:bg-white/80"
-            }`}
-          />
+            className="flex h-9 w-6 items-center justify-center"
+          >
+            <span
+              aria-hidden
+              className={`h-1.5 rounded-full transition-all duration-300 ${
+                i === index ? "w-6 bg-white" : "w-1.5 bg-white/55"
+              }`}
+            />
+          </button>
         ))}
       </div>
+
     </div>
   );
 }

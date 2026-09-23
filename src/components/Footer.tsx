@@ -41,9 +41,9 @@ export default function Footer() {
 
           {/* Nav */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/40">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/55">
               Seite
-            </h4>
+            </h3>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
               {NAV_COLUMN.map((link) => (
                 <li key={link.label}>
@@ -57,9 +57,9 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/40">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/55">
               Kontakt
-            </h4>
+            </h3>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
               <li>{BUSINESS.street}</li>
               <li>
@@ -83,9 +83,9 @@ export default function Footer() {
 
           {/* Social + legal */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/40">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/55">
               Social
-            </h4>
+            </h3>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
               <li>
                 <Link
@@ -119,9 +119,9 @@ export default function Footer() {
               </li>
             </ul>
 
-            <h4 className="mt-6 text-xs font-semibold uppercase tracking-[0.14em] text-white/40">
+            <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.14em] text-white/55">
               Rechtliches
-            </h4>
+            </h3>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
               {LEGAL_COLUMN.map((link) => (
                 <li key={link.label}>
@@ -134,7 +134,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-6 text-xs text-white/40">
+        <div className="mt-12 border-t border-white/10 pt-6 text-xs text-white/55">
           © {new Date().getFullYear()} Ali Supermarkt GmbH. Alle Rechte
           vorbehalten.
         </div>
