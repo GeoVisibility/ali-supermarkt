@@ -45,6 +45,7 @@ ${sortiment}
 
 - [Startseite](${SITE_URL})
 - [Sortiment](${SITE_URL}/sortiment)
+- [Ausführliche Fassung dieser Datei](${SITE_URL}/llms-full.txt)
 - [Impressum](${SITE_URL}/impressum)
 - [Datenschutz](${SITE_URL}/datenschutz)
 

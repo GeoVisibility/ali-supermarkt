@@ -5,6 +5,7 @@ import HeroSlider from "@/components/HeroSlider";
 import QuickFacts from "@/components/QuickFacts";
 import { WhatsAppLink } from "@/components/WhatsAppButton";
 import { BEEF_SUPPLIER } from "@/lib/business";
+import { MEAT_FAQS, MEAT_TYPES as MEAT_TYPES_LIST } from "@/lib/meat";
 import Footer from "@/components/Footer";
 import { Breadcrumb, RelatedCategories } from "@/components/CategoryExtras";
 
@@ -15,36 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/sortiment/halal-fleisch" },
 };
 
-const MEAT_TYPES = [
-  {
-    name: "Rindfleisch",
-    desc: "Saftiges Rindfleisch für Braten, Steaks und Gulasch – täglich frisch zugeschnitten.",
-  },
-  {
-    name: "Kalbfleisch",
-    desc: "Zartes Kalbfleisch für feine Braten und Schnitzel.",
-  },
-  {
-    name: "Lammfleisch",
-    desc: "Zartes Lammfleisch, ideal für traditionelle Gerichte und den Grill.",
-  },
-  {
-    name: "Geflügel",
-    desc: "Frisches Geflügel – von ganzen Hähnchen bis zu ausgewählten Teilstücken.",
-  },
-  {
-    name: "Wurstwaren",
-    desc: "Ausgewählte Wurstspezialitäten aus Halal-Fleisch.",
-  },
-  {
-    name: "Ziege",
-    desc: "Auf Bestellung erhältlich – sprechen Sie unser Team an der Theke an.",
-  },
-  {
-    name: "Schaf",
-    desc: "Auf Bestellung erhältlich – sprechen Sie unser Team an der Theke an.",
-  },
-];
+const MEAT_TYPES = MEAT_TYPES_LIST;
 
 const HERO_SLIDES = [
   { src: "/images/kasap/lammkoteletts-theke.webp", alt: "Lammkoteletts und abgepacktes Fleisch an der Theke" },
@@ -63,24 +35,7 @@ const TRUST_POINTS = [
   "Persönliche Beratung",
 ];
 
-const FAQS = [
-  {
-    q: "Ist das Fleisch bei Ali Supermarkt Halal-zertifiziert?",
-    a: "Ja, das gesamte Fleischsortiment an unserer Theke ist Halal-zertifiziert.",
-  },
-  {
-    q: "Kann ich Fleisch für eine grössere Menge vorbestellen?",
-    a: "Ja, sprechen Sie unser Team an der Theke an oder schreiben Sie uns vorab über WhatsApp – wir bereiten Ihre Bestellung gerne vor.",
-  },
-  {
-    q: "Woher kommt Ihr Rindfleisch?",
-    a: "Unser Rindfleisch beziehen wir von Melka Group (MELKA Viande Sàrl) aus Moudon im Kanton Waadt, einem Schweizer Lieferanten für Halal-Fleisch.",
-  },
-  {
-    q: "Bieten Sie auch Wurstwaren an?",
-    a: "Ja, wir führen eine Auswahl an Wurstwaren aus Halal-Fleisch.",
-  },
-];
+const FAQS = MEAT_FAQS;
 
 export default function HalalFleischPage() {
   const jsonLd = {
