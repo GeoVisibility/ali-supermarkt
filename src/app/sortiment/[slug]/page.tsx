@@ -56,10 +56,10 @@ export default async function CategoryPage({
             {category.slides?.length ? (
               <HeroSlider
                 slides={category.slides}
-                className="aspect-[4/3] shadow-charcoal/10 lg:aspect-[5/4]"
+                className="aspect-[4/3] shadow-ink/10 lg:aspect-[5/4]"
               />
             ) : (
-              <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl shadow-charcoal/10 lg:aspect-[5/4]">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl shadow-ink/10 lg:aspect-[5/4]">
                 <Image
                   src={category.img}
                   alt={category.title}
@@ -72,13 +72,13 @@ export default async function CategoryPage({
             )}
 
             <div>
-              <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
+              <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
                 {category.tagline}
               </span>
-              <h1 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-charcoal sm:text-4xl">
+              <h1 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
                 {category.title}
               </h1>
-              <p className="mt-5 max-w-lg text-base leading-relaxed text-charcoal/70">
+              <p className="mt-5 max-w-lg text-base leading-relaxed text-ink/70">
                 {category.description}
               </p>
 
@@ -86,7 +86,7 @@ export default async function CategoryPage({
                 {category.highlights.map((h) => (
                   <span
                     key={h}
-                    className="rounded-full border border-charcoal/15 px-4 py-1.5 text-sm text-charcoal/80"
+                    className="rounded-full border border-smoke/15 px-4 py-1.5 text-sm text-ink/80"
                   >
                     {h}
                   </span>
@@ -98,13 +98,13 @@ export default async function CategoryPage({
                   href="https://wa.me/41796483072"
                   target="_blank"
                   rel="noopener"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-deep-green px-6 py-3.5 text-base font-semibold text-cream shadow-sm transition hover:bg-[#0e2b23]"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-orange-dark px-6 py-3.5 text-base font-semibold text-white shadow-sm transition hover:brightness-95"
                 >
                   Frage per WhatsApp stellen
                 </a>
                 <Link
                   href="/#kontakt"
-                  className="inline-flex items-center justify-center rounded-xl border border-charcoal/15 bg-white px-6 py-3.5 text-base font-semibold text-charcoal transition hover:border-charcoal/30"
+                  className="inline-flex items-center justify-center rounded-xl border border-smoke/15 bg-white px-6 py-3.5 text-base font-semibold text-ink transition hover:border-smoke/30"
                 >
                   Route planen
                 </Link>
@@ -115,16 +115,16 @@ export default async function CategoryPage({
       </section>
 
       {category.body?.length ? (
-        <section className="border-t border-charcoal/8 bg-cream py-16 md:py-24">
+        <section className="border-t border-smoke/8 bg-mist py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
-            <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
+            <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
               Gut zu wissen
             </span>
-            <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-charcoal sm:text-3xl">
+            <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
               {category.title} bei Ali Supermarkt in Flamatt
             </h2>
 
-            <div className="mt-6 flex flex-col gap-4 text-base leading-relaxed text-charcoal/70">
+            <div className="mt-6 flex flex-col gap-4 text-base leading-relaxed text-ink/70">
               {category.body.map((paragraph) => (
                 <p key={paragraph.slice(0, 40)}>{paragraph}</p>
               ))}

@@ -18,7 +18,7 @@ const AUTOPLAY_MS = 4500;
 
 export default function HeroSlider({
   slides = DEFAULT_SLIDES,
-  className = "aspect-[4/5] shadow-charcoal/10 sm:aspect-[5/4] lg:aspect-[4/5]",
+  className = "aspect-[4/5] shadow-ink/10 sm:aspect-[5/4] lg:aspect-[4/5]",
   priority = true,
 }: {
   slides?: Slide[];
@@ -78,7 +78,7 @@ export default function HeroSlider({
       {/* darken bottom edge so dots stay legible over any photo */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-charcoal/45 to-transparent"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-ink/45 to-transparent"
       />
 
       {/* prev / next arrows */}
@@ -86,7 +86,7 @@ export default function HeroSlider({
         type="button"
         onClick={handlePrev}
         aria-label="Vorheriges Bild"
-        className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-charcoal shadow-sm backdrop-blur transition hover:bg-white"
+        className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-ink shadow-sm backdrop-blur transition hover:bg-white"
       >
         <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current stroke-[2.5]">
           <path d="M15 5 8 12l7 7" strokeLinecap="round" strokeLinejoin="round" />
@@ -96,7 +96,7 @@ export default function HeroSlider({
         type="button"
         onClick={handleNext}
         aria-label="Nächstes Bild"
-        className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-charcoal shadow-sm backdrop-blur transition hover:bg-white"
+        className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-ink shadow-sm backdrop-blur transition hover:bg-white"
       >
         <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current stroke-[2.5]">
           <path d="m9 5 7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />

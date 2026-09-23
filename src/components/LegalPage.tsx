@@ -18,24 +18,24 @@ export default function LegalPage({
 
       <nav aria-label="Breadcrumb" className="pt-28 pb-2">
         <div className="mx-auto max-w-3xl px-6">
-          <ol className="flex flex-wrap items-center gap-1.5 text-xs text-charcoal/50">
+          <ol className="flex flex-wrap items-center gap-1.5 text-xs text-ink/50">
             <li>
-              <Link href="/" className="transition hover:text-deep-green">
+              <Link href="/" className="transition hover:text-orange-dark">
                 Startseite
               </Link>
             </li>
             <li aria-hidden>/</li>
-            <li className="font-medium text-charcoal/75">{title}</li>
+            <li className="font-medium text-ink/75">{title}</li>
           </ol>
         </div>
       </nav>
 
       <section className="pt-6 pb-16 md:pb-24">
         <div className="mx-auto max-w-3xl px-6">
-          <h1 className="font-heading text-3xl font-extrabold leading-tight tracking-tight text-charcoal sm:text-4xl">
+          <h1 className="font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
             {title}
           </h1>
-          <p className="mt-3 text-sm text-charcoal/55">Stand: {updated}</p>
+          <p className="mt-3 text-sm text-ink/55">Stand: {updated}</p>
 
           <div className="mt-10 flex flex-col gap-8">{children}</div>
         </div>
@@ -55,10 +55,10 @@ export function LegalSection({
 }) {
   return (
     <section>
-      <h2 className="font-heading text-xl font-bold text-charcoal">
+      <h2 className="font-heading text-xl font-bold text-ink">
         {heading}
       </h2>
-      <div className="mt-3 flex flex-col gap-3 text-base leading-relaxed text-charcoal/70">
+      <div className="mt-3 flex flex-col gap-3 text-base leading-relaxed text-ink/70">
         {children}
       </div>
     </section>

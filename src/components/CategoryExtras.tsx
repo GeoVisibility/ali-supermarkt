@@ -31,20 +31,20 @@ export function Breadcrumb({ title, slug }: { title: string; slug: string }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="mx-auto max-w-6xl px-6">
-        <ol className="flex flex-wrap items-center gap-1.5 text-xs text-charcoal/50">
+        <ol className="flex flex-wrap items-center gap-1.5 text-xs text-ink/50">
           <li>
-            <Link href="/" className="transition hover:text-deep-green">
+            <Link href="/" className="transition hover:text-orange-dark">
               Startseite
             </Link>
           </li>
           <li aria-hidden>/</li>
           <li>
-            <Link href="/#sortiment" className="transition hover:text-deep-green">
+            <Link href="/#sortiment" className="transition hover:text-orange-dark">
               Sortiment
             </Link>
           </li>
           <li aria-hidden>/</li>
-          <li className="font-medium text-charcoal/75">{title}</li>
+          <li className="font-medium text-ink/75">{title}</li>
         </ol>
       </div>
     </nav>
@@ -55,12 +55,12 @@ export function RelatedCategories({ currentSlug }: { currentSlug: string }) {
   const others = CATEGORIES.filter((c) => c.slug !== currentSlug);
 
   return (
-    <section className="border-t border-charcoal/8 bg-white py-16 md:py-24">
+    <section className="border-t border-smoke/8 bg-white py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
+        <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
           Weitere Kategorien
         </span>
-        <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-charcoal sm:text-3xl">
+        <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
           Entdecken Sie mehr aus unserem Sortiment
         </h2>
 
@@ -89,9 +89,9 @@ function CategoryTile({ cat }: { cat: Category }) {
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/5 to-transparent"
+        className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/5 to-transparent"
       />
-      <span className="absolute inset-x-0 bottom-0 p-3 font-heading text-sm font-bold leading-tight text-cream">
+      <span className="absolute inset-x-0 bottom-0 p-3 font-heading text-sm font-bold leading-tight text-white">
         {cat.title}
       </span>
     </Link>

@@ -26,7 +26,7 @@ export default function DatenschutzPage() {
           E-Mail:{" "}
           <a
             href={`mailto:${BUSINESS.email}`}
-            className="font-medium text-deep-green underline underline-offset-2"
+            className="font-medium text-orange-dark underline underline-offset-2"
           >
             {BUSINESS.email}
           </a>
@@ -113,7 +113,7 @@ export default function DatenschutzPage() {
           veröffentlichte Fassung. Das{" "}
           <Link
             href="/impressum"
-            className="font-medium text-deep-green underline underline-offset-2"
+            className="font-medium text-orange-dark underline underline-offset-2"
           >
             Impressum
           </Link>{" "}

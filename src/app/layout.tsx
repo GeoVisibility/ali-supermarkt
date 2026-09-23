@@ -73,7 +73,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="de"
       className={`${manrope.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-cream text-charcoal font-body">
+      <body className="min-h-full flex flex-col bg-mist text-ink font-body">
         <BusinessSchema />
         {children}
       </body>

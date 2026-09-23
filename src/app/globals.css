@@ -7,13 +7,6 @@
   --color-mist: #f4f3f1; /* helles Füme für Abschnitte */
   --color-orange: #ea5d32; /* Orange aus dem Schriftzug */
   --color-orange-dark: #c0431d; /* für Text und Buttons auf hellem Grund */
-
-  /* Altbestand: wird noch auf den Kategorieseiten verwendet */
-  --color-deep-green: #173f35;
-  --color-fresh-green: #6faf45;
-  --color-cream: #f7f2e8;
-  --color-tomato: #d94b3d;
-  --color-charcoal: #202522;
 }
 
 @theme inline {
@@ -22,12 +15,6 @@
   --color-mist: var(--color-mist);
   --color-orange: var(--color-orange);
   --color-orange-dark: var(--color-orange-dark);
-
-  --color-deep-green: var(--color-deep-green);
-  --color-fresh-green: var(--color-fresh-green);
-  --color-cream: var(--color-cream);
-  --color-tomato: var(--color-tomato);
-  --color-charcoal: var(--color-charcoal);
 
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);

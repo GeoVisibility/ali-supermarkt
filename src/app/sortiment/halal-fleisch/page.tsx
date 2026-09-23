@@ -98,17 +98,17 @@ export default function HalalFleischPage() {
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <HeroSlider
               slides={HERO_SLIDES}
-              className="aspect-[4/3] shadow-charcoal/10 lg:aspect-[5/4]"
+              className="aspect-[4/3] shadow-ink/10 lg:aspect-[5/4]"
             />
 
             <div>
-              <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
+              <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
                 Täglich frisch, Halal-zertifiziert
               </span>
-              <h1 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-charcoal sm:text-4xl">
+              <h1 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
                 Frisches Halal-Fleisch in Flamatt
               </h1>
-              <p className="mt-5 max-w-lg text-base leading-relaxed text-charcoal/70">
+              <p className="mt-5 max-w-lg text-base leading-relaxed text-ink/70">
                 An unserer Fleischtheke wählen wir täglich aus, was frisch
                 und Halal-zertifiziert ist. Unser Team berät Sie gerne
                 persönlich – vom passenden Stück bis zur Zubereitung.
@@ -118,12 +118,12 @@ export default function HalalFleischPage() {
                 {TRUST_POINTS.map((point) => (
                   <span
                     key={point}
-                    className="inline-flex items-center gap-2 text-sm font-medium text-charcoal/80"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-ink/80"
                   >
                     <svg
                       aria-hidden
                       viewBox="0 0 20 20"
-                      className="h-4 w-4 flex-none fill-none stroke-deep-green stroke-[2.2]"
+                      className="h-4 w-4 flex-none fill-none stroke-orange-dark stroke-[2.2]"
                     >
                       <path d="m4 10.5 3.5 3.5L16 5.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
@@ -137,13 +137,13 @@ export default function HalalFleischPage() {
                   href="https://wa.me/41796483072"
                   target="_blank"
                   rel="noopener"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-deep-green px-6 py-3.5 text-base font-semibold text-cream shadow-sm transition hover:bg-[#0e2b23]"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-orange-dark px-6 py-3.5 text-base font-semibold text-white shadow-sm transition hover:brightness-95"
                 >
                   Bestellung per WhatsApp
                 </a>
                 <Link
                   href="/#kontakt"
-                  className="inline-flex items-center justify-center rounded-xl border border-charcoal/15 bg-white px-6 py-3.5 text-base font-semibold text-charcoal transition hover:border-charcoal/30"
+                  className="inline-flex items-center justify-center rounded-xl border border-smoke/15 bg-white px-6 py-3.5 text-base font-semibold text-ink transition hover:border-smoke/30"
                 >
                   Route planen
                 </Link>
@@ -154,12 +154,12 @@ export default function HalalFleischPage() {
       </section>
 
       {/* Meat types */}
-      <section className="border-t border-charcoal/8 bg-cream py-16 md:py-24">
+      <section className="border-t border-smoke/8 bg-mist py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-6">
-          <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
+          <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
             Unser Angebot
           </span>
-          <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-charcoal sm:text-3xl">
+          <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
             Was Sie an unserer Theke finden
           </h2>
 
@@ -167,12 +167,12 @@ export default function HalalFleischPage() {
             {MEAT_TYPES.map((meat) => (
               <div
                 key={meat.name}
-                className="rounded-2xl border border-charcoal/8 bg-white p-6"
+                className="rounded-2xl border border-smoke/8 bg-white p-6"
               >
-                <h3 className="font-heading text-lg font-bold text-charcoal">
+                <h3 className="font-heading text-lg font-bold text-ink">
                   {meat.name}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-charcoal/65">
+                <p className="mt-2 text-sm leading-relaxed text-ink/65">
                   {meat.desc}
                 </p>
               </div>
@@ -194,20 +194,20 @@ export default function HalalFleischPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <div className="mx-auto max-w-3xl px-6">
-          <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
+          <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
             Häufige Fragen
           </span>
-          <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-charcoal sm:text-3xl">
+          <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
             Zu unserer Fleischtheke
           </h2>
 
           <div className="mt-8 flex flex-col gap-5">
             {FAQS.map((item) => (
               <div key={item.q}>
-                <p className="font-heading text-base font-bold text-charcoal">
+                <p className="font-heading text-base font-bold text-ink">
                   {item.q}
                 </p>
-                <p className="mt-1.5 text-sm leading-relaxed text-charcoal/65">
+                <p className="mt-1.5 text-sm leading-relaxed text-ink/65">
                   {item.a}
                 </p>
               </div>

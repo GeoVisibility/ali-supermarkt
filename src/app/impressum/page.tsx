@@ -29,7 +29,7 @@ export default function ImpressumPage() {
           Telefon:{" "}
           <a
             href={BUSINESS.phoneHref}
-            className="font-medium text-deep-green underline underline-offset-2"
+            className="font-medium text-orange-dark underline underline-offset-2"
           >
             {BUSINESS.phone}
           </a>
@@ -37,7 +37,7 @@ export default function ImpressumPage() {
           E-Mail:{" "}
           <a
             href={`mailto:${BUSINESS.email}`}
-            className="font-medium text-deep-green underline underline-offset-2"
+            className="font-medium text-orange-dark underline underline-offset-2"
           >
             {BUSINESS.email}
           </a>
