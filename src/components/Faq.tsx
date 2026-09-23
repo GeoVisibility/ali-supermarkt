@@ -9,42 +9,62 @@ const FAQS: Faq[] = [
   {
     q: "Wo gibt es einen Halal-Supermarkt in Flamatt?",
     a: "Ali Supermarkt an der Bernstrasse 25 in Flamatt ist der lokale Supermarkt mit Halal-Sortiment und internationalen Spezialitäten in Flamatt.",
+    href: "/sortiment/halal-fleisch",
+    hrefLabel: "Zur Metzgerei",
   },
   {
     q: "Wo kann ich Halal-Fleisch in Flamatt kaufen?",
     a: "An unserer Fleischtheke im Ali Supermarkt erhalten Sie täglich frisches, Halal-zertifiziertes Fleisch – Rind, Lamm, Geflügel und Wurstwaren, inklusive persönlicher Beratung.",
+    href: "/sortiment/halal-fleisch",
+    hrefLabel: "Zur Metzgerei",
   },
   {
     q: "Hat Ali Supermarkt sonntags geöffnet?",
     a: "Ja. Wir haben sonntags von 10:00 bis 16:00 Uhr für Sie geöffnet – auch wenn andere Geschäfte zu haben.",
+    href: "/#kontakt",
+    hrefLabel: "Öffnungszeiten und Anfahrt",
   },
   {
     q: "Wo gibt es türkische Lebensmittel in Flamatt?",
     a: "Bei Ali Supermarkt finden Sie eine Auswahl an türkischen und internationalen Spezialitäten – von Antipasti über Salça bis zu Weinblättern.",
+    href: "/sortiment/internationale-spezialitaeten",
+    hrefLabel: "Zu den internationalen Spezialitäten",
   },
   {
     q: "Wo kann ich frisches Obst und Gemüse in Flamatt kaufen?",
     a: "Unsere Obst- und Gemüseauswahl wird bei Ali Supermarkt in Flamatt täglich frisch bestückt.",
+    href: "/sortiment/obst-gemuese",
+    hrefLabel: "Zu Obst & Gemüse",
   },
   {
     q: "Gibt es bei Ali Supermarkt internationale Lebensmittel?",
     a: "Ja, unser Sortiment reicht von Grundnahrungsmitteln bis zu internationalen Spezialitäten aus verschiedenen Küchen und Kulturen.",
+    href: "/#sortiment",
+    hrefLabel: "Alle Kategorien ansehen",
   },
   {
     q: "Wo befindet sich Ali Supermarkt?",
     a: "Ali Supermarkt befindet sich an der Bernstrasse 25, 3175 Wünnewil-Flamatt, Schweiz.",
+    href: "/#kontakt",
+    hrefLabel: "Route planen",
   },
   {
     q: "Wie sind die Öffnungszeiten?",
     a: "Montag bis Donnerstag 08:00–19:00 Uhr, Freitag 08:00–20:00 Uhr, Samstag 08:00–16:00 Uhr, Sonntag 10:00–16:00 Uhr.",
+    href: "/#kontakt",
+    hrefLabel: "Öffnungszeiten und Anfahrt",
   },
   {
     q: "Gibt es beim Ali Supermarkt Parkplätze?",
     a: "Ja. Direkt beim Geschäft an der Bernstrasse 25 stehen kostenlose Parkplätze zur Verfügung – Sie können also bequem mit dem Auto vorfahren.",
+    href: "/#kontakt",
+    hrefLabel: "Anfahrt und Karte",
   },
   {
     q: "Wie erreiche ich Ali Supermarkt mit dem öffentlichen Verkehr?",
     a: "Der Bahnhof Flamatt liegt rund 300 Meter entfernt, das sind etwa fünf Minuten zu Fuss. Von dort erreichen Sie uns über die Bernstrasse.",
+    href: "/#kontakt",
+    hrefLabel: "Anfahrt und Karte",
   },
   {
     q: "Kann ich Fleisch oder grössere Mengen vorbestellen?",
@@ -73,6 +93,8 @@ const FAQS: Faq[] = [
   {
     q: "Wer führt Ali Supermarkt?",
     a: "Ali Supermarkt wird von Kader Yurteri geführt, der Inhaberin der Ali Supermarkt GmbH. Das Geschäft ist seit Mai 2025 in Flamatt für Sie da und wird als Familienbetrieb geführt.",
+    href: "/#ueber-uns",
+    hrefLabel: "Mehr über uns",
   },
 ];
 

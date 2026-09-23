@@ -21,7 +21,7 @@ export const BUSINESS = {
   phone: "+41 79 648 30 72",
   phoneHref: "tel:+41796483072",
   whatsapp: "https://wa.me/41796483072",
-  email: "info@alisupermarkt.ch",
+  email: "alisupermarkt@flamatt.com",
   instagram: "https://www.instagram.com/ali.supermarkt.gmbh/",
   facebook: "https://www.facebook.com/profile.php?id=61576730932399",
   tiktok: "https://www.tiktok.com/@ali.supermarkt.gmbh",
