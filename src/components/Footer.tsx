@@ -4,7 +4,7 @@ import { BUSINESS } from "@/lib/business";
 
 const NAV_COLUMN = [
   { label: "Startseite", href: "/#top" },
-  { label: "Sortiment", href: "/#sortiment" },
+  { label: "Sortiment", href: "/sortiment" },
   { label: "Halal Fleisch", href: "/#halal-fleisch" },
   { label: "Angebote", href: "/#angebote" },
   { label: "Über uns", href: "/#ueber-uns" },

@@ -38,7 +38,7 @@ export default function Header() {
           {/* Sortiment dropdown */}
           <div className="group relative">
             <Link
-              href="/#sortiment"
+              href="/sortiment"
               className="inline-flex items-center gap-1 py-2 text-[15px] font-medium text-white/90 transition hover:text-white"
             >
               Sortiment

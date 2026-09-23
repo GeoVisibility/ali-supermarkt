@@ -18,10 +18,12 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-6 font-heading text-4xl font-extrabold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.4rem]">
-            <span className="text-orange-dark">Frisch.</span>{" "}
+            <span className="text-orange">Frisch.</span>{" "}
             <span className="text-smoke">Halal.</span>{" "}
-            International.{" "}
-            <span className="text-ink/70">Nah.</span>
+            International.
+            <span className="mt-2 block text-2xl font-bold leading-snug text-ink/70 sm:text-3xl lg:text-[2.1rem]">
+              Ihr Supermarkt in Flamatt
+            </span>
           </h1>
 
           <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/80">

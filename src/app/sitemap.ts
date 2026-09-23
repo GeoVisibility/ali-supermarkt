@@ -12,6 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+    {
+      url: `${SITE_URL}/sortiment`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
     ...CATEGORIES.map((category) => ({
       url: `${SITE_URL}/sortiment/${category.slug}`,
       lastModified,

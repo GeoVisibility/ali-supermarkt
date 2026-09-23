@@ -39,7 +39,7 @@ const FAQS: Faq[] = [
   {
     q: "Gibt es bei Ali Supermarkt internationale Lebensmittel?",
     a: "Ja, unser Sortiment reicht von Grundnahrungsmitteln bis zu internationalen Spezialitäten aus verschiedenen Küchen und Kulturen.",
-    href: "/#sortiment",
+    href: "/sortiment",
     hrefLabel: "Alle Kategorien ansehen",
   },
   {

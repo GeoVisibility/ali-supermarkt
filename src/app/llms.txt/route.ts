@@ -44,6 +44,7 @@ ${sortiment}
 ## Weitere Seiten
 
 - [Startseite](${SITE_URL})
+- [Sortiment](${SITE_URL}/sortiment)
 - [Impressum](${SITE_URL}/impressum)
 - [Datenschutz](${SITE_URL}/datenschutz)
 

@@ -13,7 +13,7 @@ export function Breadcrumb({ title, slug }: { title: string; slug: string }) {
         "@type": "ListItem",
         position: 2,
         name: "Sortiment",
-        item: `${SITE_URL}/#sortiment`,
+        item: `${SITE_URL}/sortiment`,
       },
       {
         "@type": "ListItem",
@@ -39,7 +39,7 @@ export function Breadcrumb({ title, slug }: { title: string; slug: string }) {
           </li>
           <li aria-hidden>/</li>
           <li>
-            <Link href="/#sortiment" className="transition hover:text-orange-dark">
+            <Link href="/sortiment" className="transition hover:text-orange-dark">
               Sortiment
             </Link>
           </li>
