@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import HeroSlider from "@/components/HeroSlider";
+import QuickFacts from "@/components/QuickFacts";
 import Footer from "@/components/Footer";
 import { Breadcrumb, RelatedCategories } from "@/components/CategoryExtras";
 
@@ -177,6 +178,11 @@ export default function HalalFleischPage() {
               </div>
             ))}
           </div>
+
+          <QuickFacts
+            className="mt-8"
+            sortiment="Rind, Kalb, Lamm, Geflügel, Wurstwaren; Ziege und Schaf auf Bestellung"
+          />
         </div>
       </section>
 

@@ -60,6 +60,12 @@ export default function BusinessSchema() {
     ],
     openingHoursSpecification: OPENING_HOURS_SCHEMA,
     currenciesAccepted: "CHF",
+    publicAccess: true,
+    amenityFeature: {
+      "@type": "LocationFeatureSpecification",
+      name: "Kostenlose Parkplätze",
+      value: true,
+    },
     areaServed: [
       { "@type": "City", name: "Wünnewil-Flamatt" },
       { "@type": "City", name: "Flamatt" },

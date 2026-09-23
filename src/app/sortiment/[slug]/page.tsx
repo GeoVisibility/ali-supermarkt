@@ -7,7 +7,7 @@ import HeroSlider from "@/components/HeroSlider";
 import Footer from "@/components/Footer";
 import { Breadcrumb, RelatedCategories } from "@/components/CategoryExtras";
 import { CATEGORIES, getCategory } from "@/lib/categories";
-import { BUSINESS } from "@/lib/business";
+import QuickFacts from "@/components/QuickFacts";
 
 export function generateStaticParams() {
   return CATEGORIES.filter((c) => c.slug !== "halal-fleisch").map((c) => ({
@@ -130,12 +130,11 @@ export default async function CategoryPage({
               ))}
             </div>
 
-            <p className="mt-8 text-sm leading-relaxed text-charcoal/60">
-              Sie finden uns an der {BUSINESS.street}, {BUSINESS.postalCode}{" "}
-              {BUSINESS.city}. Geöffnet Montag bis Donnerstag 08:00–19:00 Uhr,
-              Freitag 08:00–20:00 Uhr, Samstag 08:00–16:00 Uhr und Sonntag
-              10:00–16:00 Uhr.
-            </p>
+            <QuickFacts
+              className="mt-8"
+              sortiment={category.highlights.join(", ")}
+            />
+
           </div>
         </section>
       ) : null}

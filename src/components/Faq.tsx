@@ -1,8 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
-const FAQS = [
+type Faq = { q: string; a: string; href?: string; hrefLabel?: string };
+
+const FAQS: Faq[] = [
   {
     q: "Wo gibt es einen Halal-Supermarkt in Flamatt?",
     a: "Ali Supermarkt an der Bernstrasse 25 in Flamatt ist der lokale Supermarkt mit Halal-Sortiment und internationalen Spezialitäten in Flamatt.",
@@ -34,6 +37,42 @@ const FAQS = [
   {
     q: "Wie sind die Öffnungszeiten?",
     a: "Montag bis Donnerstag 08:00–19:00 Uhr, Freitag 08:00–20:00 Uhr, Samstag 08:00–16:00 Uhr, Sonntag 10:00–16:00 Uhr.",
+  },
+  {
+    q: "Gibt es beim Ali Supermarkt Parkplätze?",
+    a: "Ja. Direkt beim Geschäft an der Bernstrasse 25 stehen kostenlose Parkplätze zur Verfügung – Sie können also bequem mit dem Auto vorfahren.",
+  },
+  {
+    q: "Wie erreiche ich Ali Supermarkt mit dem öffentlichen Verkehr?",
+    a: "Der Bahnhof Flamatt liegt rund 300 Meter entfernt, das sind etwa fünf Minuten zu Fuss. Von dort erreichen Sie uns über die Bernstrasse.",
+  },
+  {
+    q: "Kann ich Fleisch oder grössere Mengen vorbestellen?",
+    a: "Ja. Sprechen Sie unser Team an der Theke an oder schreiben Sie uns vorab über WhatsApp an +41 79 648 30 72 – wir bereiten Ihre Bestellung gerne vor. Ziege und Schaf führen wir auf Bestellung.",
+    href: "/sortiment/halal-fleisch",
+    hrefLabel: "Zur Metzgerei",
+  },
+  {
+    q: "Gibt es Milchprodukte wie Käse, Joghurt und Ayran?",
+    a: "Ja. Im Kühlregal finden Sie Milch, Butter, Rahm, Joghurt in verschiedenen Grössen sowie Käsesorten von Weichkäse in Salzlake bis Kaşar. Ayran und gekühlte Desserts gehören ebenfalls dazu.",
+    href: "/sortiment/milchprodukte",
+    hrefLabel: "Zu den Milchprodukten",
+  },
+  {
+    q: "Führt Ali Supermarkt auch Tiefkühlprodukte?",
+    a: "Ja. In unseren Tiefkühltruhen finden Sie Geflügel und Fleischprodukte, Fisch, Tiefkühlgemüse sowie vorbereitete Teigwaren und Backwaren wie Börek und Fladenbrot.",
+    href: "/sortiment/tiefkuehlprodukte",
+    hrefLabel: "Zu den Tiefkühlprodukten",
+  },
+  {
+    q: "Bekomme ich hier auch Reinigungs- und Haushaltsartikel?",
+    a: "Ja. Neben Lebensmitteln führen wir Waschmittel, Putzmittel, Körperpflege und Haushaltsartikel wie Papiertücher und Abfallsäcke – so erledigen Sie den ganzen Einkauf an einem Ort.",
+    href: "/sortiment/reinigung-haushalt",
+    hrefLabel: "Zu Reinigung & Haushalt",
+  },
+  {
+    q: "Wer führt Ali Supermarkt?",
+    a: "Ali Supermarkt wird von Kader Yurteri geführt, der Inhaberin der Ali Supermarkt GmbH. Das Geschäft ist seit Mai 2025 in Flamatt für Sie da und wird als Familienbetrieb geführt.",
   },
 ];
 
@@ -103,9 +142,22 @@ export default function Faq() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-5 pb-4 text-sm leading-relaxed text-charcoal/65">
-                      {item.a}
-                    </p>
+                    <div className="px-5 pb-4">
+                      <p className="text-sm leading-relaxed text-charcoal/65">
+                        {item.a}
+                      </p>
+                      {item.href ? (
+                        <Link
+                          href={item.href}
+                          className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-deep-green transition hover:gap-2.5"
+                        >
+                          {item.hrefLabel}
+                          <svg aria-hidden viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-none stroke-current stroke-[2.4]">
+                            <path d="m9 5 7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                        </Link>
+                      ) : null}
+                    </div>
                   </div>
                 </div>
               </div>
