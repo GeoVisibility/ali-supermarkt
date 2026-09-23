@@ -21,7 +21,7 @@ export const BUSINESS = {
   phone: "+41 79 648 30 72",
   phoneHref: "tel:+41796483072",
   whatsapp: "https://wa.me/41796483072",
-  email: "info@ali-supermarkt.ch",
+  email: "info@alisupermarkt.ch",
   instagram: "https://www.instagram.com/ali.supermarkt.gmbh/",
   mapsEmbed:
     "https://www.google.com/maps?q=Ali+Supermarkt,+Bernstrasse+25,+3175+Flamatt,+Switzerland&output=embed",

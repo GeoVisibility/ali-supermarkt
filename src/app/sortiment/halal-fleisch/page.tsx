@@ -89,7 +89,7 @@ export default function HalalFleischPage() {
   return (
     <main id="top">
       <Header />
-      <Breadcrumb title="Frisches Halal-Fleisch" />
+      <Breadcrumb title="Frisches Halal-Fleisch" slug="halal-fleisch" />
 
       {/* Hero */}
       <section className="pt-6 pb-16 md:pb-24">

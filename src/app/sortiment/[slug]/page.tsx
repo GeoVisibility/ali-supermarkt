@@ -7,6 +7,7 @@ import HeroSlider from "@/components/HeroSlider";
 import Footer from "@/components/Footer";
 import { Breadcrumb, RelatedCategories } from "@/components/CategoryExtras";
 import { CATEGORIES, getCategory } from "@/lib/categories";
+import { BUSINESS } from "@/lib/business";
 
 export function generateStaticParams() {
   return CATEGORIES.filter((c) => c.slug !== "halal-fleisch").map((c) => ({
@@ -47,7 +48,7 @@ export default async function CategoryPage({
   return (
     <main id="top">
       <Header />
-      <Breadcrumb title={category.title} />
+      <Breadcrumb title={category.title} slug={category.slug} />
 
       <section className="pt-6 pb-16 md:pb-24">
         <div className="mx-auto max-w-6xl px-6">
@@ -112,6 +113,32 @@ export default async function CategoryPage({
           </div>
         </div>
       </section>
+
+      {category.body?.length ? (
+        <section className="border-t border-charcoal/8 bg-cream py-16 md:py-24">
+          <div className="mx-auto max-w-3xl px-6">
+            <span className="text-sm font-semibold uppercase tracking-[0.14em] text-fresh-green">
+              Gut zu wissen
+            </span>
+            <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-charcoal sm:text-3xl">
+              {category.title} bei Ali Supermarkt in Flamatt
+            </h2>
+
+            <div className="mt-6 flex flex-col gap-4 text-base leading-relaxed text-charcoal/70">
+              {category.body.map((paragraph) => (
+                <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+              ))}
+            </div>
+
+            <p className="mt-8 text-sm leading-relaxed text-charcoal/60">
+              Sie finden uns an der {BUSINESS.street}, {BUSINESS.postalCode}{" "}
+              {BUSINESS.city}. Geöffnet Montag bis Donnerstag 08:00–19:00 Uhr,
+              Freitag 08:00–20:00 Uhr, Samstag 08:00–16:00 Uhr und Sonntag
+              10:00–16:00 Uhr.
+            </p>
+          </div>
+        </section>
+      ) : null}
 
       <RelatedCategories currentSlug={category.slug} />
       <Footer />

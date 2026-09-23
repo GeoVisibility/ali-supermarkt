@@ -1,10 +1,35 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CATEGORIES, type Category } from "@/lib/categories";
+import { SITE_URL } from "@/lib/business";
 
-export function Breadcrumb({ title }: { title: string }) {
+export function Breadcrumb({ title, slug }: { title: string; slug: string }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Startseite", item: SITE_URL },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Sortiment",
+        item: `${SITE_URL}/#sortiment`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: title,
+        item: `${SITE_URL}/sortiment/${slug}`,
+      },
+    ],
+  };
+
   return (
     <nav aria-label="Breadcrumb" className="pt-28 pb-2">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mx-auto max-w-6xl px-6">
         <ol className="flex flex-wrap items-center gap-1.5 text-xs text-charcoal/50">
           <li>

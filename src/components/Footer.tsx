@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BUSINESS } from "@/lib/business";
 
 const NAV_COLUMN = [
   { label: "Startseite", href: "/#top" },
@@ -59,19 +60,21 @@ export default function Footer() {
               Kontakt
             </h4>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
-              <li>Bernstrasse 25</li>
-              <li>3175 Wünnewil-Flamatt</li>
+              <li>{BUSINESS.street}</li>
               <li>
-                <a href="tel:+41796483072" className="transition hover:text-cream">
-                  +41 79 648 30 72
+                {BUSINESS.postalCode} {BUSINESS.city}
+              </li>
+              <li>
+                <a href={BUSINESS.phoneHref} className="transition hover:text-cream">
+                  {BUSINESS.phone}
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:info@ali-supermarkt.ch"
+                  href={`mailto:${BUSINESS.email}`}
                   className="transition hover:text-cream"
                 >
-                  info@ali-supermarkt.ch
+                  {BUSINESS.email}
                 </a>
               </li>
             </ul>

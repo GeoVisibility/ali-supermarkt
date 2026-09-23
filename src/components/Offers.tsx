@@ -17,7 +17,7 @@ export default function Offers() {
               Unsere Angebote
             </span>
             <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-charcoal sm:text-4xl">
-              Diese Woche im Angebot
+              Beispiele aus unseren Wochenaktionen
             </h2>
           </div>
           <Link
@@ -57,8 +57,8 @@ export default function Offers() {
 
         <p className="mt-6 flex items-center gap-2 text-xs text-charcoal/45">
           <span className="h-1.5 w-1.5 rounded-full bg-fresh-green" />
-          Preise aus vergangenen Wochenaktionen – aktuelle Angebote finden Sie
-          auf Instagram.
+          Beispielpreise aus vergangenen Wochenaktionen – die aktuellen
+          Angebote finden Sie auf Instagram und im Laden.
         </p>
       </div>
     </section>
