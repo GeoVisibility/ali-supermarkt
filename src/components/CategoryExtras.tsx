@@ -85,6 +85,7 @@ function CategoryTile({ cat }: { cat: Category }) {
         alt={cat.title}
         fill
         sizes="(min-width: 1024px) 180px, 33vw"
+        quality={65}
         className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
       />
       <div

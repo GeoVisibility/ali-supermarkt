@@ -29,6 +29,7 @@ export default function Footer() {
                 alt="Ali Supermarkt"
                 width={200}
                 height={200}
+                sizes="56px"
                 className="h-full w-full object-contain"
               />
             </span>

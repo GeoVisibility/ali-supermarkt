@@ -13,6 +13,7 @@ export default function OurStory() {
               alt={`${BUSINESS.owner}, Inhaberin der ${BUSINESS.legalName}, vor dem Laden in Flamatt`}
               fill
               sizes="(min-width: 1024px) 420px, (min-width: 640px) 384px, 100vw"
+              quality={65}
               className="object-cover"
             />
             <span className="absolute bottom-4 left-4 rounded-full bg-ink px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white shadow-md shadow-ink/20">
@@ -75,6 +76,7 @@ export default function OurStory() {
             alt="Eingang von Ali Supermarkt an der Bernstrasse 25 in Flamatt"
             fill
             sizes="(min-width: 1152px) 1100px, 100vw"
+            quality={65}
             className="object-cover object-top"
           />
           <div

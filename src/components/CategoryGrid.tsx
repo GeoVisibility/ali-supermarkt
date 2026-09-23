@@ -33,6 +33,7 @@ export default function CategoryGrid() {
                 alt={cat.title}
                 fill
                 sizes="(min-width: 1024px) 380px, 50vw"
+                quality={65}
                 className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               />
               <div

@@ -61,19 +61,28 @@ export default function HeroSlider({
 
   return (
     <div className={`relative w-full overflow-hidden rounded-3xl shadow-xl ${className}`}>
-      {slides.map((slide, i) => (
-        <Image
-          key={slide.src}
-          src={slide.src}
-          alt={slide.alt}
-          fill
-          priority={priority && i === 0}
-          sizes="(min-width: 1024px) 480px, 100vw"
-          className={`object-cover transition-opacity duration-700 ease-in-out ${
-            i === index ? "opacity-100" : "opacity-0"
-          }`}
-        />
-      ))}
+      {slides.map((slide, i) => {
+        // Nur das aktuelle Bild und seine beiden Nachbarn stehen im DOM – der
+        // Rest wird erst geladen, wenn er an die Reihe kommt.
+        const offset = Math.abs(i - index);
+        const distance = Math.min(offset, slides.length - offset);
+        if (distance > 1) return null;
+
+        return (
+          <Image
+            key={slide.src}
+            src={slide.src}
+            alt={slide.alt}
+            fill
+            priority={priority && i === 0}
+            quality={65}
+            sizes="(min-width: 1024px) 480px, 100vw"
+            className={`object-cover transition-opacity duration-700 ease-in-out ${
+              i === index ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        );
+      })}
 
       {/* darken bottom edge so dots stay legible over any photo */}
       <div

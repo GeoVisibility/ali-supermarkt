@@ -26,6 +26,7 @@ export default function Header() {
               alt="Ali Supermarkt"
               width={200}
               height={200}
+              sizes="(min-width: 640px) 48px, 44px"
               className="h-full w-full object-contain"
               priority
             />

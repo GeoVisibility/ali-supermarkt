@@ -29,6 +29,7 @@ export default function HalalMeat() {
             alt="Frische Fleischauswahl an der Halal-Theke von Ali Supermarkt"
             fill
             sizes="(min-width: 1024px) 480px, 100vw"
+            quality={65}
             className="object-cover"
           />
         </div>

@@ -58,6 +58,7 @@ export default function FreshProduce() {
             alt="Frisches Obst- und Gemüseregal bei Ali Supermarkt in Flamatt"
             fill
             sizes="(min-width: 1152px) 1100px, 100vw"
+            quality={65}
             className="object-cover"
           />
           <div

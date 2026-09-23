@@ -8,13 +8,13 @@ import { BUSINESS, SITE_URL } from "@/lib/business";
 const manrope = Manrope({
   variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
+  display: "swap",
 });
 
 const inter = Inter({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
