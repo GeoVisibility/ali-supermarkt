@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import HeroSlider from "@/components/HeroSlider";
 import QuickFacts from "@/components/QuickFacts";
+import { WhatsAppLink } from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 import { Breadcrumb, RelatedCategories } from "@/components/CategoryExtras";
 
@@ -133,14 +134,7 @@ export default function HalalFleischPage() {
               </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href="https://wa.me/41796483072"
-                  target="_blank"
-                  rel="noopener"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-orange-dark px-6 py-3.5 text-base font-semibold text-white shadow-sm transition hover:brightness-95"
-                >
-                  Bestellung per WhatsApp
-                </a>
+                <WhatsAppLink>Bestellung per WhatsApp</WhatsAppLink>
                 <Link
                   href="/#kontakt"
                   className="inline-flex items-center justify-center rounded-xl border border-smoke/15 bg-white px-6 py-3.5 text-base font-semibold text-ink transition hover:border-smoke/30"

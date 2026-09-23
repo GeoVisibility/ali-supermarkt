@@ -7,6 +7,8 @@
   --color-mist: #f4f3f1; /* helles Füme für Abschnitte */
   --color-orange: #ea5d32; /* Orange aus dem Schriftzug */
   --color-orange-dark: #c0431d; /* für Text und Buttons auf hellem Grund */
+  --color-whatsapp: #25d366; /* WhatsApp-Grün, für den schwebenden Button */
+  --color-whatsapp-dark: #0f7a52; /* dunkler, damit weisse Schrift lesbar bleibt */
 }
 
 @theme inline {
@@ -15,6 +17,8 @@
   --color-mist: var(--color-mist);
   --color-orange: var(--color-orange);
   --color-orange-dark: var(--color-orange-dark);
+  --color-whatsapp: var(--color-whatsapp);
+  --color-whatsapp-dark: var(--color-whatsapp-dark);
 
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);

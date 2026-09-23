@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import "./globals.css";
 import BusinessSchema from "@/components/BusinessSchema";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { BUSINESS, SITE_URL } from "@/lib/business";
 
 const manrope = Manrope({
@@ -76,6 +77,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col bg-mist text-ink font-body">
         <BusinessSchema />
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );

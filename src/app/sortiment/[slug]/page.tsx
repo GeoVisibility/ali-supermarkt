@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumb, RelatedCategories } from "@/components/CategoryExtras";
 import { CATEGORIES, getCategory } from "@/lib/categories";
 import QuickFacts from "@/components/QuickFacts";
+import { WhatsAppLink } from "@/components/WhatsAppButton";
 
 export function generateStaticParams() {
   return CATEGORIES.filter((c) => c.slug !== "halal-fleisch").map((c) => ({
@@ -94,14 +95,7 @@ export default async function CategoryPage({
               </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href="https://wa.me/41796483072"
-                  target="_blank"
-                  rel="noopener"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-orange-dark px-6 py-3.5 text-base font-semibold text-white shadow-sm transition hover:brightness-95"
-                >
-                  Frage per WhatsApp stellen
-                </a>
+                <WhatsAppLink>Frage per WhatsApp stellen</WhatsAppLink>
                 <Link
                   href="/#kontakt"
                   className="inline-flex items-center justify-center rounded-xl border border-smoke/15 bg-white px-6 py-3.5 text-base font-semibold text-ink transition hover:border-smoke/30"
