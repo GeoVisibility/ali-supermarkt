@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BUSINESS } from "@/lib/business";
 
 export default function OurStory() {
   return (
@@ -9,7 +10,7 @@ export default function OurStory() {
           <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-3xl shadow-xl shadow-ink/10 lg:max-w-none">
             <Image
               src="/images/kader-inhaberin.webp"
-              alt="Kader, Inhaberin der Ali Supermarkt GmbH, vor dem Laden in Flamatt"
+              alt={`${BUSINESS.owner}, Inhaberin der ${BUSINESS.legalName}, vor dem Laden in Flamatt`}
               fill
               sizes="(min-width: 1024px) 420px, (min-width: 640px) 384px, 100vw"
               className="object-cover"
@@ -57,9 +58,11 @@ export default function OurStory() {
             </div>
 
             <div className="mt-8 border-l-2 border-orange pl-4">
-              <p className="font-heading text-xl font-bold text-ink">Kader</p>
+              <p className="font-heading text-xl font-bold text-ink">
+                {BUSINESS.owner}
+              </p>
               <p className="mt-0.5 text-sm text-ink/60">
-                Inhaberin der Ali Supermarkt GmbH
+                Inhaberin der {BUSINESS.legalName}
               </p>
             </div>
           </div>
