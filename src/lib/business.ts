@@ -28,6 +28,7 @@ export const BUSINESS = {
   googleProfile: "https://www.google.com/maps?cid=13612409872101344473",
   localCh:
     "https://www.local.ch/de/d/flamatt/3175/lebensmittelgeschaeft/ali-supermarkt-gmbh-VNgTRlaD2-Wltp8qkyHOmg",
+  searchCh: "https://search.ch/tel/flamatt/bernstrasse-25/ali-supermarkt-gmbh",
   /** Handelsregister Kanton Freiburg, Eintrag vom 27.01.2025 */
   uid: "CHE-402.117.715",
   chid: "CH-217-3591328-3",

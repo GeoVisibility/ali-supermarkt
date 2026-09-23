@@ -56,6 +56,7 @@ export default function BusinessSchema() {
       BUSINESS.tiktok,
       BUSINESS.googleProfile,
       BUSINESS.localCh,
+      BUSINESS.searchCh,
     ],
     openingHoursSpecification: OPENING_HOURS_SCHEMA,
     currenciesAccepted: "CHF",
