@@ -7,8 +7,8 @@ export type Slide = { src: string; alt: string };
 
 const DEFAULT_SLIDES: Slide[] = [
   { src: "/images/kasap/lammkoteletts-theke.webp", alt: "Frische Halal-Fleischauswahl von Ali Supermarkt" },
-  { src: "/images/obst-gemuese/obst-gemuese-01.webp", alt: "Frisches Obst und Gemüse im Regal von Ali Supermarkt" },
-  { src: "/images/getraenke/getraenke-01.webp", alt: "Gekühlte Getränke im Kühlregal von Ali Supermarkt" },
+  { src: "/images/obst-gemuese/obst-gemuese-03.webp", alt: "Obstinsel mit Äpfeln, Melonen und Trauben bei Ali Supermarkt" },
+  { src: "/images/getraenke/getraenke-06.webp", alt: "Regal mit Fruchtsäften und Erfrischungsgetränken bei Ali Supermarkt" },
   { src: "/images/internationale-spezialitaeten/internationale-spezialitaeten-01.webp", alt: "Salça, Konserven und internationale Spezialitäten bei Ali Supermarkt" },
   { src: "/images/grundnahrungsmittel/grundnahrungsmittel-01.webp", alt: "Reis, Teigwaren und Grundnahrungsmittel bei Ali Supermarkt" },
   { src: "/images/suesses-knabbereien/suesses-knabbereien-01.webp", alt: "Süsses und Knabbereien bei Ali Supermarkt" },
