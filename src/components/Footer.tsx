@@ -88,7 +88,7 @@ export default function Footer() {
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
               <li>
                 <Link
-                  href="https://www.instagram.com/ali.supermarkt.gmbh/"
+                  href={BUSINESS.instagram}
                   target="_blank"
                   rel="noopener"
                   className="transition hover:text-cream"
@@ -98,12 +98,22 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://www.facebook.com/profile.php?id=61576730932399"
+                  href={BUSINESS.facebook}
                   target="_blank"
                   rel="noopener"
                   className="transition hover:text-cream"
                 >
                   Facebook
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={BUSINESS.tiktok}
+                  target="_blank"
+                  rel="noopener"
+                  className="transition hover:text-cream"
+                >
+                  TikTok
                 </Link>
               </li>
             </ul>

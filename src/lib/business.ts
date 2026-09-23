@@ -23,6 +23,17 @@ export const BUSINESS = {
   whatsapp: "https://wa.me/41796483072",
   email: "info@alisupermarkt.ch",
   instagram: "https://www.instagram.com/ali.supermarkt.gmbh/",
+  facebook: "https://www.facebook.com/profile.php?id=61576730932399",
+  tiktok: "https://www.tiktok.com/@ali.supermarkt.gmbh",
+  googleProfile: "https://www.google.com/maps?cid=13612409872101344473",
+  localCh:
+    "https://www.local.ch/de/d/flamatt/3175/lebensmittelgeschaeft/ali-supermarkt-gmbh-VNgTRlaD2-Wltp8qkyHOmg",
+  /** Handelsregister Kanton Freiburg, Eintrag vom 27.01.2025 */
+  uid: "CHE-402.117.715",
+  chid: "CH-217-3591328-3",
+  registerOffice: "Handelsregisteramt des Kantons Freiburg",
+  registerDate: "27. Januar 2025",
+  legalForm: "Gesellschaft mit beschränkter Haftung (GmbH)",
   mapsEmbed:
     "https://www.google.com/maps?q=Ali+Supermarkt,+Bernstrasse+25,+3175+Flamatt,+Switzerland&output=embed",
   mapsDirections:
