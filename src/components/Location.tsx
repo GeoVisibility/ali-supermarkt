@@ -1,14 +1,9 @@
-const HOURS = [
-  { day: "Montag – Donnerstag", time: "08:00 – 19:00" },
-  { day: "Freitag", time: "08:00 – 20:00" },
-  { day: "Samstag", time: "08:00 – 16:00" },
-  { day: "Sonntag", time: "10:00 – 16:00" },
-];
+import { BUSINESS, OPENING_HOURS } from "@/lib/business";
 
-const MAPS_EMBED_SRC =
-  "https://www.google.com/maps?q=Ali+Supermarkt,+Bernstrasse+25,+3175+Flamatt,+Switzerland&output=embed";
-const MAPS_DIRECTIONS_HREF =
-  "https://www.google.com/maps/dir/?api=1&destination=Bernstrasse+25%2C+3175+Flamatt%2C+Switzerland";
+const HOURS = OPENING_HOURS;
+
+const MAPS_EMBED_SRC = BUSINESS.mapsEmbed;
+const MAPS_DIRECTIONS_HREF = BUSINESS.mapsDirections;
 
 export default function Location() {
   return (
@@ -41,12 +36,12 @@ export default function Location() {
             <div className="flex flex-col gap-6">
               <div>
                 <p className="font-heading text-lg font-bold text-charcoal">
-                  Ali Supermarkt GmbH
+                  {BUSINESS.legalName}
                 </p>
                 <p className="mt-1 text-sm leading-relaxed text-charcoal/65">
-                  Bernstrasse 25
+                  {BUSINESS.street}
                   <br />
-                  3175 Wünnewil-Flamatt
+                  {BUSINESS.postalCode} {BUSINESS.city}
                   <br />
                   Schweiz
                 </p>
@@ -54,23 +49,23 @@ export default function Location() {
 
               <div className="flex flex-col gap-2 text-sm">
                 <a
-                  href="tel:+41796483072"
+                  href={BUSINESS.phoneHref}
                   className="inline-flex items-center gap-2 font-semibold text-charcoal transition hover:text-deep-green"
                 >
                   <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current stroke-[1.8]">
                     <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.7c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1L6.6 10.8Z" />
                   </svg>
-                  +41 79 648 30 72
+                  {BUSINESS.phone}
                 </a>
                 <a
-                  href="mailto:info@ali-supermarkt.ch"
+                  href={`mailto:${BUSINESS.email}`}
                   className="inline-flex items-center gap-2 text-charcoal/70 transition hover:text-deep-green"
                 >
                   <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current stroke-[1.8]">
                     <rect x="3" y="5" width="18" height="14" rx="2.5" />
                     <path d="m4 7 8 6 8-6" />
                   </svg>
-                  info@ali-supermarkt.ch
+                  {BUSINESS.email}
                 </a>
               </div>
 

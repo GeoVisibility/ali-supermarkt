@@ -1,0 +1,22 @@
+import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/business";
+import { CATEGORIES } from "@/lib/categories";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date();
+
+  return [
+    {
+      url: SITE_URL,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    ...CATEGORIES.map((category) => ({
+      url: `${SITE_URL}/sortiment/${category.slug}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: category.slug === "halal-fleisch" ? 0.9 : 0.8,
+    })),
+  ];
+}

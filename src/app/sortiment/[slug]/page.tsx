@@ -23,8 +23,15 @@ export async function generateMetadata({
   const category = getCategory(slug);
   if (!category) return {};
   return {
-    title: `${category.title} | Ali Supermarkt Flamatt`,
+    title: category.title,
     description: `${category.description} Jetzt bei Ali Supermarkt in Flamatt entdecken.`,
+    alternates: { canonical: `/sortiment/${category.slug}` },
+    openGraph: {
+      title: `${category.title} | Ali Supermarkt Flamatt`,
+      description: category.description,
+      url: `/sortiment/${category.slug}`,
+      images: [{ url: category.img, alt: category.title }],
+    },
   };
 }
 

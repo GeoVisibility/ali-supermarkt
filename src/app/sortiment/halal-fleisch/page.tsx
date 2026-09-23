@@ -6,9 +6,10 @@ import Footer from "@/components/Footer";
 import { Breadcrumb, RelatedCategories } from "@/components/CategoryExtras";
 
 export const metadata: Metadata = {
-  title: "Halal-Fleisch in Flamatt | Ali Supermarkt",
+  title: "Halal-Fleisch",
   description:
     "Frisches, Halal-zertifiziertes Fleisch an der Theke von Ali Supermarkt in Flamatt: Rind, Lamm, Geflügel und Wurstwaren – täglich frisch, persönlich beraten.",
+  alternates: { canonical: "/sortiment/halal-fleisch" },
 };
 
 const MEAT_TYPES = [
