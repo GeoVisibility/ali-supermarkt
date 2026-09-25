@@ -3,14 +3,18 @@ import {
   OPENING_HOURS_SCHEMA,
   SITE_URL,
 } from "@/lib/business";
-import { CATEGORIES } from "@/lib/categories";
+import { getCategories } from "@/lib/categories";
+import { localizePath } from "@/i18n/config";
+import { getDictionary } from "@/i18n/server";
 
 /**
  * Strukturierte Daten zum Geschäft (GroceryStore). Liegt im Root-Layout und
  * gilt damit für alle Seiten – Suchmaschinen und KI-Assistenten finden NAP,
  * Öffnungszeiten und Sortiment an einer festen Stelle.
  */
-export default function BusinessSchema() {
+export default async function BusinessSchema() {
+  const { locale, t } = await getDictionary();
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "GroceryStore",
@@ -18,20 +22,19 @@ export default function BusinessSchema() {
     name: BUSINESS.legalName,
     alternateName: BUSINESS.name,
     legalName: BUSINESS.legalName,
-    url: SITE_URL,
+    url: `${SITE_URL}${localizePath("/", locale)}`,
     logo: `${SITE_URL}/images/logo.png`,
     image: [
       `${SITE_URL}/images/ladenfront.webp`,
       `${SITE_URL}/images/kasap/lammkoteletts-theke.webp`,
       `${SITE_URL}/images/obst-gemuese/obst-gemuese-01.webp`,
     ],
-    description:
-      "Internationaler Supermarkt in Flamatt mit Halal-Metzgerei, frischem Obst und Gemüse sowie Spezialitäten aus aller Welt. Auch sonntags geöffnet.",
+    description: t.schema.description,
     foundingDate: BUSINESS.founded,
     founder: {
       "@type": "Person",
       name: BUSINESS.owner,
-      jobTitle: "Inhaberin",
+      jobTitle: t.schema.founderTitle,
     },
     address: {
       "@type": "PostalAddress",
@@ -63,7 +66,7 @@ export default function BusinessSchema() {
     publicAccess: true,
     amenityFeature: {
       "@type": "LocationFeatureSpecification",
-      name: "Kostenlose Parkplätze",
+      name: t.schema.parking,
       value: true,
     },
     areaServed: [
@@ -73,11 +76,11 @@ export default function BusinessSchema() {
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Sortiment",
-      itemListElement: CATEGORIES.map((category) => ({
+      name: t.common.sortiment,
+      itemListElement: getCategories(t).map((category) => ({
         "@type": "OfferCatalog",
         name: category.title,
-        url: `${SITE_URL}/sortiment/${category.slug}`,
+        url: `${SITE_URL}${localizePath(`/sortiment/${category.slug}`, locale)}`,
       })),
     },
   };

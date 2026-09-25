@@ -1,0 +1,622 @@
+{
+  "meta": {
+    "title": "Ali Supermarkt Flamatt | Mish halal dhe ushqime ndërkombëtare",
+    "description": "Supermarket ndërkombëtar në Flamatt: kasap halal, fruta dhe perime të freskëta, pije dhe specialitete nga e gjithë bota. Bernstrasse 25, i hapur edhe të dielave.",
+    "keywords": [
+      "Supermarket në Flamatt",
+      "Mish halal në Flamatt",
+      "Mish hallall Flamatt",
+      "Kasap halal në Fribourg",
+      "Ushqime turke në Flamatt",
+      "Supermarket ndërkombëtar në Sensebezirk",
+      "Hapur të dielave në Flamatt"
+    ],
+    "ogDescription": "Supermarket ndërkombëtar në Flamatt: kasap halal, fruta dhe perime të freskëta dhe specialitete nga e gjithë bota. I hapur edhe të dielave.",
+    "ogImageAlt": "Ali Supermarkt në Bernstrasse 25 në Flamatt",
+    "twitterDescription": "Kasap halal, fruta dhe perime të freskëta dhe specialitete ndërkombëtare në Flamatt. Hapur edhe të dielave."
+  },
+  "common": {
+    "home": "Ballina",
+    "sortiment": "Asortimenti",
+    "routePlan": "Planifikoni rrugën",
+    "country": "Zvicër",
+    "timeSuffix": "",
+    "days": [
+      "E hënë – e enjte",
+      "E premte",
+      "E shtunë",
+      "E diel"
+    ]
+  },
+  "header": {
+    "halal": "Mish halal",
+    "offers": "Oferta",
+    "about": "Rreth nesh",
+    "cta": "Na kontaktoni",
+    "menuOpen": "Hap menunë",
+    "menuClose": "Mbyll menunë",
+    "language": "Zgjidhni gjuhën"
+  },
+  "footer": {
+    "tagline": "Të freskëta. Halal. Ndërkombëtare. Pranë jush. – Supermarketi juaj ndërkombëtar në Flamatt.",
+    "page": "Faqet",
+    "contact": "Kontakti",
+    "legal": "Informacione ligjore",
+    "impressum": "Njoftim ligjor",
+    "datenschutz": "Mbrojtja e të dhënave",
+    "legalLanguageNote": "(në gjermanisht)",
+    "rights": "Të gjitha të drejtat e rezervuara.",
+    "design": "Dizajni dhe zbatimi:"
+  },
+  "hero": {
+    "badge": "Supermarketi juaj ndërkombëtar në Flamatt",
+    "fresh": "Të freskëta.",
+    "halal": "Halal.",
+    "international": "Ndërkombëtare.",
+    "subtitle": "Supermarketi juaj në Flamatt",
+    "lead": "Produkte të freskëta, shije të njohura dhe shërbim personal – pikërisht në Flamatt.",
+    "ctaSortiment": "Zbuloni asortimentin",
+    "reviews": "Vlerësime në Google",
+    "sunday": "Hapur edhe të dielave",
+    "stickerLine1": "Çdo ditë",
+    "stickerLine2": "të zgjedhura të freskëta"
+  },
+  "slider": {
+    "prev": "Imazhi i mëparshëm",
+    "next": "Imazhi tjetër",
+    "show": "Shfaq imazhin {n}",
+    "slides": [
+      "Përzgjedhje mishi halal të freskët te Ali Supermarkt",
+      "Raft me fruta dhe perime me domate, speca dhe portokalle te Ali Supermarkt",
+      "Raft me lëngje frutash dhe pije freskuese te Ali Supermarkt",
+      "Salça, konserva dhe specialitete ndërkombëtare te Ali Supermarkt",
+      "Oriz, makarona dhe ushqime bazë te Ali Supermarkt",
+      "Ëmbëlsira dhe snacks te Ali Supermarkt"
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Pse Ali Supermarkt?",
+    "title": "Pesë arsye për të zgjedhur Ali Supermarkt",
+    "cards": [
+      {
+        "title": "Mish i freskët halal",
+        "desc": "Produkte mishi të përzgjedhura çdo ditë dhe këshilla personale në banak."
+      },
+      {
+        "title": "Fruta dhe perime të freskëta",
+        "desc": "Përzgjedhje e freskët çdo ditë për blerjet tuaja të përditshme."
+      },
+      {
+        "title": "Specialitete ndërkombëtare",
+        "desc": "Produkte nga kuzhina dhe kultura të ndryshme, të gjitha nën një çati."
+      },
+      {
+        "title": "Gjithçka për përditshmërinë",
+        "desc": "Nga ushqimet bazë te përbërësit e veçantë."
+      },
+      {
+        "title": "Hapur edhe të dielave",
+        "desc": "E diel 10:00 – 16:00 — jemi këtu për ju, edhe kur të tjerët janë të mbyllur."
+      }
+    ]
+  },
+  "categoryGrid": {
+    "title": "Kategoritë tona kryesore",
+    "lead": "Nga mishi i freskët halal deri te specialitetet ndërkombëtare – zbuloni çfarë gjeni tek ne në Flamatt."
+  },
+  "halalMeat": {
+    "eyebrow": "Kasapi ynë",
+    "title": "Mish i freskët halal në Flamatt",
+    "imageAlt": "Përzgjedhje mishi të freskët në banakun halal të Ali Supermarkt",
+    "lead": "Në banakun tonë të mishit, çdo ditë zgjedhim produkte të freskëta me certifikatë halal. Ekipi ynë ju këshillon me kënaqësi personalisht – nga zgjedhja e copës së duhur deri te mënyra e përgatitjes.",
+    "supplier": "Mishin e lopës e furnizojmë nga {link} (MELKA Viande Sàrl) në Moudon, në kantonin e Vaud – një furnizues zviceran i mishit halal.",
+    "trust": [
+      "Me certifikatë halal",
+      "I freskët çdo ditë",
+      "Këshillë personale"
+    ],
+    "cta": "Më shumë rreth kasapit tonë"
+  },
+  "fresh": {
+    "eyebrow": "Mallra të freskëta",
+    "title": "Të zgjedhura të freskëta çdo ditë",
+    "lead": "Frutat dhe perimet tona furnizohen çdo ditë – për shije të shkëlqyer.",
+    "imageAlt": "Raft me fruta dhe perime të freskëta te Ali Supermarkt në Flamatt"
+  },
+  "offers": {
+    "eyebrow": "Ofertat tona",
+    "title": "Shembuj nga ofertat tona javore",
+    "cta": "Shiko të gjitha ofertat",
+    "unit": "për kg",
+    "items": [
+      "Biftek lope",
+      "Ragu lope",
+      "Mish i grirë",
+      "Pulë"
+    ],
+    "note": "Çmime shembull nga ofertat e javëve të kaluara – ofertat aktuale i gjeni në Instagram dhe në dyqan."
+  },
+  "instagram": {
+    "eyebrow": "Na ndiqni",
+    "title": "Çfarë ka të re te Ali Supermarkt?",
+    "lead": "Produkte të reja, oferta dhe çfarë sapo ka ardhur e freskët – çdo ditë në Instagram."
+  },
+  "story": {
+    "imageAlt": "Kader Yurteri, pronare e Ali Supermarkt GmbH, para dyqanit në Flamatt",
+    "badge": "Në Flamatt që nga maji 2025",
+    "eyebrow": "Rreth nesh",
+    "title": "Një brez i ri. Një vizion i ri.",
+    "paragraphs": [
+      "Që nga maji i vitit 2025 drejtoj Ali Supermarkt GmbH me shumë pasion dhe një vizion të qartë: dua të tregoj se një supermarket ndërkombëtar mund të jetë modern, i larmishëm dhe njëkohësisht personal.",
+      "Si pronare e re dhe dinamike, qëllimi im është të sjell një frymë të re në tregtinë ndërkombëtare të ushqimeve. Në këtë mënyrë bashkoj larminë e kulturave të ndryshme me një përvojë moderne blerjeje, cilësi të mirë dhe afërsi personale me klientët tanë.",
+      "Si biznes familjar, ngrohtësia, besimi dhe respekti janë veçanërisht të rëndësishëm për ne. Duam që të gjithë të ndihen të mirëpritur tek ne – qoftë kur kërkojnë produkte të njohura nga vendi i tyre, qoftë kur duan të zbulojnë specialitete të reja nga e gjithë bota.",
+      "Jam e lumtur që së bashku me familjen time po e zhvilloj Ali Supermarkt GmbH dhe që do t'ju mirëpres personalisht tek ne."
+    ],
+    "role": "Pronare e Ali Supermarkt GmbH",
+    "storeAlt": "Hyrja e Ali Supermarkt në Bernstrasse 25 në Flamatt",
+    "storeTitle": "Tani jemi këtu për ju edhe të dielave",
+    "storeText": "Me kërkesën e shumë klientëve morëm lejen për shitje të dielave – na gjeni në Bernstrasse 25 në Flamatt."
+  },
+  "location": {
+    "eyebrow": "Na vizitoni",
+    "title": "Ali Supermarkt në Flamatt",
+    "mapTitle": "Vendndodhja e Ali Supermarkt në Google Maps"
+  },
+  "faq": {
+    "eyebrow": "Pyetje të shpeshta",
+    "title": "Mirë të dihet",
+    "items": [
+      {
+        "q": "Ku ka një supermarket halal në Flamatt?",
+        "a": "Ali Supermarkt në Bernstrasse 25 në Flamatt është supermarketi lokal me asortiment halal dhe specialitete ndërkombëtare në Flamatt.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Te kasapi"
+      },
+      {
+        "q": "Ku mund të blej mish halal në Flamatt?",
+        "a": "Në banakun tonë të mishit te Ali Supermarkt gjeni çdo ditë mish të freskët me certifikatë halal – lope, qengji, shpendë dhe sallam – bashkë me këshilla personale.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Te kasapi"
+      },
+      {
+        "q": "A është Ali Supermarkt i hapur të dielave?",
+        "a": "Po. Jemi të hapur të dielave nga ora 10:00 deri në 16:00 – edhe kur dyqanet e tjera janë të mbyllura.",
+        "href": "/#kontakt",
+        "hrefLabel": "Orari dhe si të vini"
+      },
+      {
+        "q": "Ku ka ushqime turke në Flamatt?",
+        "a": "Te Ali Supermarkt gjeni një përzgjedhje specialitetesh turke dhe ndërkombëtare – nga antipastat te salça dhe gjethet e rrushit.",
+        "href": "/sortiment/internationale-spezialitaeten",
+        "hrefLabel": "Te specialitetet ndërkombëtare"
+      },
+      {
+        "q": "Ku mund të blej fruta dhe perime të freskëta në Flamatt?",
+        "a": "Frutat dhe perimet tona te Ali Supermarkt në Flamatt furnizohen të freskëta çdo ditë.",
+        "href": "/sortiment/obst-gemuese",
+        "hrefLabel": "Te frutat & perimet"
+      },
+      {
+        "q": "A ka ushqime ndërkombëtare te Ali Supermarkt?",
+        "a": "Po, asortimenti ynë shtrihet nga ushqimet bazë deri te specialitetet ndërkombëtare nga kuzhina dhe kultura të ndryshme.",
+        "href": "/sortiment",
+        "hrefLabel": "Shiko të gjitha kategoritë"
+      },
+      {
+        "q": "Ku ndodhet Ali Supermarkt?",
+        "a": "Ali Supermarkt ndodhet në Bernstrasse 25, 3175 Wünnewil-Flamatt, Zvicër.",
+        "href": "/#kontakt",
+        "hrefLabel": "Planifikoni rrugën"
+      },
+      {
+        "q": "Cili është orari i hapjes?",
+        "a": "E hënë deri të enjte 08:00–19:00, e premte 08:00–20:00, e shtunë 08:00–16:00, e diel 10:00–16:00.",
+        "href": "/#kontakt",
+        "hrefLabel": "Orari dhe si të vini"
+      },
+      {
+        "q": "A ka parking te Ali Supermarkt?",
+        "a": "Po. Pranë dyqanit në Bernstrasse 25 ka vende parkimi falas – kështu që mund të vini lehtësisht me makinë.",
+        "href": "/#kontakt",
+        "hrefLabel": "Udhëzime dhe harta"
+      },
+      {
+        "q": "Si të vij te Ali Supermarkt me transport publik?",
+        "a": "Stacioni i trenit Flamatt është rreth 300 metra larg, afërsisht pesë minuta në këmbë. Prej andej na arrini përmes Bernstrasse.",
+        "href": "/#kontakt",
+        "hrefLabel": "Udhëzime dhe harta"
+      },
+      {
+        "q": "A mund të porosis paraprakisht mish ose sasi më të mëdha?",
+        "a": "Po. Flisni me ekipin tonë në banak ose na shkruani paraprakisht në WhatsApp në +41 79 648 30 72 – e përgatisim me kënaqësi porosinë tuaj. Mish dhie dhe deleje kemi me porosi.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Te kasapi"
+      },
+      {
+        "q": "Nga vjen mishi i lopës te Ali Supermarkt?",
+        "a": "Mishin e lopës e furnizojmë nga Melka Group (MELKA Viande Sàrl) në Moudon, në kantonin e Vaud, një furnizues zviceran i mishit halal. Për origjinën e produkteve ju këshillojmë me kënaqësi në banak.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Te kasapi"
+      },
+      {
+        "q": "A ka produkte qumështi si djathë, kos dhe ajran?",
+        "a": "Po. Në raftin frigorifik gjeni qumësht, gjalpë, ajkë, kos në madhësi të ndryshme dhe lloje djathi – nga djathi i bardhë në shëllirë deri te kaşari. Ka gjithashtu ajran dhe ëmbëlsira të ftohta.",
+        "href": "/sortiment/milchprodukte",
+        "hrefLabel": "Te produktet e qumështit"
+      },
+      {
+        "q": "A ka Ali Supermarkt edhe produkte të ngrira?",
+        "a": "Po. Në ngrirëset tona gjeni shpendë dhe produkte mishi, peshk, perime të ngrira, si dhe brumëra dhe produkte furre të gatshme si byrek dhe bukë e sheshtë.",
+        "href": "/sortiment/tiefkuehlprodukte",
+        "hrefLabel": "Te produktet e ngrira"
+      },
+      {
+        "q": "A mund të gjej këtu edhe produkte pastrimi dhe shtëpiake?",
+        "a": "Po. Përveç ushqimeve kemi detergjentë rrobash, produkte pastrimi, kujdes personal dhe artikuj shtëpiakë si letra kuzhine dhe qese mbeturinash – kështu i bëni të gjitha blerjet në një vend.",
+        "href": "/sortiment/reinigung-haushalt",
+        "hrefLabel": "Te pastrimi & shtëpia"
+      },
+      {
+        "q": "Kush e drejton Ali Supermarkt?",
+        "a": "Ali Supermarkt drejtohet nga Kader Yurteri, pronare e Ali Supermarkt GmbH. Dyqani është në shërbimin tuaj në Flamatt që nga maji 2025 dhe drejtohet si biznes familjar.",
+        "href": "/#ueber-uns",
+        "hrefLabel": "Më shumë rreth nesh"
+      }
+    ]
+  },
+  "quickFacts": {
+    "title": "Me një vështrim",
+    "address": "Adresa",
+    "hours": "Orari i hapjes",
+    "phone": "Telefoni",
+    "sortiment": "Asortimenti"
+  },
+  "whatsapp": {
+    "label": "Na shkruani në WhatsApp"
+  },
+  "sortimentPage": {
+    "metaTitle": "Asortimenti",
+    "metaDescription": "Asortimenti i Ali Supermarkt në Flamatt: kasap halal, fruta dhe perime, specialitete ndërkombëtare, ushqime bazë, pije, produkte qumështi, produkte të ngrira dhe artikuj shtëpiakë.",
+    "eyebrow": "Asortimenti ynë",
+    "title": "Gjithçka për blerjet e përditshme në Flamatt",
+    "paragraphs": [
+      "Te Ali Supermarkt në Bernstrasse 25 gjeni të gjitha blerjet javore nën një çati: një kasap halal me banakun e vet, fruta dhe perime të freskëta çdo ditë, specialitete nga kuzhina turke, arabe, ballkanike dhe mesdhetare, si dhe gjithçka që i duhet qilarit dhe shtëpisë.",
+      "Nëntë kategori, një blerje – dhe për çdo pyetje ju këshillojmë me kënaqësi personalisht në dyqan."
+    ],
+    "categoriesTitle": "Kategoritë tona",
+    "itemListName": "Asortimenti i Ali Supermarkt",
+    "viewCategory": "Shiko {title}"
+  },
+  "categoryPage": {
+    "metaDescription": "{description} Zbulojeni tani te Ali Supermarkt në Flamatt.",
+    "whatsappCta": "Bëni një pyetje në WhatsApp",
+    "bodyEyebrow": "Mirë të dihet",
+    "bodyTitle": "{title} te Ali Supermarkt në Flamatt",
+    "relatedEyebrow": "Kategori të tjera",
+    "relatedTitle": "Zbuloni më shumë nga asortimenti ynë"
+  },
+  "halalPage": {
+    "metaTitle": "Mish halal",
+    "metaDescription": "Mish i freskët me certifikatë halal në banakun e Ali Supermarkt në Flamatt: lope, qengji, shpendë dhe sallam – i freskët çdo ditë, me këshilla personale.",
+    "eyebrow": "I freskët çdo ditë, me certifikatë halal",
+    "title": "Mish i freskët halal në Flamatt",
+    "lead": "Në banakun tonë të mishit, çdo ditë zgjedhim produkte të freskëta me certifikatë halal. Ekipi ynë ju këshillon me kënaqësi personalisht – nga zgjedhja e copës së duhur deri te mënyra e përgatitjes.",
+    "whatsappCta": "Porosisni në WhatsApp",
+    "slides": [
+      "Brinjë qengji dhe mish i paketuar në banak",
+      "File lope e freskët në banakun e mishit halal të Ali Supermarkt",
+      "Kurorë qengji me erëza në banakun e mishit",
+      "Brinjë qengji të marinuara mbi akull",
+      "Sucuk dhe sallam nga mish halal",
+      "Banaku i mishit me mish të grirë dhe copa të freskëta",
+      "Mish i marinuar në vitrinë",
+      "Banaku i mishit halal te Ali Supermarkt në Flamatt"
+    ],
+    "typesEyebrow": "Oferta jonë",
+    "typesTitle": "Çfarë gjeni në banakun tonë",
+    "types": [
+      {
+        "name": "Mish lope",
+        "desc": "Mish lope i lëngshëm për pjekje, biftekë dhe gulash – i prerë i freskët çdo ditë."
+      },
+      {
+        "name": "Mish viçi",
+        "desc": "Mish viçi i butë për rosto dhe shnicel."
+      },
+      {
+        "name": "Mish qengji",
+        "desc": "Mish qengji i butë, ideal për gatime tradicionale dhe për skarë."
+      },
+      {
+        "name": "Shpendë",
+        "desc": "Shpendë të freskëta – nga pula të plota deri te pjesë të përzgjedhura."
+      },
+      {
+        "name": "Sallam",
+        "desc": "Specialitete të përzgjedhura sallami nga mish halal."
+      },
+      {
+        "name": "Mish dhie",
+        "desc": "I disponueshëm me porosi – flisni me ekipin tonë në banak."
+      },
+      {
+        "name": "Mish deleje",
+        "desc": "I disponueshëm me porosi – flisni me ekipin tonë në banak."
+      }
+    ],
+    "sortiment": "Lope, viçi, qengji, shpendë, sallam; dhi dhe dele me porosi",
+    "originEyebrow": "Origjina",
+    "originTitle": "Mishi ynë i lopës vjen nga Melka Group",
+    "originParagraphs": [
+      "Te mishi për ne ka rëndësi se nga vjen. Mishin e lopës e furnizojmë nga MELKA Viande Sàrl (Melka Group) në Moudon, në kantonin e Vaud – një furnizues zviceran i specializuar në mish halal, që furnizon kasapë dhe dyqane ushqimore në gjithë Zvicrën.",
+      "Kështu e dini nga vjen çdo copë që presim në banakun tonë. Keni pyetje për origjinën e një produkti? Na drejtohuni në banak – ju informojmë me kënaqësi."
+    ],
+    "supplierLink": "Faqja e internetit e Melka Group",
+    "faqEyebrow": "Pyetje të shpeshta",
+    "faqTitle": "Rreth banakut tonë të mishit",
+    "faqs": [
+      {
+        "q": "A është mishi te Ali Supermarkt me certifikatë halal?",
+        "a": "Po, i gjithë mishi në banakun tonë ka certifikatë halal."
+      },
+      {
+        "q": "A mund të porosis paraprakisht mish në sasi më të mëdha?",
+        "a": "Po, flisni me ekipin tonë në banak ose na shkruani paraprakisht në WhatsApp – e përgatisim me kënaqësi porosinë tuaj."
+      },
+      {
+        "q": "Nga vjen mishi juaj i lopës?",
+        "a": "Mishin e lopës e furnizojmë nga Melka Group (MELKA Viande Sàrl) në Moudon, në kantonin e Vaud, një furnizues zviceran i mishit halal."
+      },
+      {
+        "q": "A keni edhe sallam?",
+        "a": "Po, kemi një përzgjedhje sallamesh nga mish halal."
+      }
+    ]
+  },
+  "notFound": {
+    "metaTitle": "Faqja nuk u gjet",
+    "metaDescription": "Kjo faqe nuk ekziston (më). Këtu gjeni rrugën për t'u kthyer te asortimenti i Ali Supermarkt në Flamatt.",
+    "eyebrow": "Gabim 404",
+    "title": "Kjo faqe nuk ekziston",
+    "lead": "Ndoshta adresa ka ndryshuar ose lidhja nuk është më aktuale. Asortimentin tonë e gjeni këtu:",
+    "home": "Te ballina",
+    "sortiment": "Te asortimenti"
+  },
+  "schema": {
+    "description": "Supermarket ndërkombëtar në Flamatt me kasap halal, fruta dhe perime të freskëta dhe specialitete nga e gjithë bota. I hapur edhe të dielave.",
+    "founderTitle": "Pronare",
+    "parking": "Parking falas"
+  },
+  "categories": {
+    "halal-fleisch": {
+      "title": "Mish i freskët halal",
+      "tagline": "I freskët çdo ditë, me certifikatë halal",
+      "description": "Në banakun tonë të mishit, çdo ditë zgjedhim produkte të freskëta me certifikatë halal.",
+      "highlights": [
+        "Mish lope",
+        "Mish viçi",
+        "Mish qengji",
+        "Shpendë",
+        "Sallam",
+        "Dhi (me porosi)",
+        "Dele (me porosi)"
+      ],
+      "slides": [],
+      "body": []
+    },
+    "obst-gemuese": {
+      "title": "Fruta & perime",
+      "tagline": "Të zgjedhura të freskëta çdo ditë",
+      "description": "Frutat dhe perimet tona furnizohen çdo ditë – për shije të shkëlqyer. Nga klasikët e stinës deri te erëzat e freskëta.",
+      "highlights": [
+        "Fruta",
+        "Perime",
+        "Erëza të freskëta",
+        "Produkte sezonale"
+      ],
+      "slides": [
+        "Raft me fruta dhe perime me domate, speca dhe qepë te Ali Supermarkt në Flamatt",
+        "Raft perimesh me manaferra, domate dhe patate në arka druri",
+        "Ishull frutash me mollë, pjepra dhe rrush",
+        "Raft frigorifik perimesh me presh, kungulleshka dhe karota",
+        "Vitrinë me xhenxhefil, limonë dhe hudhër",
+        "Pamje e raftit frigorifik të frutave dhe perimeve",
+        "Raft frigorifik me erëza të freskëta dhe sallata",
+        "Raft frutash me agrume dhe mollë",
+        "Raft perimesh me domate, speca dhe patëllxhanë",
+        "Raft i gjatë frigorifik me perime dhe sallatë",
+        "Vitrinë me limonë, sallatë dhe erëza të freskëta",
+        "Raft perimesh me domate, speca dhe kungulleshka",
+        "Raft me pjepra, manaferra dhe perime me gjethe",
+        "Vitrinë frutash me portokalle, mollë dhe pjepra"
+      ],
+      "body": [
+        "Reparti ynë i frutave dhe perimeve është gjëja e parë që shihni kur vini tek ne në Flamatt – dhe furnizohet çdo ditë. Çfarë vjen në mëngjes, është në raft po atë ditë: domate, speca, patëllxhanë, kungulleshka dhe qepë për kuzhinën e përditshme, si dhe sallata dhe erëza të freskëta nga rafti frigorifik.",
+        "Përveç klasikëve si mollët, bananet dhe portokallet, gjeni edhe pjepra, rrush, fiq dhe agrume – të pandashme në shumë kuzhina rreth Mesdheut dhe në Lindjen e Mesme. Sipas stinës shtohen edhe lloje të tjera – pyesni ekipin tonë çfarë është veçanërisht e mirë tani.",
+        "Nëse bleni për disa ditë ose për mysafirë, shumë lloje i gjeni edhe në paketime dhe arka më të mëdha. Na kontaktoni nëse ju duhen sasi më të mëdha për një festë – e përgatisim me kënaqësi porosinë tuaj."
+      ]
+    },
+    "internationale-spezialitaeten": {
+      "title": "Specialitete ndërkombëtare",
+      "tagline": "Shije nga e gjithë bota",
+      "description": "Produkte nga kuzhina dhe kultura të ndryshme nën një çati – nga antipastat te salça dhe gjethet e rrushit.",
+      "highlights": [
+        "Çaj",
+        "Salça (pastë domatesh & specash)",
+        "Qiqra",
+        "Fasule",
+        "Thjerrëza",
+        "Bulgur",
+        "Ullinj & vaj ulliri",
+        "Turshi (Turşu)",
+        "Gjethe rrushi",
+        "Tahini & pekmez",
+        "Konserva",
+        "Antipasti",
+        "Erëza"
+      ],
+      "slides": [
+        "Raft me konserva, salça dhe turshi te Ali Supermarkt në Flamatt",
+        "Raft me kavanoza, salça dhe antipasti",
+        "Raft me çaj, vaj ulliri dhe konserva",
+        "Raft me vajra, uthull dhe salca",
+        "Raft me specialitete ndërkombëtare",
+        "Raft me konserva dhe produkte të gatshme",
+        "Korridor me ushqime ndërkombëtare",
+        "Raft me specialitete dhe snacks",
+        "Vitrinë me produkte furre të freskëta dhe byrek",
+        "Raft me erëza dhe kavanoza salçe"
+      ],
+      "body": [
+        "Specialitetet ndërkombëtare janë zemra e asortimentit tonë. Në raftet tona qëndrojnë krah për krah produkte nga kuzhina turke, arabe, ballkanike dhe mesdhetare – nga salça e domateve dhe specave, te turshitë dhe gjethet e rrushit, deri te ullinjtë, vaji i ullirit dhe tahini.",
+        "Te erëzat gjeni përzierjet që vërtet ju duhen për gatimet e këtyre kuzhinave: piper i kuq i ëmbël dhe djegës, qimnon, sumak, mendër, trumzë dhe përzierje të gatshme erëzash. Ka gjithashtu çaj në shumë lloje, kafe turke, si dhe konserva dhe antipasti për një vakt të shpejtë.",
+        "Shumë nga klientët tanë vijnë sepse këtu gjejnë një produkt të caktuar nga vendlindja e tyre. Nëse mungon diçka, na e thoni – shqyrtojmë me kënaqësi nëse mund ta shtojmë në asortiment."
+      ]
+    },
+    "grundnahrungsmittel": {
+      "title": "Ushqime bazë",
+      "tagline": "Baza e kuzhinës suaj",
+      "description": "Nga bishtajoret dhe orizi deri te erëzat dhe vajrat – gjithçka që i duhet kuzhinës së përditshme.",
+      "highlights": [
+        "Bishtajore",
+        "Oriz",
+        "Erëza",
+        "Vajra"
+      ],
+      "slides": [
+        "Raft me oriz, bulgur dhe bishtajore te Ali Supermarkt në Flamatt",
+        "Raft me thasë orizi dhe makarona",
+        "Raft me ushqime bazë të paketuara",
+        "Raft me miell, bollgur dhe përbërës për pjekje",
+        "Raft me konserva dhe ushqime të thata",
+        "Raft me bishtajore, oriz dhe makarona"
+      ],
+      "body": [
+        "Ushqimet bazë i kemi qëllimisht në një gamë të gjerë, që t'i bëni blerjet javore në një vend. Oriz i llojeve të ndryshme, bulgur i imët dhe i trashë, kuskus, miell, bollgur dhe sheqer qëndrojnë në raft bashkë me makarona në shumë forma.",
+        "Te bishtajoret gjeni qiqra, fasule të bardha dhe të kuqe, si dhe lloje të ndryshme thjerrëzash – të paketuara dhe në konserva. Kemi gjithashtu vajra, uthull dhe konserva për rezervë.",
+        "Shumë produkte i gjeni edhe në paketime të mëdha, si thasë orizi dhe mielli për familje ose për rezervë. Ia vlen nëse gatuani rregullisht për shumë persona."
+      ]
+    },
+    "getraenke": {
+      "title": "Pije",
+      "tagline": "Freskim për çdo ditë",
+      "description": "Pije freskuese, çaj dhe më shumë – për etjen gjatë ditës ose për vizitën tuaj të radhës.",
+      "highlights": [
+        "Pije freskuese",
+        "Çaj",
+        "Ujë",
+        "Lëngje"
+      ],
+      "slides": [
+        "Frigoriferë pijesh me pije të gazuara dhe lëngje te Ali Supermarkt në Flamatt",
+        "Raft frigorifik me shishe dhe kanaçe pijesh",
+        "Frigoriferë me pije freskuese",
+        "Frigorifer pijesh me pije energjike dhe pije të gazuara",
+        "Raft frigorifik me ujë dhe pije freskuese",
+        "Raft pijesh me lëngje frutash dhe shurupe",
+        "Raft me shishe dhe pije të veçanta",
+        "Raft pijesh me lëngje dhe çaj të ftohtë",
+        "Paleta me shishe uji dhe arka pijesh",
+        "Reparti i pijeve me banak frigorifik"
+      ],
+      "body": [
+        "Reparti ynë i pijeve shkon nga shishja e ftohtë për rrugë deri te arka për në shtëpi. Në frigoriferë gjeni ujë mineral, pije freskuese, çaj të ftohtë, pije energjike dhe lëngje frutash – të ftohta mirë dhe gjithmonë në dorë.",
+        "Në raft gjeni gjithashtu pije që nuk i gjeni në çdo supermarket: ajran, pije malti, nektare frutash dhe shurupe, si dhe një zgjedhje të madhe çaji. Uji dhe pijet e ëmbla ka edhe në pako me gjashtë dhe në arka.",
+        "Për festa dhe raste më të mëdha ju përgatisim me kënaqësi një porosi. Na kontaktoni paraprakisht në WhatsApp ose na flisni në dyqan."
+      ]
+    },
+    "suesses-knabbereien": {
+      "title": "Ëmbëlsira & snacks",
+      "tagline": "Për urinë e vogël gjatë ditës",
+      "description": "Arra, fruta të thata dhe snacks – një zgjedhje e madhe për në shtëpi ose për rrugë.",
+      "highlights": [
+        "Arra",
+        "Fruta të thata",
+        "Snacks",
+        "Ëmbëlsira"
+      ],
+      "slides": [
+        "Raft me ëmbëlsira dhe snacks te Ali Supermarkt në Flamatt",
+        "Raft me patatina dhe snacks të kripura",
+        "Raft me çokollata, biskota dhe ëmbëlsira",
+        "Raft me biskota, vafera dhe pako çokollate",
+        "Raft me hallvë, mjaltë dhe krem për bukë",
+        "Raft me biskota dhe snacks në mes të dyqanit",
+        "Raft me arra dhe fruta të thata",
+        "Raft me arra, fara dhe fruta të thata",
+        "Ishull ofertash me ëmbëlsira dhe snacks",
+        "Raft me çokollata dhe dhurata të vogla"
+      ],
+      "body": [
+        "Për urinë e vogël gjatë ditës kemi një zgjedhje të madhe të ëmbla dhe të kripura. Përveç çokollatës, biskotave dhe vaferave, gjeni ëmbëlsira orientale si hallvë dhe llokum, si dhe krem për bukë dhe mjaltë.",
+        "Veçanërisht e pëlqyer është zgjedhja jonë e arrave, farave dhe frutave të thata – nga arrat e kripura dhe pa kripë, fëstëkët dhe farat e lulediellit deri te kajsitë e thata, hurmat dhe fiqtë.",
+        "Kemi gjithashtu patatina dhe snacks të kripura, si dhe oferta që ndryshojnë në ishullin tonë të ofertave në mes të dyqanit. Për dhurata për mikpritësit dhe pjata me ëmbëlsira ju këshillojmë me kënaqësi personalisht."
+      ]
+    },
+    "milchprodukte": {
+      "title": "Produkte qumështi",
+      "tagline": "Të freskëta nga rafti frigorifik",
+      "description": "Kos, djathë, gjalpë dhe qumësht – një zgjedhje e madhe produktesh qumështi, të ftohta mirë dhe të rimbushura çdo ditë.",
+      "highlights": [
+        "Kos & ajran",
+        "Djathë",
+        "Gjalpë",
+        "Qumësht"
+      ],
+      "slides": [
+        "Raft frigorifik me kos, djathë dhe produkte qumështi te Ali Supermarkt në Flamatt",
+        "Raft frigorifik me ajran, kos dhe gjalpë",
+        "Raft frigorifik me djathë, kos dhe ëmbëlsira"
+      ],
+      "body": [
+        "Në raftin frigorifik gjeni produkte qumështi për nevojat e përditshme dhe për kuzhinën ndërkombëtare. Përveç qumështit, gjalpit dhe ajkës, kemi kos në madhësi të ndryshme – nga gota e vogël deri te kova familjare.",
+        "Te djathrat zgjedhja shkon nga djathi i bardhë në shëllirë dhe kaşari deri te djathi i grirë për byrek dhe tava. Ka gjithashtu ajran, ajkë dhe ëmbëlsira të ftohta.",
+        "Të gjitha produktet mbahen mirë të ftohta dhe rimbushen vazhdimisht – edhe të dielën, nëse ju duhet diçka në çast."
+      ]
+    },
+    "tiefkuehlprodukte": {
+      "title": "Produkte të ngrira",
+      "tagline": "Rezerva për çdo ditë",
+      "description": "Në ngrirëset tona gjeni shpendë, peshk, produkte mishi dhe më shumë – praktike për rezervë në shtëpi.",
+      "highlights": [
+        "Shpendë",
+        "Peshk",
+        "Produkte mishi",
+        "Perime të ngrira"
+      ],
+      "slides": [
+        "Ngrirëse me produkte mishi dhe gatime të gatshme te Ali Supermarkt në Flamatt",
+        "Ngrirëse me shpendë dhe produkte mishi",
+        "Ngrirëse me peshk dhe fruta deti",
+        "Ngrirëse me brumëra dhe gatime të gatshme",
+        "Reparti i produkteve të ngrira me ngrirëse dhe produkte furre"
+      ],
+      "body": [
+        "Në ngrirëset tona gjeni gjithçka që ruhet mirë si rezervë. Përveç shpendëve dhe produkteve të mishit, kemi peshk dhe fruta deti, si dhe perime të ngrira.",
+        "Të pëlqyera janë brumërat dhe produktet e furrës të përgatitura: byrek, petë, mantı dhe bukë e sheshtë, që në shtëpi vetëm i përfundoni. Kemi gjithashtu gatime të gatshme dhe patate të skuqura.",
+        "Nëse ju duhen sasi më të mëdha për një festë ose për ngrirësen në shtëpi, flisni me ekipin tonë – ju ndihmojmë me kënaqësi ta përgatisni porosinë."
+      ]
+    },
+    "reinigung-haushalt": {
+      "title": "Pastrim & shtëpi",
+      "tagline": "Gjithçka për një shtëpi të pastër",
+      "description": "Detergjentë rrobash, produkte pastrimi dhe artikuj shtëpiakë – që të gjeni gjithçka për përditshmërinë në një vend.",
+      "highlights": [
+        "Detergjentë rrobash",
+        "Produkte pastrimi",
+        "Kujdes personal",
+        "Artikuj shtëpiakë"
+      ],
+      "slides": [
+        "Raft me detergjentë dhe produkte pastrimi te Ali Supermarkt në Flamatt",
+        "Raft me produkte pastrimi dhe artikuj shtëpiakë",
+        "Korridor me produkte pastrimi dhe kujdes personal"
+      ],
+      "body": [
+        "Që të mos ju duhet të shkoni në një dyqan tjetër për çdo gjë të vogël, kemi edhe gjithçka për shtëpinë dhe pastrimin. Në raft gjeni detergjentë dhe zbutës rrobash, detergjentë enësh dhe pastrimi, si dhe pastrues për kuzhinën dhe banjon.",
+        "Kemi gjithashtu produkte për kujdesin e përditshëm personal si sapun, shampo dhe pastë dhëmbësh, si dhe artikuj shtëpiakë: letra kuzhine, qese mbeturinash, letër alumini dhe sfungjerë.",
+        "Shumë artikuj i gjeni edhe në paketime më të mëdha – praktike për familjet dhe për të gjithë ata që nuk duan të blejnë çdo javë."
+      ]
+    }
+  }
+}

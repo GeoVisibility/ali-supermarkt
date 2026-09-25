@@ -1,31 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CATEGORIES } from "@/lib/categories";
+import { getCategories } from "@/lib/categories";
+import { localizePath } from "@/i18n/config";
+import { getDictionary } from "@/i18n/server";
 
-export default function CategoryGrid() {
+export default async function CategoryGrid() {
+  const { locale, t } = await getDictionary();
+
   return (
     <section className="bg-white py-16 md:py-24" id="sortiment">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-xl">
             <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
-              Sortiment
+              {t.common.sortiment}
             </span>
             <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
-              Unsere Hauptkategorien
+              {t.categoryGrid.title}
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-ink/60">
-            Von frischem Halal-Fleisch bis zu internationalen Spezialitäten
-            – entdecken Sie, was Sie bei uns in Flamatt finden.
+            {t.categoryGrid.lead}
           </p>
         </div>
 
         <div className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-3">
-          {CATEGORIES.map((cat) => (
+          {getCategories(t).map((cat) => (
             <Link
               key={cat.slug}
-              href={`/sortiment/${cat.slug}`}
+              href={localizePath(`/sortiment/${cat.slug}`, locale)}
               className="group relative aspect-[4/3] overflow-hidden rounded-2xl"
             >
               <Image

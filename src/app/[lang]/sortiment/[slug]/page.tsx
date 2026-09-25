@@ -6,32 +6,36 @@ import Header from "@/components/Header";
 import HeroSlider from "@/components/HeroSlider";
 import Footer from "@/components/Footer";
 import { Breadcrumb, RelatedCategories } from "@/components/CategoryExtras";
-import { CATEGORIES, getCategory } from "@/lib/categories";
+import { CATEGORY_SLUGS, getCategory } from "@/lib/categories";
 import QuickFacts from "@/components/QuickFacts";
 import { WhatsAppLink } from "@/components/WhatsAppButton";
+import { localizePath, OG_LOCALES } from "@/i18n/config";
+import { alternatesFor, fill } from "@/i18n/dictionaries";
+import { getDictionary } from "@/i18n/server";
 
 export function generateStaticParams() {
-  return CATEGORIES.filter((c) => c.slug !== "halal-fleisch").map((c) => ({
-    slug: c.slug,
+  return CATEGORY_SLUGS.filter((slug) => slug !== "halal-fleisch").map((slug) => ({
+    slug,
   }));
 }
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
+}: PageProps<"/[lang]/sortiment/[slug]">): Promise<Metadata> {
   const { slug } = await params;
-  const category = getCategory(slug);
+  const { locale, t } = await getDictionary();
+  const category = getCategory(t, slug);
   if (!category) return {};
+  const path = `/sortiment/${category.slug}`;
   return {
     title: category.title,
-    description: `${category.description} Jetzt bei Ali Supermarkt in Flamatt entdecken.`,
-    alternates: { canonical: `/sortiment/${category.slug}` },
+    description: fill(t.categoryPage.metaDescription, { description: category.description }),
+    alternates: alternatesFor(path, locale),
     openGraph: {
       title: `${category.title} | Ali Supermarkt Flamatt`,
       description: category.description,
-      url: `/sortiment/${category.slug}`,
+      url: localizePath(path, locale),
+      locale: OG_LOCALES[locale],
       images: [{ url: category.img, alt: category.title }],
     },
   };
@@ -39,16 +43,15 @@ export async function generateMetadata({
 
 export default async function CategoryPage({
   params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+}: PageProps<"/[lang]/sortiment/[slug]">) {
   const { slug } = await params;
-  const category = getCategory(slug);
+  const { locale, t } = await getDictionary();
+  const category = getCategory(t, slug);
   if (!category || slug === "halal-fleisch") notFound();
 
   return (
     <main id="top">
-      <Header />
+      <Header path={`/sortiment/${category.slug}`} />
       <Breadcrumb title={category.title} slug={category.slug} />
 
       <section className="pt-6 pb-16 md:pb-24">
@@ -57,6 +60,7 @@ export default async function CategoryPage({
             {category.slides?.length ? (
               <HeroSlider
                 slides={category.slides}
+                labels={{ prev: t.slider.prev, next: t.slider.next, show: t.slider.show }}
                 className="aspect-[4/3] shadow-ink/10 lg:aspect-[5/4]"
               />
             ) : (
@@ -95,12 +99,12 @@ export default async function CategoryPage({
               </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <WhatsAppLink>Frage per WhatsApp stellen</WhatsAppLink>
+                <WhatsAppLink>{t.categoryPage.whatsappCta}</WhatsAppLink>
                 <Link
-                  href="/#kontakt"
+                  href={localizePath("/#kontakt", locale)}
                   className="inline-flex items-center justify-center rounded-xl border border-smoke/15 bg-white px-6 py-3.5 text-base font-semibold text-ink transition hover:border-smoke/30"
                 >
-                  Route planen
+                  {t.common.routePlan}
                 </Link>
               </div>
             </div>
@@ -112,10 +116,10 @@ export default async function CategoryPage({
         <section className="border-t border-smoke/8 bg-mist py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-6">
             <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
-              Gut zu wissen
+              {t.categoryPage.bodyEyebrow}
             </span>
             <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
-              {category.title} bei Ali Supermarkt in Flamatt
+              {fill(t.categoryPage.bodyTitle, { title: category.title })}
             </h2>
 
             <div className="mt-6 flex flex-col gap-4 text-base leading-relaxed text-ink/70">
@@ -134,7 +138,7 @@ export default async function CategoryPage({
       ) : null}
 
       <RelatedCategories currentSlug={category.slug} />
-      <Footer />
+      <Footer path={`/sortiment/${category.slug}`} />
     </main>
   );
 }

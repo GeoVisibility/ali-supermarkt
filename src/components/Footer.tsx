@@ -1,22 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BUSINESS } from "@/lib/business";
+import { LanguageNames } from "@/components/LanguageSwitcher";
+import { LOCALES, localizePath } from "@/i18n/config";
+import { getDictionary } from "@/i18n/server";
 
-const NAV_COLUMN = [
-  { label: "Startseite", href: "/#top" },
-  { label: "Sortiment", href: "/sortiment" },
-  { label: "Halal Fleisch", href: "/#halal-fleisch" },
-  { label: "Angebote", href: "/#angebote" },
-  { label: "Über uns", href: "/#ueber-uns" },
-  { label: "Kontakt", href: "/#kontakt" },
-];
+/** `path` und `germanOnly` wie beim Header – für die Sprachlinks. */
+export default async function Footer({
+  path = "/",
+  germanOnly = false,
+}: {
+  path?: string;
+  germanOnly?: boolean;
+}) {
+  const { locale, t } = await getDictionary();
+  const languageLinks = LOCALES.map((l) => ({
+    locale: l,
+    href: localizePath(germanOnly && l !== "de" ? "/" : path, l),
+  }));
+  const href = (p: string) => localizePath(p, locale);
 
-const LEGAL_COLUMN = [
-  { label: "Impressum", href: "/impressum" },
-  { label: "Datenschutz", href: "/datenschutz" },
-];
+  const NAV_COLUMN = [
+    { label: t.common.home, href: href("/#top") },
+    { label: t.common.sortiment, href: href("/sortiment") },
+    { label: t.header.halal, href: href("/#halal-fleisch") },
+    { label: t.header.offers, href: href("/#angebote") },
+    { label: t.header.about, href: href("/#ueber-uns") },
+    { label: t.footer.contact, href: href("/#kontakt") },
+  ];
 
-export default function Footer() {
+  // Die Rechtstexte gibt es nur auf Deutsch.
+  const LEGAL_COLUMN = [
+    { label: t.footer.impressum, href: "/impressum" },
+    { label: t.footer.datenschutz, href: "/datenschutz" },
+  ];
+
   return (
     <footer className="bg-ink text-white/70">
       <div className="mx-auto max-w-6xl px-6 pt-14 pb-24">
@@ -34,15 +52,14 @@ export default function Footer() {
               />
             </span>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/55">
-              Frisch. Halal. International. Nah. – Ihr internationaler
-              Supermarkt in Flamatt.
+              {t.footer.tagline}
             </p>
           </div>
 
           {/* Nav */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/55">
-              Seite
+              {t.footer.page}
             </h3>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
               {NAV_COLUMN.map((link) => (
@@ -58,7 +75,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-white/55">
-              Kontakt
+              {t.footer.contact}
             </h3>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
               <li>{BUSINESS.street}</li>
@@ -120,13 +137,18 @@ export default function Footer() {
             </ul>
 
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.14em] text-white/55">
-              Rechtliches
+              {t.footer.legal}
             </h3>
             <ul className="mt-4 flex flex-col gap-2.5 text-sm">
               {LEGAL_COLUMN.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="transition hover:text-white">
+                  <Link
+                    href={link.href}
+                    hrefLang={locale === "de" ? undefined : "de"}
+                    className="transition hover:text-white"
+                  >
                     {link.label}
+                    {t.footer.legalLanguageNote ? ` ${t.footer.legalLanguageNote}` : ""}
                   </Link>
                 </li>
               ))}
@@ -134,13 +156,21 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 border-t border-white/10 pt-6">
+          <LanguageNames
+            current={locale}
+            links={languageLinks}
+            label={t.header.language}
+            variant="footer"
+          />
+        </div>
+
+        <div className="mt-6 flex flex-col gap-2 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} Ali Supermarkt GmbH. Alle Rechte
-            vorbehalten.
+            © {new Date().getFullYear()} Ali Supermarkt GmbH. {t.footer.rights}
           </p>
           <p>
-            Gestaltung und Umsetzung:{" "}
+            {t.footer.design}{" "}
             <Link
               href="https://growusagency.com/"
               target="_blank"

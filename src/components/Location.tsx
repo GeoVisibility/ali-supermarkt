@@ -1,20 +1,22 @@
-import { BUSINESS, OPENING_HOURS } from "@/lib/business";
-
-const HOURS = OPENING_HOURS;
+import { BUSINESS, openingHours } from "@/lib/business";
+import { getDictionary } from "@/i18n/server";
 
 const MAPS_EMBED_SRC = BUSINESS.mapsEmbed;
 const MAPS_DIRECTIONS_HREF = BUSINESS.mapsDirections;
 
-export default function Location() {
+export default async function Location() {
+  const { t } = await getDictionary();
+  const HOURS = openingHours(t.common.days);
+
   return (
     <section className="bg-mist py-16 md:py-24" id="kontakt">
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-xl">
           <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
-            Besuchen Sie uns
+            {t.location.eyebrow}
           </span>
           <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
-            Ali Supermarkt in Flamatt
+            {t.location.title}
           </h2>
         </div>
 
@@ -22,7 +24,7 @@ export default function Location() {
           {/* Map */}
           <div className="overflow-hidden rounded-3xl border border-smoke/8 shadow-sm">
             <iframe
-              title="Standort von Ali Supermarkt auf Google Maps"
+              title={t.location.mapTitle}
               src={MAPS_EMBED_SRC}
               loading="lazy"
               className="h-80 w-full lg:h-full"
@@ -43,7 +45,7 @@ export default function Location() {
                   <br />
                   {BUSINESS.postalCode} {BUSINESS.city}
                   <br />
-                  Schweiz
+                  {t.common.country}
                 </p>
               </div>
 
@@ -89,7 +91,7 @@ export default function Location() {
               rel="noopener"
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-orange-dark px-6 py-3.5 text-base font-semibold text-white shadow-sm transition hover:bg-orange-dark"
             >
-              Route planen
+              {t.common.routePlan}
             </a>
           </div>
         </div>

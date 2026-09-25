@@ -1,0 +1,621 @@
+{
+  "meta": {
+    "title": "Ali Supermarkt Flamatt | Viande halal et produits alimentaires internationaux",
+    "description": "Supermarché international à Flamatt : boucherie halal, fruits et légumes frais, boissons et spécialités du monde entier. Bernstrasse 25, ouvert également le dimanche.",
+    "keywords": [
+      "Supermarché Flamatt",
+      "Viande halal Flamatt",
+      "Boucherie halal Fribourg",
+      "Produits alimentaires turcs Flamatt",
+      "Supermarché international district de la Singine",
+      "Ouvert le dimanche Flamatt"
+    ],
+    "ogDescription": "Supermarché international à Flamatt : boucherie halal, fruits et légumes frais et spécialités du monde entier. Ouvert également le dimanche.",
+    "ogImageAlt": "Ali Supermarkt, Bernstrasse 25 à Flamatt",
+    "twitterDescription": "Boucherie halal, fruits et légumes frais et spécialités internationales à Flamatt. Ouvert également le dimanche."
+  },
+  "common": {
+    "home": "Accueil",
+    "sortiment": "Assortiment",
+    "routePlan": "Planifier l'itinéraire",
+    "country": "Suisse",
+    "timeSuffix": "",
+    "days": [
+      "Lundi – jeudi",
+      "Vendredi",
+      "Samedi",
+      "Dimanche"
+    ]
+  },
+  "header": {
+    "halal": "Viande halal",
+    "offers": "Offres",
+    "about": "À propos",
+    "cta": "Nous contacter",
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu",
+    "language": "Choisir la langue"
+  },
+  "footer": {
+    "tagline": "Frais. Halal. International. Proche. – Votre supermarché international à Flamatt.",
+    "page": "Pages",
+    "contact": "Contact",
+    "legal": "Informations juridiques",
+    "impressum": "Mentions légales",
+    "datenschutz": "Protection des données",
+    "legalLanguageNote": "(en allemand)",
+    "rights": "Tous droits réservés.",
+    "design": "Conception et réalisation :"
+  },
+  "hero": {
+    "badge": "Votre supermarché international à Flamatt",
+    "fresh": "Frais.",
+    "halal": "Halal.",
+    "international": "International.",
+    "subtitle": "Votre supermarché à Flamatt",
+    "lead": "Des produits frais, des saveurs familières et un service personnalisé – directement à Flamatt.",
+    "ctaSortiment": "Découvrir l'assortiment",
+    "reviews": "Avis Google",
+    "sunday": "Ouvert également le dimanche",
+    "stickerLine1": "Chaque jour",
+    "stickerLine2": "sélectionné frais"
+  },
+  "slider": {
+    "prev": "Image précédente",
+    "next": "Image suivante",
+    "show": "Afficher l'image {n}",
+    "slides": [
+      "Sélection de viandes halal fraîches chez Ali Supermarkt",
+      "Rayon fruits et légumes avec tomates, poivrons et oranges chez Ali Supermarkt",
+      "Rayon de jus de fruits et de boissons rafraîchissantes chez Ali Supermarkt",
+      "Salça, conserves et spécialités internationales chez Ali Supermarkt",
+      "Riz, pâtes et produits de base chez Ali Supermarkt",
+      "Confiseries et snacks chez Ali Supermarkt"
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Pourquoi Ali Supermarkt ?",
+    "title": "Cinq raisons de choisir Ali Supermarkt",
+    "cards": [
+      {
+        "title": "Viande halal fraîche",
+        "desc": "Une sélection quotidienne de produits de boucherie et des conseils personnalisés au comptoir."
+      },
+      {
+        "title": "Fruits et légumes frais",
+        "desc": "Une sélection fraîche chaque jour pour vos courses quotidiennes."
+      },
+      {
+        "title": "Spécialités internationales",
+        "desc": "Des produits issus de différentes cuisines et cultures réunis sous un même toit."
+      },
+      {
+        "title": "Tout pour le quotidien",
+        "desc": "Des produits de base aux ingrédients spéciaux."
+      },
+      {
+        "title": "Ouvert également le dimanche",
+        "desc": "Dimanche 10:00 – 16:00 — nous sommes là pour vous, même quand les autres sont fermés."
+      }
+    ]
+  },
+  "categoryGrid": {
+    "title": "Nos principales catégories",
+    "lead": "De la viande halal fraîche aux spécialités internationales : découvrez tout ce que vous trouverez chez nous à Flamatt."
+  },
+  "halalMeat": {
+    "eyebrow": "Notre boucherie",
+    "title": "Viande halal fraîche à Flamatt",
+    "imageAlt": "Sélection de viandes fraîches au comptoir halal d'Ali Supermarkt",
+    "lead": "À notre comptoir de boucherie, nous sélectionnons chaque jour des produits frais et certifiés halal. Notre équipe se fera un plaisir de vous conseiller personnellement, du choix du morceau à sa préparation.",
+    "supplier": "Nous nous approvisionnons en viande de bœuf auprès de {link} (MELKA Viande Sàrl), à Moudon dans le canton de Vaud – un fournisseur suisse de viande halal.",
+    "trust": [
+      "Certifié halal",
+      "Frais chaque jour",
+      "Conseil personnalisé"
+    ],
+    "cta": "En savoir plus sur notre boucherie"
+  },
+  "fresh": {
+    "eyebrow": "Produits frais",
+    "title": "Sélection fraîche chaque jour",
+    "lead": "Notre assortiment de fruits et légumes est renouvelé chaque jour, pour un goût irréprochable.",
+    "imageAlt": "Rayon de fruits et légumes frais chez Ali Supermarkt à Flamatt"
+  },
+  "offers": {
+    "eyebrow": "Nos offres",
+    "title": "Exemples tirés de nos promotions hebdomadaires",
+    "cta": "Voir toutes les offres",
+    "unit": "par kg",
+    "items": [
+      "Steak de bœuf",
+      "Ragoût de bœuf",
+      "Viande hachée",
+      "Poulet"
+    ],
+    "note": "Exemples de prix issus des promotions des semaines précédentes – vous trouverez les offres actuelles sur Instagram et en magasin."
+  },
+  "instagram": {
+    "eyebrow": "Suivez-nous",
+    "title": "Quoi de neuf chez Ali Supermarkt ?",
+    "lead": "Nouveaux produits, promotions et arrivages du jour – chaque jour sur Instagram."
+  },
+  "story": {
+    "imageAlt": "Kader Yurteri, propriétaire d'Ali Supermarkt GmbH, devant le magasin à Flamatt",
+    "badge": "À Flamatt depuis mai 2025",
+    "eyebrow": "À propos",
+    "title": "Une nouvelle génération. Une nouvelle vision.",
+    "paragraphs": [
+      "Depuis mai 2025, je dirige Ali Supermarkt GmbH avec beaucoup de passion et une vision claire : je souhaite montrer qu'un supermarché international peut être à la fois moderne, varié et chaleureux.",
+      "En tant que jeune et dynamique propriétaire, mon objectif est d'apporter un vent de fraîcheur dans le commerce alimentaire international. Pour cela, j'allie la diversité des différentes cultures à une expérience d'achat moderne, à une bonne qualité et à une relation de proximité avec nos clientes et nos clients.",
+      "En tant qu'entreprise familiale, nous accordons une importance particulière à la convivialité, à la confiance et au respect. Chez nous, chacun doit se sentir le bienvenu, qu'il recherche des produits familiers de son pays d'origine ou qu'il souhaite découvrir de nouvelles spécialités venues du monde entier.",
+      "Je me réjouis de poursuivre le développement d'Ali Supermarkt GmbH aux côtés de ma famille et d'avoir le plaisir de vous accueillir personnellement chez nous."
+    ],
+    "role": "Propriétaire d'Ali Supermarkt GmbH",
+    "storeAlt": "Entrée d'Ali Supermarkt, Bernstrasse 25 à Flamatt",
+    "storeTitle": "Désormais aussi ouvert le dimanche",
+    "storeText": "À la demande générale, nous avons obtenu l'autorisation d'ouvrir le dimanche. Vous nous trouverez à la Bernstrasse 25, à Flamatt."
+  },
+  "location": {
+    "eyebrow": "Rendez-nous visite",
+    "title": "Ali Supermarkt à Flamatt",
+    "mapTitle": "Emplacement d'Ali Supermarkt sur Google Maps"
+  },
+  "faq": {
+    "eyebrow": "Questions fréquentes",
+    "title": "Bon à savoir",
+    "items": [
+      {
+        "q": "Où trouver un supermarché halal à Flamatt ?",
+        "a": "Ali Supermarkt, à la Bernstrasse 25 à Flamatt, est le supermarché local proposant un assortiment halal et des spécialités internationales à Flamatt.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Vers la boucherie"
+      },
+      {
+        "q": "Où acheter de la viande halal à Flamatt ?",
+        "a": "Au comptoir de boucherie d'Ali Supermarkt, vous trouverez chaque jour de la viande fraîche certifiée halal – bœuf, agneau, volaille et charcuterie – avec des conseils personnalisés.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Vers la boucherie"
+      },
+      {
+        "q": "Ali Supermarkt est-il ouvert le dimanche ?",
+        "a": "Oui. Nous sommes ouverts le dimanche de 10 h à 16 h – même lorsque les autres magasins sont fermés.",
+        "href": "/#kontakt",
+        "hrefLabel": "Horaires et accès"
+      },
+      {
+        "q": "Où trouver des produits alimentaires turcs à Flamatt ?",
+        "a": "Chez Ali Supermarkt, vous trouverez une sélection de spécialités turques et internationales – des antipasti à la salça en passant par les feuilles de vigne.",
+        "href": "/sortiment/internationale-spezialitaeten",
+        "hrefLabel": "Vers les spécialités internationales"
+      },
+      {
+        "q": "Où acheter des fruits et légumes frais à Flamatt ?",
+        "a": "Chez Ali Supermarkt à Flamatt, notre assortiment de fruits et légumes est renouvelé chaque jour.",
+        "href": "/sortiment/obst-gemuese",
+        "hrefLabel": "Vers fruits & légumes"
+      },
+      {
+        "q": "Trouve-t-on des produits alimentaires internationaux chez Ali Supermarkt ?",
+        "a": "Oui, notre assortiment s'étend des produits de base aux spécialités internationales issues de différentes cuisines et cultures.",
+        "href": "/sortiment",
+        "hrefLabel": "Voir toutes les catégories"
+      },
+      {
+        "q": "Où se trouve Ali Supermarkt ?",
+        "a": "Ali Supermarkt se trouve à la Bernstrasse 25, 3175 Wünnewil-Flamatt, Suisse.",
+        "href": "/#kontakt",
+        "hrefLabel": "Planifier l'itinéraire"
+      },
+      {
+        "q": "Quels sont les horaires d'ouverture ?",
+        "a": "Du lundi au jeudi de 8 h à 19 h, le vendredi de 8 h à 20 h, le samedi de 8 h à 16 h, le dimanche de 10 h à 16 h.",
+        "href": "/#kontakt",
+        "hrefLabel": "Horaires et accès"
+      },
+      {
+        "q": "Y a-t-il des places de parc chez Ali Supermarkt ?",
+        "a": "Oui. Des places de parc gratuites sont disponibles juste à côté du magasin, à la Bernstrasse 25 – vous pouvez donc venir facilement en voiture.",
+        "href": "/#kontakt",
+        "hrefLabel": "Itinéraire et carte"
+      },
+      {
+        "q": "Comment venir chez Ali Supermarkt en transports publics ?",
+        "a": "La gare de Flamatt se trouve à environ 300 mètres, soit environ cinq minutes à pied. De là, vous nous rejoignez par la Bernstrasse.",
+        "href": "/#kontakt",
+        "hrefLabel": "Itinéraire et carte"
+      },
+      {
+        "q": "Puis-je commander de la viande ou de grandes quantités à l'avance ?",
+        "a": "Oui. Adressez-vous à notre équipe au comptoir ou écrivez-nous à l'avance sur WhatsApp au +41 79 648 30 72 – nous préparerons volontiers votre commande. La chèvre et le mouton sont disponibles sur commande.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Vers la boucherie"
+      },
+      {
+        "q": "D'où provient la viande de bœuf d'Ali Supermarkt ?",
+        "a": "Nous nous approvisionnons en viande de bœuf auprès de Melka Group (MELKA Viande Sàrl), à Moudon dans le canton de Vaud, un fournisseur suisse de viande halal. Au comptoir, nous vous renseignons volontiers sur l'origine de chaque produit.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Vers la boucherie"
+      },
+      {
+        "q": "Y a-t-il des produits laitiers comme du fromage, du yogourt et de l'ayran ?",
+        "a": "Oui. Au rayon frais, vous trouverez du lait, du beurre, de la crème, du yogourt en différents formats ainsi que des fromages, du fromage à pâte molle en saumure au kaşar. L'ayran et les desserts réfrigérés en font également partie.",
+        "href": "/sortiment/milchprodukte",
+        "hrefLabel": "Vers les produits laitiers"
+      },
+      {
+        "q": "Ali Supermarkt propose-t-il aussi des produits surgelés ?",
+        "a": "Oui. Dans nos congélateurs, vous trouverez de la volaille et des produits carnés, du poisson, des légumes surgelés ainsi que des pâtes et produits de boulangerie prêts à cuire, comme le börek et le pain plat.",
+        "href": "/sortiment/tiefkuehlprodukte",
+        "hrefLabel": "Vers les produits surgelés"
+      },
+      {
+        "q": "Trouve-t-on aussi des produits de nettoyage et des articles ménagers ?",
+        "a": "Oui. Outre les denrées alimentaires, nous proposons des lessives, des produits de nettoyage, des produits d'hygiène et des articles ménagers comme des essuie-tout et des sacs poubelle – vous faites ainsi toutes vos courses au même endroit.",
+        "href": "/sortiment/reinigung-haushalt",
+        "hrefLabel": "Vers nettoyage & ménage"
+      },
+      {
+        "q": "Qui dirige Ali Supermarkt ?",
+        "a": "Ali Supermarkt est dirigé par Kader Yurteri, propriétaire d'Ali Supermarkt GmbH. Le magasin est à votre service à Flamatt depuis mai 2025 et est géré comme une entreprise familiale.",
+        "href": "/#ueber-uns",
+        "hrefLabel": "En savoir plus sur nous"
+      }
+    ]
+  },
+  "quickFacts": {
+    "title": "En bref",
+    "address": "Adresse",
+    "hours": "Horaires d'ouverture",
+    "phone": "Téléphone",
+    "sortiment": "Assortiment"
+  },
+  "whatsapp": {
+    "label": "Écrivez-nous sur WhatsApp"
+  },
+  "sortimentPage": {
+    "metaTitle": "Assortiment",
+    "metaDescription": "L'assortiment d'Ali Supermarkt à Flamatt : boucherie halal, fruits et légumes, spécialités internationales, produits de base, boissons, produits laitiers, surgelés et articles ménagers.",
+    "eyebrow": "Notre assortiment",
+    "title": "Tout pour vos courses quotidiennes à Flamatt",
+    "paragraphs": [
+      "Chez Ali Supermarkt, à la Bernstrasse 25, vous trouverez toutes vos courses de la semaine sous un même toit : une boucherie halal avec son propre comptoir, des fruits et légumes frais chaque jour, des spécialités des cuisines turque, arabe, balkanique et méditerranéenne, ainsi que tout ce qu'il faut pour le garde-manger et le ménage.",
+      "Neuf catégories, un seul passage en caisse – et pour toute question, nous vous conseillons volontiers personnellement en magasin."
+    ],
+    "categoriesTitle": "Nos catégories",
+    "itemListName": "Assortiment d'Ali Supermarkt",
+    "viewCategory": "Voir {title}"
+  },
+  "categoryPage": {
+    "metaDescription": "{description} À découvrir dès maintenant chez Ali Supermarkt à Flamatt.",
+    "whatsappCta": "Poser une question sur WhatsApp",
+    "bodyEyebrow": "Bon à savoir",
+    "bodyTitle": "{title} chez Ali Supermarkt à Flamatt",
+    "relatedEyebrow": "Autres catégories",
+    "relatedTitle": "Découvrez le reste de notre assortiment"
+  },
+  "halalPage": {
+    "metaTitle": "Viande halal",
+    "metaDescription": "Viande fraîche certifiée halal au comptoir d'Ali Supermarkt à Flamatt : bœuf, agneau, volaille et charcuterie – fraîche chaque jour, avec des conseils personnalisés.",
+    "eyebrow": "Frais chaque jour, certifié halal",
+    "title": "Viande halal fraîche à Flamatt",
+    "lead": "À notre comptoir de boucherie, nous sélectionnons chaque jour des produits frais et certifiés halal. Notre équipe se fera un plaisir de vous conseiller personnellement, du choix du morceau à sa préparation.",
+    "whatsappCta": "Commander sur WhatsApp",
+    "slides": [
+      "Côtelettes d'agneau et viande emballée au comptoir",
+      "Filet de bœuf frais au comptoir halal d'Ali Supermarkt",
+      "Couronne d'agneau aux herbes au comptoir de boucherie",
+      "Carré d'agneau mariné sur glace",
+      "Sucuk et charcuterie à base de viande halal",
+      "Comptoir de boucherie avec viande hachée et morceaux frais",
+      "Viande marinée en vitrine",
+      "Comptoir de viande halal d'Ali Supermarkt à Flamatt"
+    ],
+    "typesEyebrow": "Notre offre",
+    "typesTitle": "Ce que vous trouverez à notre comptoir",
+    "types": [
+      {
+        "name": "Bœuf",
+        "desc": "Bœuf savoureux pour rôtis, steaks et goulasch – découpé frais chaque jour."
+      },
+      {
+        "name": "Veau",
+        "desc": "Veau tendre pour rôtis raffinés et escalopes."
+      },
+      {
+        "name": "Agneau",
+        "desc": "Agneau tendre, idéal pour les plats traditionnels et le gril."
+      },
+      {
+        "name": "Volaille",
+        "desc": "Volaille fraîche – du poulet entier aux morceaux choisis."
+      },
+      {
+        "name": "Charcuterie",
+        "desc": "Une sélection de spécialités de charcuterie à base de viande halal."
+      },
+      {
+        "name": "Chèvre",
+        "desc": "Disponible sur commande – adressez-vous à notre équipe au comptoir."
+      },
+      {
+        "name": "Mouton",
+        "desc": "Disponible sur commande – adressez-vous à notre équipe au comptoir."
+      }
+    ],
+    "sortiment": "Bœuf, veau, agneau, volaille, charcuterie ; chèvre et mouton sur commande",
+    "originEyebrow": "Origine",
+    "originTitle": "Notre bœuf vient de Melka Group",
+    "originParagraphs": [
+      "Pour la viande, la provenance compte. Nous nous approvisionnons en bœuf auprès de MELKA Viande Sàrl (Melka Group), à Moudon dans le canton de Vaud – un fournisseur suisse spécialisé dans la viande halal qui livre des boucheries et des commerces d'alimentation dans toute la Suisse.",
+      "Vous savez ainsi d'où provient chaque morceau que nous découpons à notre comptoir. Vous avez une question sur l'origine d'un produit ? Parlez-nous-en au comptoir – nous vous renseignerons volontiers."
+    ],
+    "supplierLink": "Site web de Melka Group",
+    "faqEyebrow": "Questions fréquentes",
+    "faqTitle": "À propos de notre comptoir de boucherie",
+    "faqs": [
+      {
+        "q": "La viande d'Ali Supermarkt est-elle certifiée halal ?",
+        "a": "Oui, toute la viande proposée à notre comptoir est certifiée halal."
+      },
+      {
+        "q": "Puis-je commander de la viande à l'avance pour une grande quantité ?",
+        "a": "Oui, adressez-vous à notre équipe au comptoir ou écrivez-nous à l'avance sur WhatsApp – nous préparerons volontiers votre commande."
+      },
+      {
+        "q": "D'où provient votre viande de bœuf ?",
+        "a": "Nous nous approvisionnons en viande de bœuf auprès de Melka Group (MELKA Viande Sàrl), à Moudon dans le canton de Vaud, un fournisseur suisse de viande halal."
+      },
+      {
+        "q": "Proposez-vous aussi de la charcuterie ?",
+        "a": "Oui, nous proposons une sélection de charcuterie à base de viande halal."
+      }
+    ]
+  },
+  "notFound": {
+    "metaTitle": "Page introuvable",
+    "metaDescription": "Cette page n'existe pas (ou plus). Voici comment revenir à l'assortiment d'Ali Supermarkt à Flamatt.",
+    "eyebrow": "Erreur 404",
+    "title": "Cette page n'existe pas",
+    "lead": "L'adresse a peut-être changé ou le lien n'est plus à jour. Vous trouverez notre assortiment ici :",
+    "home": "Vers l'accueil",
+    "sortiment": "Vers l'assortiment"
+  },
+  "schema": {
+    "description": "Supermarché international à Flamatt avec boucherie halal, fruits et légumes frais et spécialités du monde entier. Ouvert également le dimanche.",
+    "founderTitle": "Propriétaire",
+    "parking": "Places de parc gratuites"
+  },
+  "categories": {
+    "halal-fleisch": {
+      "title": "Viande halal fraîche",
+      "tagline": "Frais chaque jour, certifié halal",
+      "description": "À notre comptoir de boucherie, nous sélectionnons chaque jour des produits frais et certifiés halal.",
+      "highlights": [
+        "Bœuf",
+        "Veau",
+        "Agneau",
+        "Volaille",
+        "Charcuterie",
+        "Chèvre (sur commande)",
+        "Mouton (sur commande)"
+      ],
+      "slides": [],
+      "body": []
+    },
+    "obst-gemuese": {
+      "title": "Fruits & légumes",
+      "tagline": "Sélection fraîche chaque jour",
+      "description": "Notre assortiment de fruits et légumes est renouvelé chaque jour, pour un goût irréprochable. Des classiques de saison aux herbes fraîches.",
+      "highlights": [
+        "Fruits",
+        "Légumes",
+        "Herbes aromatiques",
+        "Produits de saison"
+      ],
+      "slides": [
+        "Rayon fruits et légumes avec tomates, poivrons et oignons chez Ali Supermarkt à Flamatt",
+        "Étal de légumes avec baies, tomates et pommes de terre dans des caisses en bois",
+        "Îlot de fruits avec pommes, melons et raisins",
+        "Rayon réfrigéré de légumes avec poireaux, courgettes et carottes",
+        "Étal avec gingembre, citrons et ail",
+        "Vue sur le rayon réfrigéré des fruits et légumes",
+        "Rayon réfrigéré avec herbes fraîches et salades",
+        "Rayon de fruits avec agrumes et pommes",
+        "Rayon de légumes avec tomates, poivrons et aubergines",
+        "Long rayon réfrigéré avec légumes et salade",
+        "Étal avec citrons, salade et herbes fraîches",
+        "Rayon de légumes avec tomates, poivrons et courgettes",
+        "Rayon avec melons, baies et légumes-feuilles",
+        "Étal de fruits avec oranges, pommes et melons"
+      ],
+      "body": [
+        "Notre rayon fruits et légumes est la première chose que vous voyez chez nous à Flamatt – et il est réassorti chaque jour. Ce qui est livré le matin est en rayon le jour même : tomates, poivrons, aubergines, courgettes et oignons pour la cuisine de tous les jours, ainsi que salades et herbes fraîches au rayon réfrigéré.",
+        "Côté fruits, vous trouverez, outre les classiques comme les pommes, les bananes et les oranges, des melons, des raisins, des figues et des agrumes, incontournables de nombreuses cuisines du pourtour méditerranéen et du Moyen-Orient. Selon la saison, d'autres variétés s'y ajoutent – demandez à notre équipe ce qui est particulièrement bon en ce moment.",
+        "Si vous faites vos courses pour plusieurs jours ou pour recevoir des invités, vous trouverez de nombreuses variétés en grands conditionnements et en caisses. Contactez-nous si vous avez besoin de grandes quantités pour une fête – nous préparerons volontiers votre commande."
+      ]
+    },
+    "internationale-spezialitaeten": {
+      "title": "Spécialités internationales",
+      "tagline": "Les saveurs du monde entier",
+      "description": "Des produits de différentes cuisines et cultures sous un même toit – des antipasti à la salça en passant par les feuilles de vigne.",
+      "highlights": [
+        "Thé",
+        "Salça (purée de tomates & de poivrons)",
+        "Pois chiches",
+        "Haricots",
+        "Lentilles",
+        "Boulgour",
+        "Olives & huile d'olive",
+        "Légumes marinés (Turşu)",
+        "Feuilles de vigne",
+        "Tahini & pekmez",
+        "Conserves",
+        "Antipasti",
+        "Épices"
+      ],
+      "slides": [
+        "Rayon avec conserves, salça et légumes marinés chez Ali Supermarkt à Flamatt",
+        "Rayon avec bocaux, salça et antipasti",
+        "Rayon avec thé, huile d'olive et conserves",
+        "Rayon avec huiles, vinaigre et sauces",
+        "Rayon de spécialités internationales",
+        "Rayon avec conserves et plats préparés",
+        "Allée de produits alimentaires internationaux",
+        "Rayon avec spécialités et snacks",
+        "Étal de pâtisseries fraîches et de börek",
+        "Rayon avec épices et bocaux de salça"
+      ],
+      "body": [
+        "Les spécialités internationales sont au cœur de notre assortiment. Dans nos rayons, les produits des cuisines turque, arabe, balkanique et méditerranéenne se côtoient – de la salça de tomates et de poivrons aux légumes marinés et feuilles de vigne, jusqu'aux olives, à l'huile d'olive et au tahini.",
+        "Côté épices, vous trouverez les mélanges vraiment indispensables aux plats de ces cuisines : paprika doux et fort, cumin, sumac, menthe, thym et mélanges d'épices tout prêts. S'y ajoutent de nombreuses variétés de thé, du café turc ainsi que des conserves et des antipasti pour un repas rapide.",
+        "Beaucoup de nos clientes et clients viennent parce qu'ils trouvent chez nous un produit précis de leur pays d'origine. S'il manque quelque chose, dites-le-nous – nous examinerons volontiers si nous pouvons l'ajouter à notre assortiment."
+      ]
+    },
+    "grundnahrungsmittel": {
+      "title": "Produits de base",
+      "tagline": "La base de votre cuisine",
+      "description": "Des légumineuses au riz, en passant par les épices et les huiles – tout ce qu'il faut pour la cuisine de tous les jours.",
+      "highlights": [
+        "Légumineuses",
+        "Riz",
+        "Épices",
+        "Huiles"
+      ],
+      "slides": [
+        "Rayon avec riz, boulgour et légumineuses chez Ali Supermarkt à Flamatt",
+        "Rayon avec sacs de riz et pâtes",
+        "Rayon de produits de base emballés",
+        "Rayon avec farine, semoule et ingrédients de pâtisserie",
+        "Rayon avec conserves et produits secs",
+        "Rayon avec légumineuses, riz et pâtes"
+      ],
+      "body": [
+        "Nous proposons volontairement un large choix de produits de base pour que vous puissiez faire vos courses de la semaine en un seul endroit. Riz de différentes variétés, boulgour fin et gros, couscous, farine, semoule et sucre côtoient des pâtes de toutes les formes.",
+        "Côté légumineuses, vous trouverez des pois chiches, des haricots blancs et rouges ainsi que différentes lentilles – en sachet et en conserve. S'y ajoutent huiles, vinaigre et conserves pour vos réserves.",
+        "De nombreux produits existent aussi en grands formats, comme des sacs de riz et de farine pour les familles ou pour faire des réserves. C'est avantageux si vous cuisinez régulièrement pour beaucoup de monde."
+      ]
+    },
+    "getraenke": {
+      "title": "Boissons",
+      "tagline": "Rafraîchissement au quotidien",
+      "description": "Boissons rafraîchissantes, thé et plus encore – pour une petite soif ou pour votre prochaine visite.",
+      "highlights": [
+        "Boissons rafraîchissantes",
+        "Thé",
+        "Eau",
+        "Jus"
+      ],
+      "slides": [
+        "Réfrigérateurs à boissons avec sodas et jus chez Ali Supermarkt à Flamatt",
+        "Rayon réfrigéré avec bouteilles et canettes",
+        "Réfrigérateurs avec boissons rafraîchissantes",
+        "Réfrigérateurs avec boissons énergisantes et sodas",
+        "Rayon réfrigéré avec eau et boissons rafraîchissantes",
+        "Rayon boissons avec jus de fruits et sirops",
+        "Rayon avec bouteilles et spécialités de boissons",
+        "Rayon boissons avec jus et thé froid",
+        "Palettes de bouteilles d'eau et de caisses de boissons",
+        "Rayon boissons avec comptoir réfrigéré"
+      ],
+      "body": [
+        "Notre rayon boissons va de la bouteille fraîche à emporter jusqu'à la caisse pour la maison. Dans les réfrigérateurs, vous trouverez eau minérale, boissons rafraîchissantes, thé froid, boissons énergisantes et jus de fruits – bien frais et à portée de main.",
+        "Dans les rayons, vous trouverez aussi des boissons qu'on ne trouve pas dans tous les supermarchés : ayran, boissons au malt, nectars de fruits et sirops, ainsi qu'un grand choix de thés. L'eau et les boissons sucrées sont aussi disponibles en packs de six et en caisses.",
+        "Pour vos fêtes et grands événements, nous préparons volontiers votre commande. Contactez-nous simplement à l'avance sur WhatsApp ou parlez-nous-en en magasin."
+      ]
+    },
+    "suesses-knabbereien": {
+      "title": "Douceurs & snacks",
+      "tagline": "Pour une petite faim",
+      "description": "Noix, fruits secs et grignotines – un grand choix pour la maison ou en déplacement.",
+      "highlights": [
+        "Noix",
+        "Fruits secs",
+        "Snacks",
+        "Confiseries"
+      ],
+      "slides": [
+        "Rayon de confiseries et de snacks chez Ali Supermarkt à Flamatt",
+        "Rayon avec chips et snacks salés",
+        "Rayon avec chocolat, biscuits et confiseries",
+        "Rayon avec biscuits, gaufrettes et tablettes de chocolat",
+        "Rayon avec halva, miel et pâtes à tartiner",
+        "Rayon de biscuits et de snacks au centre du magasin",
+        "Rayon avec noix et fruits secs",
+        "Rayon avec noix, graines et fruits secs",
+        "Îlot promotionnel avec confiseries et snacks",
+        "Rayon avec chocolats et petits articles cadeaux"
+      ],
+      "body": [
+        "Pour une petite faim, nous proposons un grand choix de produits sucrés et salés. Outre le chocolat, les biscuits et les gaufrettes, vous trouverez des douceurs orientales comme le halva et le lokum, ainsi que des pâtes à tartiner et du miel.",
+        "Notre sélection de noix, graines et fruits secs est particulièrement appréciée – des noix salées et non salées aux pistaches et graines de tournesol, jusqu'aux abricots secs, dattes et figues.",
+        "S'y ajoutent chips et snacks salés ainsi que des promotions changeantes sur notre îlot promotionnel au centre du magasin. Pour les cadeaux d'invités et les plateaux de pâtisseries, nous vous conseillons volontiers personnellement."
+      ]
+    },
+    "milchprodukte": {
+      "title": "Produits laitiers",
+      "tagline": "Frais du rayon réfrigéré",
+      "description": "Yogourt, fromage, beurre et lait – un grand choix de produits laitiers, bien au frais et réassortis chaque jour.",
+      "highlights": [
+        "Yogourt & ayran",
+        "Fromage",
+        "Beurre",
+        "Lait"
+      ],
+      "slides": [
+        "Rayon réfrigéré avec yogourts, fromages et produits laitiers chez Ali Supermarkt à Flamatt",
+        "Rayon réfrigéré avec ayran, yogourt et beurre",
+        "Rayon réfrigéré avec fromages, yogourts et desserts"
+      ],
+      "body": [
+        "Au rayon réfrigéré, vous trouverez des produits laitiers pour le quotidien et pour la cuisine internationale. Outre le lait, le beurre et la crème, nous proposons du yogourt en différents formats – du pot individuel au seau familial.",
+        "Côté fromages, le choix va du fromage à pâte molle en saumure au kaşar jusqu'au fromage râpé pour les börek et les gratins. S'y ajoutent l'ayran, la crème et des desserts réfrigérés.",
+        "Tous les produits sont bien au frais et réassortis en continu – même le dimanche, si vous avez besoin de quelque chose à la dernière minute."
+      ]
+    },
+    "tiefkuehlprodukte": {
+      "title": "Produits surgelés",
+      "tagline": "Des réserves pour tous les jours",
+      "description": "Dans nos congélateurs, vous trouverez volaille, poisson, produits carnés et plus encore – pratique pour vos réserves à la maison.",
+      "highlights": [
+        "Volaille",
+        "Poisson",
+        "Produits carnés",
+        "Légumes surgelés"
+      ],
+      "slides": [
+        "Congélateur avec produits carnés et plats préparés chez Ali Supermarkt à Flamatt",
+        "Congélateur avec volaille et produits carnés",
+        "Congélateur avec poisson et fruits de mer",
+        "Congélateurs avec pâtes et plats préparés",
+        "Rayon surgelés avec congélateurs et produits de boulangerie"
+      ],
+      "body": [
+        "Dans nos congélateurs, vous trouverez tout ce qui se conserve bien en réserve. Outre la volaille et les produits carnés, nous proposons du poisson et des fruits de mer ainsi que des légumes surgelés.",
+        "Les pâtes et produits de boulangerie prêts à cuire sont très appréciés : börek, feuilles de pâte, mantı et pain plat, qu'il ne vous reste plus qu'à terminer à la maison. S'y ajoutent des plats préparés et des frites.",
+        "Si vous avez besoin de grandes quantités pour une fête ou pour votre congélateur, adressez-vous à notre équipe – nous vous aiderons volontiers à composer votre commande."
+      ]
+    },
+    "reinigung-haushalt": {
+      "title": "Nettoyage & ménage",
+      "tagline": "Tout pour une maison propre",
+      "description": "Lessives, produits de nettoyage et articles ménagers – pour trouver tout ce dont vous avez besoin au quotidien au même endroit.",
+      "highlights": [
+        "Lessive",
+        "Produits de nettoyage",
+        "Soins du corps",
+        "Articles ménagers"
+      ],
+      "slides": [
+        "Rayon avec lessives et produits de nettoyage chez Ali Supermarkt à Flamatt",
+        "Rayon avec produits de nettoyage et articles ménagers",
+        "Allée avec produits de nettoyage et soins du corps"
+      ],
+      "body": [
+        "Pour que vous n'ayez pas à vous rendre dans un autre magasin pour la moindre chose, nous proposons aussi tout pour le ménage et le nettoyage. En rayon : lessives et adoucissants, produits vaisselle et d'entretien ainsi que nettoyants pour la cuisine et la salle de bains.",
+        "S'y ajoutent des produits d'hygiène quotidienne comme le savon, le shampooing et le dentifrice, ainsi que des articles ménagers : essuie-tout, sacs poubelle, papier aluminium et éponges.",
+        "De nombreux articles existent aussi en grands conditionnements – pratique pour les familles et pour tous ceux qui ne veulent pas racheter chaque semaine."
+      ]
+    }
+  }
+}

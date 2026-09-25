@@ -1,0 +1,621 @@
+{
+  "meta": {
+    "title": "Ali Supermarkt Flamatt | Halal meat & international food",
+    "description": "International supermarket in Flamatt: halal butcher’s, fresh fruit and vegetables, drinks and specialities from around the world. Bernstrasse 25, also open on Sundays.",
+    "keywords": [
+      "Supermarket Flamatt",
+      "Halal meat Flamatt",
+      "Halal butcher Fribourg",
+      "Turkish food Flamatt",
+      "International supermarket Sense district",
+      "Open on Sundays Flamatt"
+    ],
+    "ogDescription": "International supermarket in Flamatt: halal butcher’s, fresh fruit and vegetables, and specialities from around the world. Also open on Sundays.",
+    "ogImageAlt": "Ali Supermarkt at Bernstrasse 25 in Flamatt",
+    "twitterDescription": "Halal butcher’s, fresh fruit and vegetables, and international specialities in Flamatt. Open on Sundays too."
+  },
+  "common": {
+    "home": "Home",
+    "sortiment": "Product range",
+    "routePlan": "Plan your route",
+    "country": "Switzerland",
+    "timeSuffix": "",
+    "days": [
+      "Monday – Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ]
+  },
+  "header": {
+    "halal": "Halal meat",
+    "offers": "Offers",
+    "about": "About us",
+    "cta": "Contact us",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "language": "Select language"
+  },
+  "footer": {
+    "tagline": "Fresh. Halal. International. Local. – Your international supermarket in Flamatt.",
+    "page": "Pages",
+    "contact": "Contact",
+    "legal": "Legal",
+    "impressum": "Legal notice",
+    "datenschutz": "Privacy policy",
+    "legalLanguageNote": "(in German)",
+    "rights": "All rights reserved.",
+    "design": "Design and development:"
+  },
+  "hero": {
+    "badge": "Your international supermarket in Flamatt",
+    "fresh": "Fresh.",
+    "halal": "Halal.",
+    "international": "International.",
+    "subtitle": "Your supermarket in Flamatt",
+    "lead": "Fresh produce, familiar flavours and personal service – right here in Flamatt.",
+    "ctaSortiment": "Discover our range",
+    "reviews": "Google reviews",
+    "sunday": "Open on Sundays too",
+    "stickerLine1": "Every day",
+    "stickerLine2": "freshly selected"
+  },
+  "slider": {
+    "prev": "Previous image",
+    "next": "Next image",
+    "show": "Show image {n}",
+    "slides": [
+      "A selection of fresh halal meat at Ali Supermarkt",
+      "Fruit and vegetable shelf with tomatoes, peppers and oranges at Ali Supermarkt",
+      "A shelf of fruit juices and soft drinks at Ali Supermarkt",
+      "Salça, tinned food and international specialities at Ali Supermarkt",
+      "Rice, pasta and staple foods at Ali Supermarkt",
+      "Sweets and snacks at Ali Supermarkt"
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Why Ali Supermarkt?",
+    "title": "Five reasons to choose Ali Supermarkt",
+    "cards": [
+      {
+        "title": "Fresh halal meat",
+        "desc": "A daily selection of meat products and personal advice at the counter."
+      },
+      {
+        "title": "Fresh fruit & vegetables",
+        "desc": "A fresh selection every day for your daily shopping."
+      },
+      {
+        "title": "International specialities",
+        "desc": "Products from different cuisines and cultures, all under one roof."
+      },
+      {
+        "title": "Everything for everyday life",
+        "desc": "From staple foods to speciality ingredients."
+      },
+      {
+        "title": "Open on Sundays too",
+        "desc": "Sunday 10:00 – 16:00 — here for you, even when others are closed."
+      }
+    ]
+  },
+  "categoryGrid": {
+    "title": "Our main categories",
+    "lead": "From fresh halal meat to international specialities – discover what you’ll find at our shop in Flamatt."
+  },
+  "halalMeat": {
+    "eyebrow": "Our butcher’s counter",
+    "title": "Fresh halal meat in Flamatt",
+    "imageAlt": "A selection of fresh meat at the halal counter of Ali Supermarkt",
+    "lead": "At our meat counter, we select fresh, halal‑certified produce every day. Our team will be happy to advise you in person – from choosing the right cut to how to prepare it.",
+    "supplier": "We source our beef from {link} (MELKA Viande Sàrl) in Moudon, in the canton of Vaud – a Swiss supplier of halal meat.",
+    "trust": [
+      "Halal-certified",
+      "Fresh every day",
+      "Personal advice"
+    ],
+    "cta": "Find out more about our butcher’s counter"
+  },
+  "fresh": {
+    "eyebrow": "Fresh produce",
+    "title": "Freshly selected every day",
+    "lead": "Our selection of fruit and vegetables is restocked daily – for great flavour.",
+    "imageAlt": "Fresh fruit and vegetable display at Ali Supermarkt in Flamatt"
+  },
+  "offers": {
+    "eyebrow": "Our offers",
+    "title": "Examples from our weekly special offers",
+    "cta": "View all offers",
+    "unit": "per kg",
+    "items": [
+      "Beef steak",
+      "Beef ragout",
+      "Minced meat",
+      "Chicken"
+    ],
+    "note": "Sample prices from previous weekly promotions – you can find the latest offers on Instagram and in the shop."
+  },
+  "instagram": {
+    "eyebrow": "Follow us",
+    "title": "What’s new at Ali Supermarkt?",
+    "lead": "New products, special offers and the latest arrivals – every day on Instagram."
+  },
+  "story": {
+    "imageAlt": "Kader Yurteri, owner of Ali Supermarkt GmbH, outside the shop in Flamatt",
+    "badge": "In Flamatt since May 2025",
+    "eyebrow": "About us",
+    "title": "A new generation. A new vision.",
+    "paragraphs": [
+      "Since May 2025, I have been running Ali Supermarkt GmbH with great passion and a clear vision: I want to show that an international supermarket can be modern, diverse and, at the same time, personal.",
+      "As a young and dynamic owner, my aim is to bring a breath of fresh air to the international food trade. In doing so, I combine the diversity of different cultures with a modern shopping experience, good quality and a personal connection with our customers.",
+      "As a family-run business, warmth, trust and respect are particularly important to us. We want everyone to feel welcome here – whether they’re looking for familiar products from their home country or want to discover new specialities from around the world.",
+      "I look forward to developing Ali Supermarkt GmbH together with my family and to welcoming you personally to our shop."
+    ],
+    "role": "Owner of Ali Supermarkt GmbH",
+    "storeAlt": "Entrance to Ali Supermarkt at Bernstrasse 25 in Flamatt",
+    "storeTitle": "Now open on Sundays too",
+    "storeText": "Following numerous requests, we have been granted permission to open on Sundays – you can find us at Bernstrasse 25 in Flamatt."
+  },
+  "location": {
+    "eyebrow": "Visit us",
+    "title": "Ali Supermarkt in Flamatt",
+    "mapTitle": "Location of Ali Supermarkt on Google Maps"
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "Good to know",
+    "items": [
+      {
+        "q": "Where is there a halal supermarket in Flamatt?",
+        "a": "Ali Supermarkt at Bernstrasse 25 in Flamatt is the local supermarket in Flamatt with a halal range and international specialities.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Visit our butcher’s counter"
+      },
+      {
+        "q": "Where can I buy halal meat in Flamatt?",
+        "a": "At our meat counter at Ali Supermarkt, you can buy fresh, halal-certified meat every day – beef, lamb, poultry and sausages – with personal advice included.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Visit our butcher’s counter"
+      },
+      {
+        "q": "Is Ali Supermarkt open on Sundays?",
+        "a": "Yes. We’re open on Sundays from 10:00 to 16:00 – even when other shops are closed.",
+        "href": "/#kontakt",
+        "hrefLabel": "Opening hours and directions"
+      },
+      {
+        "q": "Where can I find Turkish food in Flamatt?",
+        "a": "At Ali Supermarkt, you’ll find a selection of Turkish and international specialities – from antipasti to salça and vine leaves.",
+        "href": "/sortiment/internationale-spezialitaeten",
+        "hrefLabel": "See international specialities"
+      },
+      {
+        "q": "Where can I buy fresh fruit and vegetables in Flamatt?",
+        "a": "Our selection of fruit and vegetables at Ali Supermarkt in Flamatt is restocked fresh every day.",
+        "href": "/sortiment/obst-gemuese",
+        "hrefLabel": "See fruit & vegetables"
+      },
+      {
+        "q": "Does Ali Supermarkt stock international food?",
+        "a": "Yes, our range extends from staple foods to international specialities from various cuisines and cultures.",
+        "href": "/sortiment",
+        "hrefLabel": "View all categories"
+      },
+      {
+        "q": "Where is Ali Supermarkt?",
+        "a": "Ali Supermarkt is located at Bernstrasse 25, 3175 Wünnewil-Flamatt, Switzerland.",
+        "href": "/#kontakt",
+        "hrefLabel": "Plan your route"
+      },
+      {
+        "q": "What are the opening hours?",
+        "a": "Monday to Thursday 08:00–19:00, Friday 08:00–20:00, Saturday 08:00–16:00, Sunday 10:00–16:00.",
+        "href": "/#kontakt",
+        "hrefLabel": "Opening hours and directions"
+      },
+      {
+        "q": "Is there parking at Ali Supermarkt?",
+        "a": "Yes. There are free parking spaces right by the shop at Bernstrasse 25 – so you can easily come by car.",
+        "href": "/#kontakt",
+        "hrefLabel": "Directions and map"
+      },
+      {
+        "q": "How do I get to Ali Supermarkt by public transport?",
+        "a": "Flamatt railway station is about 300 metres away, roughly a five-minute walk. From there, you can reach us via Bernstrasse.",
+        "href": "/#kontakt",
+        "hrefLabel": "Directions and map"
+      },
+      {
+        "q": "Can I pre-order meat or larger quantities?",
+        "a": "Yes. Speak to our team at the counter or message us in advance on WhatsApp at +41 79 648 30 72 – we’ll be happy to prepare your order. Goat and mutton are available to order.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Visit our butcher’s counter"
+      },
+      {
+        "q": "Where does the beef at Ali Supermarkt come from?",
+        "a": "We source our beef from Melka Group (MELKA Viande Sàrl) in Moudon, in the canton of Vaud, a Swiss supplier of halal meat. We’re happy to tell you about the origin of individual products at the counter.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Visit our butcher’s counter"
+      },
+      {
+        "q": "Do you have dairy products such as cheese, yoghurt and ayran?",
+        "a": "Yes. In the chilled section, you’ll find milk, butter, cream, yoghurt in various sizes, and cheeses ranging from soft cheese in brine to kaşar. Ayran and chilled desserts are also available.",
+        "href": "/sortiment/milchprodukte",
+        "hrefLabel": "See dairy products"
+      },
+      {
+        "q": "Does Ali Supermarkt also stock frozen food?",
+        "a": "Yes. In our freezers, you’ll find poultry and meat products, fish, frozen vegetables, as well as ready-to-bake pastry and baked goods such as börek and flatbread.",
+        "href": "/sortiment/tiefkuehlprodukte",
+        "hrefLabel": "See frozen food"
+      },
+      {
+        "q": "Can I also get cleaning and household products here?",
+        "a": "Yes. As well as food, we stock laundry detergent, cleaning products, personal care items and household goods such as paper towels and bin bags – so you can do all your shopping in one place.",
+        "href": "/sortiment/reinigung-haushalt",
+        "hrefLabel": "See cleaning & household"
+      },
+      {
+        "q": "Who runs Ali Supermarkt?",
+        "a": "Ali Supermarkt is run by Kader Yurteri, the owner of Ali Supermarkt GmbH. The shop has been serving customers in Flamatt since May 2025 and is run as a family business.",
+        "href": "/#ueber-uns",
+        "hrefLabel": "More about us"
+      }
+    ]
+  },
+  "quickFacts": {
+    "title": "At a glance",
+    "address": "Address",
+    "hours": "Opening hours",
+    "phone": "Phone",
+    "sortiment": "Product range"
+  },
+  "whatsapp": {
+    "label": "Message us on WhatsApp"
+  },
+  "sortimentPage": {
+    "metaTitle": "Product range",
+    "metaDescription": "The range at Ali Supermarkt in Flamatt: halal butcher’s, fruit and vegetables, international specialities, staple foods, drinks, dairy products, frozen food and household goods.",
+    "eyebrow": "Our range",
+    "title": "Everything for your daily shopping in Flamatt",
+    "paragraphs": [
+      "At Ali Supermarkt at Bernstrasse 25, you’ll find your whole weekly shop under one roof: a halal butcher’s with its own counter, fresh fruit and vegetables every day, specialities from Turkish, Arabic, Balkan and Mediterranean cuisine, and everything you need for your pantry and household.",
+      "Nine categories, one shop – and if you have any questions, we’ll be happy to advise you in person in the shop."
+    ],
+    "categoriesTitle": "Our categories",
+    "itemListName": "Ali Supermarkt product range",
+    "viewCategory": "View {title}"
+  },
+  "categoryPage": {
+    "metaDescription": "{description} Discover it now at Ali Supermarkt in Flamatt.",
+    "whatsappCta": "Ask a question on WhatsApp",
+    "bodyEyebrow": "Good to know",
+    "bodyTitle": "{title} at Ali Supermarkt in Flamatt",
+    "relatedEyebrow": "More categories",
+    "relatedTitle": "Discover more from our range"
+  },
+  "halalPage": {
+    "metaTitle": "Halal meat",
+    "metaDescription": "Fresh, halal-certified meat at the counter of Ali Supermarkt in Flamatt: beef, lamb, poultry and sausages – fresh every day, with personal advice.",
+    "eyebrow": "Fresh every day, halal-certified",
+    "title": "Fresh halal meat in Flamatt",
+    "lead": "At our meat counter, we select fresh, halal-certified produce every day. Our team will be happy to advise you in person – from choosing the right cut to how to prepare it.",
+    "whatsappCta": "Order on WhatsApp",
+    "slides": [
+      "Lamb chops and packaged meat at the counter",
+      "Fresh beef fillet at the halal meat counter of Ali Supermarkt",
+      "Crown of lamb with herbs at the meat counter",
+      "Marinated rack of lamb on ice",
+      "Sucuk and sausages made from halal meat",
+      "Meat counter with minced meat and fresh cuts",
+      "Marinated meat on display",
+      "Halal meat counter at Ali Supermarkt in Flamatt"
+    ],
+    "typesEyebrow": "What we offer",
+    "typesTitle": "What you’ll find at our counter",
+    "types": [
+      {
+        "name": "Beef",
+        "desc": "Juicy beef for roasts, steaks and goulash – freshly cut every day."
+      },
+      {
+        "name": "Veal",
+        "desc": "Tender veal for fine roasts and escalopes."
+      },
+      {
+        "name": "Lamb",
+        "desc": "Tender lamb, ideal for traditional dishes and the grill."
+      },
+      {
+        "name": "Poultry",
+        "desc": "Fresh poultry – from whole chickens to selected cuts."
+      },
+      {
+        "name": "Sausages",
+        "desc": "A selection of sausage specialities made from halal meat."
+      },
+      {
+        "name": "Goat",
+        "desc": "Available to order – please speak to our team at the counter."
+      },
+      {
+        "name": "Mutton",
+        "desc": "Available to order – please speak to our team at the counter."
+      }
+    ],
+    "sortiment": "Beef, veal, lamb, poultry, sausages; goat and mutton to order",
+    "originEyebrow": "Origin",
+    "originTitle": "Our beef comes from Melka Group",
+    "originParagraphs": [
+      "When it comes to meat, where it comes from matters to us. We source our beef from MELKA Viande Sàrl (Melka Group) in Moudon, in the canton of Vaud – a Swiss supplier specialising in halal meat that supplies butchers and food shops throughout Switzerland.",
+      "This way, you know where every piece we cut at our counter comes from. Do you have a question about where a product comes from? Speak to us at the counter – we’ll be happy to help."
+    ],
+    "supplierLink": "Melka Group website",
+    "faqEyebrow": "Frequently asked questions",
+    "faqTitle": "About our meat counter",
+    "faqs": [
+      {
+        "q": "Is the meat at Ali Supermarkt halal-certified?",
+        "a": "Yes, all the meat at our counter is halal-certified."
+      },
+      {
+        "q": "Can I pre-order meat in larger quantities?",
+        "a": "Yes, speak to our team at the counter or message us in advance on WhatsApp – we’ll be happy to prepare your order."
+      },
+      {
+        "q": "Where does your beef come from?",
+        "a": "We source our beef from Melka Group (MELKA Viande Sàrl) in Moudon, in the canton of Vaud, a Swiss supplier of halal meat."
+      },
+      {
+        "q": "Do you also sell sausages?",
+        "a": "Yes, we stock a selection of sausages made from halal meat."
+      }
+    ]
+  },
+  "notFound": {
+    "metaTitle": "Page not found",
+    "metaDescription": "This page doesn’t exist (any more). Here’s how to get back to the Ali Supermarkt range in Flamatt.",
+    "eyebrow": "Error 404",
+    "title": "This page doesn’t exist",
+    "lead": "Perhaps the address has changed or the link is out of date. You can find our range here:",
+    "home": "Go to the home page",
+    "sortiment": "Go to our range"
+  },
+  "schema": {
+    "description": "International supermarket in Flamatt with a halal butcher’s, fresh fruit and vegetables and specialities from around the world. Also open on Sundays.",
+    "founderTitle": "Owner",
+    "parking": "Free parking"
+  },
+  "categories": {
+    "halal-fleisch": {
+      "title": "Fresh halal meat",
+      "tagline": "Fresh every day, halal-certified",
+      "description": "At our meat counter, we select fresh, halal-certified produce every day.",
+      "highlights": [
+        "Beef",
+        "Veal",
+        "Lamb",
+        "Poultry",
+        "Sausages",
+        "Goat (to order)",
+        "Mutton (to order)"
+      ],
+      "slides": [],
+      "body": []
+    },
+    "obst-gemuese": {
+      "title": "Fruit & vegetables",
+      "tagline": "Freshly selected every day",
+      "description": "Our selection of fruit and vegetables is restocked daily – for great flavour. From seasonal classics to fresh herbs.",
+      "highlights": [
+        "Fruit",
+        "Vegetables",
+        "Herbs",
+        "Seasonal produce"
+      ],
+      "slides": [
+        "Fruit and vegetable shelf with tomatoes, peppers and onions at Ali Supermarkt in Flamatt",
+        "Vegetable display with berries, tomatoes and potatoes in wooden crates",
+        "Fruit island with apples, melons and grapes",
+        "Chilled vegetable shelf with leeks, courgettes and carrots",
+        "Display of ginger, lemons and garlic",
+        "View of the chilled fruit and vegetable shelf",
+        "Chilled shelf with fresh herbs and salads",
+        "Fruit shelf with citrus fruits and apples",
+        "Vegetable shelf with tomatoes, peppers and aubergines",
+        "Long chilled shelf with vegetables and salad",
+        "Display of lemons, lettuce and fresh herbs",
+        "Vegetable shelf with tomatoes, peppers and courgettes",
+        "Shelf with melons, berries and leafy greens",
+        "Fruit display with oranges, apples and melons"
+      ],
+      "body": [
+        "Our fruit and vegetable section is the first thing you see when you visit us in Flamatt – and it’s restocked every day. What’s delivered in the morning is on the shelves the same day: tomatoes, peppers, aubergines, courgettes and onions for everyday cooking, plus salads and fresh herbs from the chilled section.",
+        "As well as classics such as apples, bananas and oranges, you’ll find melons, grapes, figs and citrus fruits – staples in many cuisines around the Mediterranean and the Middle East. Depending on the season, other varieties are added – ask our team what’s particularly good right now.",
+        "If you’re shopping for several days or for guests, you’ll find many varieties in larger packs and crates. Let us know if you need larger quantities for a celebration – we’ll be happy to put your order together."
+      ]
+    },
+    "internationale-spezialitaeten": {
+      "title": "International specialities",
+      "tagline": "Flavours from around the world",
+      "description": "Products from different cuisines and cultures under one roof – from antipasti to salça and vine leaves.",
+      "highlights": [
+        "Tea",
+        "Salça (tomato & pepper paste)",
+        "Chickpeas",
+        "Beans",
+        "Lentils",
+        "Bulgur",
+        "Olives & olive oil",
+        "Pickles (Turşu)",
+        "Vine leaves",
+        "Tahini & pekmez",
+        "Tinned food",
+        "Antipasti",
+        "Spices"
+      ],
+      "slides": [
+        "Shelf with tinned food, salça and pickled vegetables at Ali Supermarkt in Flamatt",
+        "Shelf with jars, salça and antipasti",
+        "Shelf with tea, olive oil and tinned food",
+        "Shelf with oils, vinegar and sauces",
+        "Shelf with international specialities",
+        "Shelf with tinned food and ready meals",
+        "Aisle with international food",
+        "Shelf with specialities and snacks",
+        "Display of fresh baked goods and börek",
+        "Shelf with spices and jars of salça"
+      ],
+      "body": [
+        "International specialities are the heart of our range. On the shelves, products from Turkish, Arabic, Balkan and Mediterranean cuisine sit side by side – from salça made from tomatoes and peppers to pickled vegetables and vine leaves, olives, olive oil and tahini.",
+        "In the spice section, you’ll find the blends you really need for dishes from these cuisines: mild and hot paprika, cumin, sumac, mint, thyme and ready-made spice mixes. There’s also tea in many varieties, Turkish coffee, and tinned food and antipasti for a quick meal.",
+        "Many of our customers come to us because they can find a particular product from their home country here. If something is missing, let us know – we’ll be happy to see if we can add it to our range."
+      ]
+    },
+    "grundnahrungsmittel": {
+      "title": "Staple foods",
+      "tagline": "The basis of your cooking",
+      "description": "From pulses and rice to spices and oils – everything you need for everyday cooking.",
+      "highlights": [
+        "Pulses",
+        "Rice",
+        "Spices",
+        "Oils"
+      ],
+      "slides": [
+        "Shelf with rice, bulgur and pulses at Ali Supermarkt in Flamatt",
+        "Shelf with bags of rice and pasta",
+        "Shelf with packaged staple foods",
+        "Shelf with flour, semolina and baking ingredients",
+        "Shelf with tinned food and dry goods",
+        "Shelf with pulses, rice and pasta"
+      ],
+      "body": [
+        "We deliberately stock a wide range of staple foods so that you can do your weekly shop in one place. Rice in various varieties, fine and coarse bulgur, couscous, flour, semolina and sugar are on the shelves alongside pasta in many shapes.",
+        "Our pulses include chickpeas, white and red beans and various lentils – packaged and tinned. We also stock oils, vinegar and tinned goods for your store cupboard.",
+        "Many products are also available in large packs, such as sacks of rice and flour for families or for stocking up. This is worthwhile if you regularly cook for a lot of people."
+      ]
+    },
+    "getraenke": {
+      "title": "Drinks",
+      "tagline": "Refreshment for every day",
+      "description": "Soft drinks, tea and more – for when you’re thirsty or for your next visit.",
+      "highlights": [
+        "Soft drinks",
+        "Tea",
+        "Water",
+        "Juices"
+      ],
+      "slides": [
+        "Drinks fridges with soft drinks and juices at Ali Supermarkt in Flamatt",
+        "Chilled shelf with bottles and cans",
+        "Fridges with soft drinks",
+        "Drinks fridge with energy drinks and soft drinks",
+        "Chilled shelf with water and soft drinks",
+        "Drinks shelf with fruit juices and syrup",
+        "Shelf with bottles and speciality drinks",
+        "Drinks shelf with juices and iced tea",
+        "Pallets of water bottles and crates of drinks",
+        "Drinks section with chilled counter"
+      ],
+      "body": [
+        "Our drinks section ranges from a chilled bottle for on the go to a crate for at home. The fridges are stocked with mineral water, soft drinks, iced tea, energy drinks and fruit juices – well chilled and within easy reach.",
+        "On the shelves, you’ll also find drinks that aren’t available in every supermarket: ayran, malt drinks, fruit nectars and syrups, as well as a large selection of tea. Water and soft drinks are also available in six-packs and crates.",
+        "For parties and larger occasions, we’re happy to prepare an order for you. Simply get in touch in advance on WhatsApp or speak to us in the shop."
+      ]
+    },
+    "suesses-knabbereien": {
+      "title": "Sweets & snacks",
+      "tagline": "For when you’re feeling peckish",
+      "description": "Nuts, dried fruit and snacks – a wide selection for home or on the go.",
+      "highlights": [
+        "Nuts",
+        "Dried fruit",
+        "Snacks",
+        "Sweets"
+      ],
+      "slides": [
+        "Shelf with sweets and snacks at Ali Supermarkt in Flamatt",
+        "Shelf with crisps and savoury snacks",
+        "Shelf with chocolate, biscuits and sweets",
+        "Shelf with biscuits, wafers and chocolate bars",
+        "Shelf with halva, honey and spreads",
+        "Shelf with biscuits and snacks in the middle of the shop",
+        "Shelf with nuts and dried fruit",
+        "Shelf with nuts, seeds and dried fruit",
+        "Promotion island with sweets and snacks",
+        "Shelf with chocolates and small gift items"
+      ],
+      "body": [
+        "For when you’re feeling peckish, we stock a wide selection of sweet and savoury treats. As well as chocolate, biscuits and wafers, you’ll find oriental sweets such as halva and lokum, as well as spreads and honey.",
+        "Our selection of nuts, seeds and dried fruit is particularly popular – from salted and unsalted nuts, pistachios and sunflower seeds to dried apricots, dates and figs.",
+        "We also stock crisps and savoury snacks, and there are changing offers on our promotion island in the middle of the shop. We’re happy to advise you in person on gifts for hosts and pastry platters."
+      ]
+    },
+    "milchprodukte": {
+      "title": "Dairy products",
+      "tagline": "Fresh from the chilled section",
+      "description": "Yoghurt, cheese, butter and milk – a wide selection of dairy products, well chilled and restocked daily.",
+      "highlights": [
+        "Yoghurt & ayran",
+        "Cheese",
+        "Butter",
+        "Milk"
+      ],
+      "slides": [
+        "Chilled shelf with yoghurt, cheese and dairy products at Ali Supermarkt in Flamatt",
+        "Chilled shelf with ayran, yoghurt and butter",
+        "Chilled shelf with cheese, yoghurt and desserts"
+      ],
+      "body": [
+        "In the chilled section, you’ll find dairy products for everyday needs and for international cooking. As well as milk, butter and cream, we stock yoghurt in various sizes – from single pots to family-size tubs.",
+        "Our cheeses range from soft cheese in brine and kaşar to grated cheese for börek and bakes. There’s also ayran, cream and chilled desserts.",
+        "All products are kept well chilled and restocked continuously – even on Sundays, if you need something at short notice."
+      ]
+    },
+    "tiefkuehlprodukte": {
+      "title": "Frozen food",
+      "tagline": "Supplies for every day",
+      "description": "In our freezers, you’ll find poultry, fish, meat products and more – handy for stocking up at home.",
+      "highlights": [
+        "Poultry",
+        "Fish",
+        "Meat products",
+        "Frozen vegetables"
+      ],
+      "slides": [
+        "Freezer with meat products and ready meals at Ali Supermarkt in Flamatt",
+        "Freezer with poultry and meat products",
+        "Freezer with fish and seafood",
+        "Freezers with pastry and ready meals",
+        "Frozen food section with chest freezers and baked goods"
+      ],
+      "body": [
+        "In our freezers, you’ll find everything that keeps well in stock. As well as poultry and meat products, we stock fish and seafood and frozen vegetables.",
+        "The ready-to-bake pastry and baked goods are popular: börek, filo pastry, mantı and flatbread, which you simply finish off at home. There are also ready meals and chips.",
+        "If you need larger quantities for a party or for your freezer at home, speak to our team – we’ll be happy to help you put your order together."
+      ]
+    },
+    "reinigung-haushalt": {
+      "title": "Cleaning & household",
+      "tagline": "Everything for a clean home",
+      "description": "Laundry detergent, cleaning products and household supplies – so you can find everything for everyday life in one place.",
+      "highlights": [
+        "Laundry detergent",
+        "Cleaning products",
+        "Personal care",
+        "Household supplies"
+      ],
+      "slides": [
+        "Shelf with laundry detergent and cleaning products at Ali Supermarkt in Flamatt",
+        "Shelf with cleaning products and household items",
+        "Aisle with cleaning products and personal care"
+      ],
+      "body": [
+        "So that you don’t have to go to a second shop for every little thing, we also stock everything for the home and cleaning. On the shelves you’ll find laundry detergent and fabric softener, washing-up liquid and cleaning products, as well as cleaners for the kitchen and bathroom.",
+        "There are also everyday personal care products such as soap, shampoo and toothpaste, and household items: paper towels, bin bags, aluminium foil and sponges.",
+        "Many items are also available in larger packs – handy for families and for anyone who doesn’t want to restock every week."
+      ]
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getDictionary } from "@/i18n/server";
 
 const INSTAGRAM_URL = "https://www.instagram.com/ali.supermarkt.gmbh/";
 
@@ -10,7 +11,9 @@ const InstagramIcon = () => (
   </svg>
 );
 
-export default function InstagramSection() {
+export default async function InstagramSection() {
+  const { t } = await getDictionary();
+
   return (
     <section className="bg-mist py-12 md:py-16" id="instagram">
       <div className="mx-auto max-w-6xl px-6">
@@ -21,14 +24,13 @@ export default function InstagramSection() {
             </span>
             <div>
               <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange">
-                Folgen Sie uns
+                {t.instagram.eyebrow}
               </span>
               <h2 className="mt-1 font-heading text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl">
-                Was gibt&apos;s Neues bei Ali Supermarkt?
+                {t.instagram.title}
               </h2>
               <p className="mt-2 max-w-md text-sm leading-relaxed text-white/70">
-                Neue Produkte, Aktionen und was gerade frisch hereinkommt –
-                täglich auf Instagram.
+                {t.instagram.lead}
               </p>
             </div>
           </div>

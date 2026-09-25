@@ -1,12 +1,18 @@
 import {
   BEEF_SUPPLIER,
   BUSINESS,
-  OPENING_HOURS,
   SITE_URL,
+  openingHours,
 } from "@/lib/business";
-import { CATEGORIES } from "@/lib/categories";
-import { HOME_FAQS } from "@/lib/faqs";
-import { MEAT_FAQS, MEAT_TYPES } from "@/lib/meat";
+import { getCategories } from "@/lib/categories";
+import { dictionaryFor } from "@/i18n/dictionaries";
+import { LANGUAGE_LIST } from "@/lib/llms";
+
+const t = dictionaryFor("de");
+const CATEGORIES = getCategories(t);
+const HOME_FAQS = t.faq.items;
+const MEAT_FAQS = t.halalPage.faqs;
+const MEAT_TYPES = t.halalPage.types;
 
 /**
  * /llms-full.txt – die ausführliche Fassung von /llms.txt: alle Kategorien mit
@@ -16,7 +22,7 @@ import { MEAT_FAQS, MEAT_TYPES } from "@/lib/meat";
 export const dynamic = "force-static";
 
 export function GET() {
-  const hours = OPENING_HOURS.map((h) => `- ${h.day}: ${h.time} Uhr`).join("\n");
+  const hours = openingHours(t.common.days).map((h) => `- ${h.day}: ${h.time} Uhr`).join("\n");
 
   const kategorien = CATEGORIES.map((c) => {
     const url = `${SITE_URL}/sortiment/${c.slug}`;
@@ -92,6 +98,12 @@ ${faqs}
 ${CATEGORIES.map((c) => `- [${c.title}](${SITE_URL}/sortiment/${c.slug})`).join("\n")}
 - [Impressum](${SITE_URL}/impressum)
 - [Datenschutz](${SITE_URL}/datenschutz)
+
+## Sprachen
+
+Die Website gibt es auf Deutsch, Französisch, Englisch und Albanisch:
+
+${LANGUAGE_LIST}
 
 ## Profile
 

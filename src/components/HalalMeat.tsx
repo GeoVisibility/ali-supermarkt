@@ -1,24 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BEEF_SUPPLIER } from "@/lib/business";
+import { localizePath } from "@/i18n/config";
+import { getDictionary } from "@/i18n/server";
 
-const MEAT_TYPES = [
-  "Rindfleisch",
-  "Kalbfleisch",
-  "Lammfleisch",
-  "Geflügel",
-  "Wurstwaren",
-  "Ziege (auf Bestellung)",
-  "Schaf (auf Bestellung)",
-];
+export default async function HalalMeat() {
+  const { locale, t } = await getDictionary();
+  const MEAT_TYPES = t.categories["halal-fleisch"].highlights;
+  const TRUST_POINTS = t.halalMeat.trust;
+  const [supplierBefore, supplierAfter = ""] = t.halalMeat.supplier.split("{link}");
 
-const TRUST_POINTS = [
-  "Halal-zertifiziert",
-  "Täglich frisch",
-  "Persönliche Beratung",
-];
-
-export default function HalalMeat() {
   return (
     <section className="bg-ink py-16 md:py-24" id="halal-fleisch">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16">
@@ -26,7 +17,7 @@ export default function HalalMeat() {
         <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl shadow-black/20 lg:aspect-[5/4]">
           <Image
             src="/images/kasap/lammkoteletts-theke.webp"
-            alt="Frische Fleischauswahl an der Halal-Theke von Ali Supermarkt"
+            alt={t.halalMeat.imageAlt}
             fill
             sizes="(min-width: 1024px) 480px, 100vw"
             quality={65}
@@ -37,18 +28,16 @@ export default function HalalMeat() {
         {/* Content */}
         <div>
           <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange">
-            Unsere Metzgerei
+            {t.halalMeat.eyebrow}
           </span>
           <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl">
-            Frisches Halal-Fleisch in Flamatt
+            {t.halalMeat.title}
           </h2>
           <p className="mt-5 max-w-lg text-base leading-relaxed text-white/75">
-            An unserer Fleischtheke wählen wir täglich aus, was frisch und
-            Halal&#8209;zertifiziert ist. Unser Team berät Sie gerne persönlich
-            – vom passenden Stück bis zur Zubereitung.
+            {t.halalMeat.lead}
           </p>
           <p className="mt-4 max-w-lg text-base leading-relaxed text-white/75">
-            Unser Rindfleisch beziehen wir von{" "}
+            {supplierBefore}
             <a
               href={BEEF_SUPPLIER.url}
               target="_blank"
@@ -56,10 +45,8 @@ export default function HalalMeat() {
               className="font-semibold text-orange underline underline-offset-4"
             >
               {BEEF_SUPPLIER.name}
-            </a>{" "}
-            ({BEEF_SUPPLIER.legalName}) aus {BEEF_SUPPLIER.city} im{" "}
-            {BEEF_SUPPLIER.region} – einem Schweizer Lieferanten für
-            Halal-Fleisch.
+            </a>
+            {supplierAfter}
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">
@@ -89,10 +76,10 @@ export default function HalalMeat() {
           </div>
 
           <Link
-            href="/sortiment/halal-fleisch"
+            href={localizePath("/sortiment/halal-fleisch", locale)}
             className="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-orange-dark px-6 py-3.5 text-base font-semibold text-white shadow-sm transition hover:brightness-95"
           >
-            Mehr über unsere Metzgerei
+            {t.halalMeat.cta}
             <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current stroke-[2.2]">
               <path d="m9 5 7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

@@ -2,19 +2,21 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-/** Rahmen für die Rechtstexte (Impressum, Datenschutz). */
+/** Rahmen für die Rechtstexte (Impressum, Datenschutz). Nur auf Deutsch. */
 export default function LegalPage({
   title,
+  path,
   updated,
   children,
 }: {
   title: string;
+  path: string;
   updated: string;
   children: React.ReactNode;
 }) {
   return (
     <main id="top">
-      <Header />
+      <Header path={path} germanOnly />
 
       <nav aria-label="Breadcrumb" className="pt-28 pb-2">
         <div className="mx-auto max-w-3xl px-6">
@@ -41,7 +43,7 @@ export default function LegalPage({
         </div>
       </section>
 
-      <Footer />
+      <Footer path={path} germanOnly />
     </main>
   );
 }

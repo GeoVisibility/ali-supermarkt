@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import LegalPage, { LegalSection } from "@/components/LegalPage";
 import { BUSINESS } from "@/lib/business";
+import { germanOnly } from "@/i18n/server";
 
 export const metadata: Metadata = {
   title: "Impressum",
@@ -9,9 +10,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/impressum" },
 };
 
-export default function ImpressumPage() {
+export default async function ImpressumPage() {
+  await germanOnly();
+
   return (
-    <LegalPage title="Impressum" updated="September 2026">
+    <LegalPage title="Impressum" path="/impressum" updated="September 2026">
       <LegalSection heading="Verantwortlich für diese Website">
         <p>
           {BUSINESS.legalName}

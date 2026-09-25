@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import LegalPage, { LegalSection } from "@/components/LegalPage";
 import { BUSINESS } from "@/lib/business";
+import { germanOnly } from "@/i18n/server";
 
 export const metadata: Metadata = {
   title: "Datenschutz",
@@ -10,9 +11,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/datenschutz" },
 };
 
-export default function DatenschutzPage() {
+export default async function DatenschutzPage() {
+  await germanOnly();
+
   return (
-    <LegalPage title="Datenschutzerklärung" updated="September 2026">
+    <LegalPage title="Datenschutzerklärung" path="/datenschutz" updated="September 2026">
       <LegalSection heading="Verantwortliche Stelle">
         <p>
           Verantwortlich für die Bearbeitung von Personendaten im Zusammenhang

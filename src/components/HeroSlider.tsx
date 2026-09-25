@@ -5,23 +5,19 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 export type Slide = { src: string; alt: string };
 
-const DEFAULT_SLIDES: Slide[] = [
-  { src: "/images/kasap/lammkoteletts-theke.webp", alt: "Frische Halal-Fleischauswahl von Ali Supermarkt" },
-  { src: "/images/obst-gemuese/obst-gemuese-12.webp", alt: "Obst- und Gemüseregal mit Tomaten, Peperoni und Orangen bei Ali Supermarkt" },
-  { src: "/images/getraenke/getraenke-06.webp", alt: "Regal mit Fruchtsäften und Erfrischungsgetränken bei Ali Supermarkt" },
-  { src: "/images/internationale-spezialitaeten/internationale-spezialitaeten-01.webp", alt: "Salça, Konserven und internationale Spezialitäten bei Ali Supermarkt" },
-  { src: "/images/grundnahrungsmittel/grundnahrungsmittel-01.webp", alt: "Reis, Teigwaren und Grundnahrungsmittel bei Ali Supermarkt" },
-  { src: "/images/suesses-knabbereien/suesses-knabbereien-01.webp", alt: "Süsses und Knabbereien bei Ali Supermarkt" },
-];
+/** Beschriftungen der Bedienelemente; `show` enthält den Platzhalter {n}. */
+export type SliderLabels = { prev: string; next: string; show: string };
 
 const AUTOPLAY_MS = 4500;
 
 export default function HeroSlider({
-  slides = DEFAULT_SLIDES,
+  slides,
+  labels,
   className = "aspect-[4/5] shadow-ink/10 sm:aspect-[5/4] lg:aspect-[4/5]",
   priority = true,
 }: {
-  slides?: Slide[];
+  slides: Slide[];
+  labels: SliderLabels;
   className?: string;
   priority?: boolean;
 }) {
@@ -94,7 +90,7 @@ export default function HeroSlider({
       <button
         type="button"
         onClick={handlePrev}
-        aria-label="Vorheriges Bild"
+        aria-label={labels.prev}
         className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-ink shadow-sm backdrop-blur transition hover:bg-white"
       >
         <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current stroke-[2.5]">
@@ -104,7 +100,7 @@ export default function HeroSlider({
       <button
         type="button"
         onClick={handleNext}
-        aria-label="Nächstes Bild"
+        aria-label={labels.next}
         className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white/80 text-ink shadow-sm backdrop-blur transition hover:bg-white"
       >
         <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current stroke-[2.5]">
@@ -120,7 +116,7 @@ export default function HeroSlider({
             key={slide.src}
             type="button"
             onClick={() => handleDot(i)}
-            aria-label={`Bild ${i + 1} anzeigen`}
+            aria-label={labels.show.replace("{n}", String(i + 1))}
             aria-current={i === index}
             className="flex h-9 w-6 items-center justify-center"
           >

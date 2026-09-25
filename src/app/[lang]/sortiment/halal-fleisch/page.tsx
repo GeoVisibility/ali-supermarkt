@@ -5,39 +5,42 @@ import HeroSlider from "@/components/HeroSlider";
 import QuickFacts from "@/components/QuickFacts";
 import { WhatsAppLink } from "@/components/WhatsAppButton";
 import { BEEF_SUPPLIER } from "@/lib/business";
-import { MEAT_FAQS, MEAT_TYPES as MEAT_TYPES_LIST } from "@/lib/meat";
 import Footer from "@/components/Footer";
 import { Breadcrumb, RelatedCategories } from "@/components/CategoryExtras";
+import { localizePath } from "@/i18n/config";
+import { alternatesFor } from "@/i18n/dictionaries";
+import { getDictionary } from "@/i18n/server";
 
-export const metadata: Metadata = {
-  title: "Halal-Fleisch",
-  description:
-    "Frisches, Halal-zertifiziertes Fleisch an der Theke von Ali Supermarkt in Flamatt: Rind, Lamm, Geflügel und Wurstwaren – täglich frisch, persönlich beraten.",
-  alternates: { canonical: "/sortiment/halal-fleisch" },
-};
+const PATH = "/sortiment/halal-fleisch";
 
-const MEAT_TYPES = MEAT_TYPES_LIST;
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale, t } = await getDictionary();
+  return {
+    title: t.halalPage.metaTitle,
+    description: t.halalPage.metaDescription,
+    alternates: alternatesFor(PATH, locale),
+  };
+}
 
-const HERO_SLIDES = [
-  { src: "/images/kasap/lammkoteletts-theke.webp", alt: "Lammkoteletts und abgepacktes Fleisch an der Theke" },
-  { src: "/images/kasap/rindsfilet.webp", alt: "Frisches Rindsfilet an der Halal-Fleischtheke von Ali Supermarkt" },
-  { src: "/images/kasap/lammkrone.webp", alt: "Lammkrone mit Kräutern an der Fleischtheke" },
-  { src: "/images/kasap/lammrack.webp", alt: "Mariniertes Lammrack auf Eis" },
-  { src: "/images/kasap/sucuk.webp", alt: "Sucuk und Wurstwaren aus Halal-Fleisch" },
-  { src: "/images/kasap/fleischtheke-hackfleisch.webp", alt: "Fleischtheke mit Hackfleisch und frischen Teilstücken" },
-  { src: "/images/kasap/mariniert-theke.webp", alt: "Mariniertes Fleisch in der Auslage" },
-  { src: "/images/kasap/halal-theke.webp", alt: "Halal-Fleischtheke von Ali Supermarkt in Flamatt" },
+/** Bilder des Sliders; die Alt-Texte stehen im Wörterbuch (halalPage.slides). */
+const HERO_IMAGES = [
+  "/images/kasap/lammkoteletts-theke.webp",
+  "/images/kasap/rindsfilet.webp",
+  "/images/kasap/lammkrone.webp",
+  "/images/kasap/lammrack.webp",
+  "/images/kasap/sucuk.webp",
+  "/images/kasap/fleischtheke-hackfleisch.webp",
+  "/images/kasap/mariniert-theke.webp",
+  "/images/kasap/halal-theke.webp",
 ];
 
-const TRUST_POINTS = [
-  "Halal-zertifiziert",
-  "Täglich frisch",
-  "Persönliche Beratung",
-];
+export default async function HalalFleischPage() {
+  const { locale, t } = await getDictionary();
+  const HERO_SLIDES = HERO_IMAGES.map((src, i) => ({ src, alt: t.halalPage.slides[i] }));
+  const TRUST_POINTS = t.halalMeat.trust;
+  const MEAT_TYPES = t.halalPage.types;
+  const FAQS = t.halalPage.faqs;
 
-const FAQS = MEAT_FAQS;
-
-export default function HalalFleischPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -50,8 +53,8 @@ export default function HalalFleischPage() {
 
   return (
     <main id="top">
-      <Header />
-      <Breadcrumb title="Frisches Halal-Fleisch" slug="halal-fleisch" />
+      <Header path={PATH} />
+      <Breadcrumb title={t.categories["halal-fleisch"].title} slug="halal-fleisch" />
 
       {/* Hero */}
       <section className="pt-6 pb-16 md:pb-24">
@@ -59,20 +62,19 @@ export default function HalalFleischPage() {
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <HeroSlider
               slides={HERO_SLIDES}
+              labels={{ prev: t.slider.prev, next: t.slider.next, show: t.slider.show }}
               className="aspect-[4/3] shadow-ink/10 lg:aspect-[5/4]"
             />
 
             <div>
               <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
-                Täglich frisch, Halal-zertifiziert
+                {t.halalPage.eyebrow}
               </span>
               <h1 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
-                Frisches Halal-Fleisch in Flamatt
+                {t.halalPage.title}
               </h1>
               <p className="mt-5 max-w-lg text-base leading-relaxed text-ink/70">
-                An unserer Fleischtheke wählen wir täglich aus, was frisch
-                und Halal-zertifiziert ist. Unser Team berät Sie gerne
-                persönlich – vom passenden Stück bis zur Zubereitung.
+                {t.halalPage.lead}
               </p>
 
               <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3">
@@ -94,12 +96,12 @@ export default function HalalFleischPage() {
               </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <WhatsAppLink>Bestellung per WhatsApp</WhatsAppLink>
+                <WhatsAppLink>{t.halalPage.whatsappCta}</WhatsAppLink>
                 <Link
-                  href="/#kontakt"
+                  href={localizePath("/#kontakt", locale)}
                   className="inline-flex items-center justify-center rounded-xl border border-smoke/15 bg-white px-6 py-3.5 text-base font-semibold text-ink transition hover:border-smoke/30"
                 >
-                  Route planen
+                  {t.common.routePlan}
                 </Link>
               </div>
             </div>
@@ -111,10 +113,10 @@ export default function HalalFleischPage() {
       <section className="border-t border-smoke/8 bg-mist py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-6">
           <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
-            Unser Angebot
+            {t.halalPage.typesEyebrow}
           </span>
           <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
-            Was Sie an unserer Theke finden
+            {t.halalPage.typesTitle}
           </h2>
 
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -135,7 +137,7 @@ export default function HalalFleischPage() {
 
           <QuickFacts
             className="mt-8"
-            sortiment="Rind, Kalb, Lamm, Geflügel, Wurstwaren; Ziege und Schaf auf Bestellung"
+            sortiment={t.halalPage.sortiment}
           />
         </div>
       </section>
@@ -144,27 +146,16 @@ export default function HalalFleischPage() {
       <section className="bg-white py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-6">
           <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
-            Herkunft
+            {t.halalPage.originEyebrow}
           </span>
           <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
-            Unser Rindfleisch kommt von {BEEF_SUPPLIER.name}
+            {t.halalPage.originTitle}
           </h2>
 
           <div className="mt-6 flex flex-col gap-4 text-base leading-relaxed text-ink/70">
-            <p>
-              Beim Fleisch zählt für uns, woher es kommt. Unser Rindfleisch
-              beziehen wir von der {BEEF_SUPPLIER.legalName} ({BEEF_SUPPLIER.name})
-              aus {BEEF_SUPPLIER.city} im {BEEF_SUPPLIER.region} – einem
-              Schweizer Lieferanten, der auf Halal-Fleisch spezialisiert ist und
-              Metzgereien und Lebensmittelgeschäfte in der ganzen Schweiz
-              beliefert.
-            </p>
-            <p>
-              So wissen Sie bei jedem Stück, das wir an unserer Theke
-              zuschneiden, woher es stammt. Haben Sie Fragen zur Herkunft eines
-              Produkts? Sprechen Sie uns an der Theke an – wir geben Ihnen gerne
-              Auskunft.
-            </p>
+            {t.halalPage.originParagraphs.map((paragraph) => (
+              <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+            ))}
           </div>
 
           <a
@@ -173,7 +164,7 @@ export default function HalalFleischPage() {
             rel="noopener"
             className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-orange-dark transition hover:gap-2.5"
           >
-            Website von {BEEF_SUPPLIER.name}
+            {t.halalPage.supplierLink}
             <svg aria-hidden viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-none stroke-current stroke-[2.4]">
               <path d="m9 5 7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -190,10 +181,10 @@ export default function HalalFleischPage() {
         />
         <div className="mx-auto max-w-3xl px-6">
           <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
-            Häufige Fragen
+            {t.halalPage.faqEyebrow}
           </span>
           <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
-            Zu unserer Fleischtheke
+            {t.halalPage.faqTitle}
           </h2>
 
           <div className="mt-8 flex flex-col gap-5">
@@ -212,7 +203,7 @@ export default function HalalFleischPage() {
       </section>
 
       <RelatedCategories currentSlug="halal-fleisch" />
-      <Footer />
+      <Footer path={PATH} />
     </main>
   );
 }

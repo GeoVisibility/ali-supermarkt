@@ -1,23 +1,28 @@
 import Link from "next/link";
+import { getDictionary } from "@/i18n/server";
 
-const OFFERS = [
-  { name: "Rind Steak", unit: "pro kg", oldPrice: "33.90", price: "23.90" },
-  { name: "Rindsragout", unit: "pro kg", oldPrice: "22.90", price: "18.90" },
-  { name: "Hackfleisch", unit: "pro kg", oldPrice: "14.90", price: "12.90" },
-  { name: "Poulet", unit: "pro kg", oldPrice: null, price: "11.90" },
+/** Preise der Beispiele; die Namen stehen im Wörterbuch (offers.items). */
+const PRICES = [
+  { oldPrice: "33.90", price: "23.90" },
+  { oldPrice: "22.90", price: "18.90" },
+  { oldPrice: "14.90", price: "12.90" },
+  { oldPrice: null, price: "11.90" },
 ];
 
-export default function Offers() {
+export default async function Offers() {
+  const { t } = await getDictionary();
+  const OFFERS = PRICES.map((p, i) => ({ ...p, name: t.offers.items[i], unit: t.offers.unit }));
+
   return (
     <section className="bg-white py-16 md:py-24" id="angebote">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-xl">
             <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
-              Unsere Angebote
+              {t.offers.eyebrow}
             </span>
             <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
-              Beispiele aus unseren Wochenaktionen
+              {t.offers.title}
             </h2>
           </div>
           <Link
@@ -26,7 +31,7 @@ export default function Offers() {
             rel="noopener"
             className="inline-flex items-center gap-2 rounded-xl border border-smoke/15 bg-white px-6 py-3.5 text-base font-semibold text-ink transition hover:border-smoke/30"
           >
-            Alle Angebote ansehen
+            {t.offers.cta}
             <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current stroke-[2.2]">
               <path d="m9 5 7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -57,8 +62,7 @@ export default function Offers() {
 
         <p className="mt-6 flex items-center gap-2 text-xs text-ink/65">
           <span className="h-1.5 w-1.5 rounded-full bg-orange" />
-          Beispielpreise aus vergangenen Wochenaktionen – die aktuellen
-          Angebote finden Sie auf Instagram und im Laden.
+          {t.offers.note}
         </p>
       </div>
     </section>

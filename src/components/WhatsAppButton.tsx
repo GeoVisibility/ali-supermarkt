@@ -28,14 +28,14 @@ export function WhatsAppLink({
 }
 
 /** Schwebender Button unten rechts, auf allen Seiten. */
-export default function WhatsAppButton() {
+export default function WhatsAppButton({ label }: { label: string }) {
   return (
     <a
       href={BUSINESS.whatsapp}
       target="_blank"
       rel="noopener"
-      aria-label="Schreiben Sie uns auf WhatsApp"
-      title="Schreiben Sie uns auf WhatsApp"
+      aria-label={label}
+      title={label}
       className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp text-white shadow-lg shadow-ink/25 ring-1 ring-ink/10 transition hover:scale-105 hover:brightness-105 sm:bottom-7 sm:right-7"
     >
       <WhatsAppIcon className="h-7 w-7" />

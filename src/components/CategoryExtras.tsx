@@ -1,25 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CATEGORIES, type Category } from "@/lib/categories";
+import { getCategories, type Category } from "@/lib/categories";
 import { SITE_URL } from "@/lib/business";
+import { localizePath, type Locale } from "@/i18n/config";
+import { getDictionary } from "@/i18n/server";
 
-export function Breadcrumb({ title, slug }: { title: string; slug: string }) {
+export async function Breadcrumb({ title, slug }: { title: string; slug: string }) {
+  const { locale, t } = await getDictionary();
+  const href = (p: string) => localizePath(p, locale);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Startseite", item: SITE_URL },
+      { "@type": "ListItem", position: 1, name: t.common.home, item: `${SITE_URL}${href("/")}` },
       {
         "@type": "ListItem",
         position: 2,
-        name: "Sortiment",
-        item: `${SITE_URL}/sortiment`,
+        name: t.common.sortiment,
+        item: `${SITE_URL}${href("/sortiment")}`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: title,
-        item: `${SITE_URL}/sortiment/${slug}`,
+        item: `${SITE_URL}${href(`/sortiment/${slug}`)}`,
       },
     ],
   };
@@ -33,14 +38,14 @@ export function Breadcrumb({ title, slug }: { title: string; slug: string }) {
       <div className="mx-auto max-w-6xl px-6">
         <ol className="flex flex-wrap items-center gap-1.5 text-xs text-ink/65">
           <li>
-            <Link href="/" className="transition hover:text-orange-dark">
-              Startseite
+            <Link href={href("/")} className="transition hover:text-orange-dark">
+              {t.common.home}
             </Link>
           </li>
           <li aria-hidden>/</li>
           <li>
-            <Link href="/sortiment" className="transition hover:text-orange-dark">
-              Sortiment
+            <Link href={href("/sortiment")} className="transition hover:text-orange-dark">
+              {t.common.sortiment}
             </Link>
           </li>
           <li aria-hidden>/</li>
@@ -51,22 +56,23 @@ export function Breadcrumb({ title, slug }: { title: string; slug: string }) {
   );
 }
 
-export function RelatedCategories({ currentSlug }: { currentSlug: string }) {
-  const others = CATEGORIES.filter((c) => c.slug !== currentSlug);
+export async function RelatedCategories({ currentSlug }: { currentSlug: string }) {
+  const { locale, t } = await getDictionary();
+  const others = getCategories(t).filter((c) => c.slug !== currentSlug);
 
   return (
     <section className="border-t border-smoke/8 bg-white py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
-          Weitere Kategorien
+          {t.categoryPage.relatedEyebrow}
         </span>
         <h2 className="mt-3 font-heading text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
-          Entdecken Sie mehr aus unserem Sortiment
+          {t.categoryPage.relatedTitle}
         </h2>
 
         <div className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-4">
           {others.map((cat) => (
-            <CategoryTile key={cat.slug} cat={cat} />
+            <CategoryTile key={cat.slug} cat={cat} locale={locale} />
           ))}
         </div>
       </div>
@@ -74,10 +80,10 @@ export function RelatedCategories({ currentSlug }: { currentSlug: string }) {
   );
 }
 
-function CategoryTile({ cat }: { cat: Category }) {
+function CategoryTile({ cat, locale }: { cat: Category; locale: Locale }) {
   return (
     <Link
-      href={`/sortiment/${cat.slug}`}
+      href={localizePath(`/sortiment/${cat.slug}`, locale)}
       className="group relative aspect-square overflow-hidden rounded-xl"
     >
       <Image

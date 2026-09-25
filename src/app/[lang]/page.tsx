@@ -11,15 +11,18 @@ import OurStory from "@/components/OurStory";
 import Location from "@/components/Location";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
+import { alternatesFor } from "@/i18n/dictionaries";
+import { getLocale } from "@/i18n/server";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "/" },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  return { alternates: alternatesFor("/", locale) };
+}
 
 export default function Home() {
   return (
     <main id="top">
-      <Header />
+      <Header path="/" />
       <Hero />
       <WhyUs />
       <CategoryGrid />
@@ -30,7 +33,7 @@ export default function Home() {
       <OurStory />
       <Location />
       <Faq />
-      <Footer />
+      <Footer path="/" />
     </main>
   );
 }

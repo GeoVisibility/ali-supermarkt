@@ -50,13 +50,19 @@ export const BEEF_SUPPLIER = {
   url: "https://www.melkagroup.ch/",
 } as const;
 
-/** Öffnungszeiten für die Anzeige (zusammengefasste Tage). */
-export const OPENING_HOURS = [
-  { day: "Montag – Donnerstag", time: "08:00 – 19:00" },
-  { day: "Freitag", time: "08:00 – 20:00" },
-  { day: "Samstag", time: "08:00 – 16:00" },
-  { day: "Sonntag", time: "10:00 – 16:00" },
+/** Öffnungszeiten für die Anzeige (zusammengefasste Tage). Die Namen der
+ *  Tage stehen in den Wörterbüchern unter common.days, in derselben Reihenfolge. */
+export const OPENING_TIMES = [
+  "08:00 – 19:00",
+  "08:00 – 20:00",
+  "08:00 – 16:00",
+  "10:00 – 16:00",
 ];
+
+/** Öffnungszeiten mit Tagesnamen in einer Sprache. */
+export function openingHours(days: string[]) {
+  return OPENING_TIMES.map((time, i) => ({ day: days[i], time }));
+}
 
 /** Dieselben Zeiten als schema.org OpeningHoursSpecification. */
 export const OPENING_HOURS_SCHEMA = [

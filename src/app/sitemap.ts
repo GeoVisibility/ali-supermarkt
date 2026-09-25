@@ -1,30 +1,40 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/business";
-import { CATEGORIES } from "@/lib/categories";
+import { CATEGORY_SLUGS } from "@/lib/categories";
+import { DEFAULT_LOCALE, GERMAN_ONLY_PATHS, LOCALES, localizePath } from "@/i18n/config";
+
+type Entry = MetadataRoute.Sitemap[number];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
+  /** Ein Eintrag je Sprache, jeweils mit Verweisen auf alle Sprachfassungen. */
+  const localized = (
+    path: string,
+    changeFrequency: Entry["changeFrequency"],
+    priority: number,
+  ): Entry[] => {
+    const languages: Record<string, string> = {};
+    for (const locale of LOCALES) languages[locale] = `${SITE_URL}${localizePath(path, locale)}`;
+    languages["x-default"] = `${SITE_URL}${localizePath(path, DEFAULT_LOCALE)}`;
+
+    return LOCALES.map((locale) => ({
+      url: `${SITE_URL}${localizePath(path, locale)}`,
+      lastModified,
+      changeFrequency,
+      priority,
+      alternates: { languages },
+    }));
+  };
+
   return [
-    {
-      url: SITE_URL,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: `${SITE_URL}/sortiment`,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    },
-    ...CATEGORIES.map((category) => ({
-      url: `${SITE_URL}/sortiment/${category.slug}`,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: category.slug === "halal-fleisch" ? 0.9 : 0.8,
-    })),
-    ...["/impressum", "/datenschutz"].map((path) => ({
+    ...localized("/", "weekly", 1),
+    ...localized("/sortiment", "monthly", 0.9),
+    ...CATEGORY_SLUGS.flatMap((slug) =>
+      localized(`/sortiment/${slug}`, "monthly", slug === "halal-fleisch" ? 0.9 : 0.8),
+    ),
+    // Rechtstexte nur auf Deutsch.
+    ...GERMAN_ONLY_PATHS.map((path) => ({
       url: `${SITE_URL}${path}`,
       lastModified,
       changeFrequency: "yearly" as const,

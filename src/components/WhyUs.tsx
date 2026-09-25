@@ -1,6 +1,7 @@
+import { getDictionary } from "@/i18n/server";
+
+/** Symbole der fünf Karten; Titel und Text stehen im Wörterbuch (whyUs.cards). */
 type Card = {
-  title: string;
-  desc: string;
   icon: React.ReactNode;
   highlight?: boolean;
 };
@@ -15,8 +16,6 @@ const iconProps = {
 
 const CARDS: Card[] = [
   {
-    title: "Frisches Halal-Fleisch",
-    desc: "Täglich ausgewählte Fleischprodukte und persönliche Beratung an der Theke.",
     icon: (
       <svg {...iconProps}>
         <path d="M5 15c0-4 3-9 8-9s8 3.5 8 7-3 5-6 5c-1.2 0-1.8-.6-2.5-1.3" />
@@ -26,8 +25,6 @@ const CARDS: Card[] = [
     ),
   },
   {
-    title: "Frisches Obst & Gemüse",
-    desc: "Jeden Tag frische Auswahl für Ihren täglichen Einkauf.",
     icon: (
       <svg {...iconProps}>
         <path d="M12 21c-5-2-8-6-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 5-3 9-8 11Z" />
@@ -36,8 +33,6 @@ const CARDS: Card[] = [
     ),
   },
   {
-    title: "Internationale Spezialitäten",
-    desc: "Produkte aus verschiedenen Küchen und Kulturen unter einem Dach.",
     icon: (
       <svg {...iconProps}>
         <circle cx="12" cy="12" r="8.5" />
@@ -46,8 +41,6 @@ const CARDS: Card[] = [
     ),
   },
   {
-    title: "Alles für den Alltag",
-    desc: "Von Grundnahrungsmitteln bis zu besonderen Zutaten.",
     icon: (
       <svg {...iconProps}>
         <path d="M4 9h16l-1.5 11a2 2 0 0 1-2 1.8H7.5a2 2 0 0 1-2-1.8L4 9Z" />
@@ -56,8 +49,6 @@ const CARDS: Card[] = [
     ),
   },
   {
-    title: "Auch sonntags geöffnet",
-    desc: "Sonntag 10:00 – 16:00 Uhr — für Sie da, auch wenn andere zu haben.",
     highlight: true,
     icon: (
       <svg {...iconProps}>
@@ -68,21 +59,24 @@ const CARDS: Card[] = [
   },
 ];
 
-export default function WhyUs() {
+export default async function WhyUs() {
+  const { t } = await getDictionary();
+  const cards = CARDS.map((card, i) => ({ ...card, ...t.whyUs.cards[i] }));
+
   return (
     <section className="bg-mist py-16 md:py-24" id="warum-ali">
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-xl">
           <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
-            Warum Ali Supermarkt?
+            {t.whyUs.eyebrow}
           </span>
           <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
-            Fünf Gründe für Ali Supermarkt
+            {t.whyUs.title}
           </h2>
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
-          {CARDS.map((card) => (
+          {cards.map((card) => (
             <div
               key={card.title}
               className={`flex flex-col gap-4 rounded-2xl p-6 ${

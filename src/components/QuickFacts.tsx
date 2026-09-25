@@ -1,10 +1,11 @@
-import { BUSINESS, OPENING_HOURS } from "@/lib/business";
+import { BUSINESS, openingHours } from "@/lib/business";
+import { getDictionary } from "@/i18n/server";
 
 /**
  * «Auf einen Blick»: die harten Fakten als Definitionsliste – gut zu scannen
  * für Besucher und gut zu zitieren für Suchmaschinen und KI-Assistenten.
  */
-export default function QuickFacts({
+export default async function QuickFacts({
   sortiment,
   className = "",
 }: {
@@ -12,25 +13,28 @@ export default function QuickFacts({
   sortiment?: string;
   className?: string;
 }) {
+  const { t } = await getDictionary();
+
   const rows: { label: string; value: React.ReactNode }[] = [
     {
-      label: "Adresse",
+      label: t.quickFacts.address,
       value: `${BUSINESS.legalName}, ${BUSINESS.street}, ${BUSINESS.postalCode} ${BUSINESS.city}`,
     },
     {
-      label: "Öffnungszeiten",
+      label: t.quickFacts.hours,
       value: (
         <span className="flex flex-col gap-0.5">
-          {OPENING_HOURS.map((hour) => (
+          {openingHours(t.common.days).map((hour) => (
             <span key={hour.day}>
-              {hour.day}: {hour.time} Uhr
+              {hour.day}: {hour.time}
+              {t.common.timeSuffix}
             </span>
           ))}
         </span>
       ),
     },
     {
-      label: "Telefon",
+      label: t.quickFacts.phone,
       value: (
         <a
           href={BUSINESS.phoneHref}
@@ -40,7 +44,7 @@ export default function QuickFacts({
         </a>
       ),
     },
-    ...(sortiment ? [{ label: "Sortiment", value: sortiment }] : []),
+    ...(sortiment ? [{ label: t.quickFacts.sortiment, value: sortiment }] : []),
   ];
 
   return (
@@ -48,7 +52,7 @@ export default function QuickFacts({
       className={`rounded-2xl border border-smoke/10 bg-white p-6 sm:p-7 ${className}`}
     >
       <p className="text-sm font-semibold uppercase tracking-[0.14em] text-orange-dark">
-        Auf einen Blick
+        {t.quickFacts.title}
       </p>
       <dl className="mt-4 flex flex-col divide-y divide-dashed divide-smoke/12 text-sm">
         {rows.map((row) => (

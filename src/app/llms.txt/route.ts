@@ -1,5 +1,10 @@
-import { BUSINESS, OPENING_HOURS, SITE_URL } from "@/lib/business";
-import { CATEGORIES } from "@/lib/categories";
+import { BUSINESS, SITE_URL, openingHours } from "@/lib/business";
+import { getCategories } from "@/lib/categories";
+import { dictionaryFor } from "@/i18n/dictionaries";
+import { LANGUAGE_LIST } from "@/lib/llms";
+
+const t = dictionaryFor("de");
+const CATEGORIES = getCategories(t);
 
 /**
  * /llms.txt – kurze, maschinenlesbare Zusammenfassung für KI-Assistenten.
@@ -8,7 +13,7 @@ import { CATEGORIES } from "@/lib/categories";
 export const dynamic = "force-static";
 
 export function GET() {
-  const hours = OPENING_HOURS.map((h) => `- ${h.day}: ${h.time} Uhr`).join("\n");
+  const hours = openingHours(t.common.days).map((h) => `- ${h.day}: ${h.time} Uhr`).join("\n");
 
   const sortiment = CATEGORIES.map(
     (c) =>
@@ -48,6 +53,12 @@ ${sortiment}
 - [Ausführliche Fassung dieser Datei](${SITE_URL}/llms-full.txt)
 - [Impressum](${SITE_URL}/impressum)
 - [Datenschutz](${SITE_URL}/datenschutz)
+
+## Sprachen
+
+Die Website gibt es auf Deutsch, Französisch, Englisch und Albanisch:
+
+${LANGUAGE_LIST}
 
 ## Häufige Fragen
 

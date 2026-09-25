@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getDictionary } from "@/i18n/server";
 
 const iconProps = {
   viewBox: "0 0 24 24",
@@ -8,9 +9,10 @@ const iconProps = {
   "aria-hidden": true,
 };
 
-const HIGHLIGHTS = [
+/** Symbole der vier Kacheln; die Beschriftungen sind die Stichworte der
+ *  Kategorie Obst & Gemüse im Wörterbuch. */
+const ICONS = [
   {
-    label: "Obst",
     icon: (
       <svg {...iconProps}>
         <path d="M12 9c-4 0-6.5 3-6.5 6.5S9 21 12 21s6.5-2 6.5-5.5S16 9 12 9Z" />
@@ -19,7 +21,6 @@ const HIGHLIGHTS = [
     ),
   },
   {
-    label: "Gemüse",
     icon: (
       <svg {...iconProps}>
         <path d="M12 21c-5-2-8-6-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 5-3 9-8 11Z" />
@@ -28,7 +29,6 @@ const HIGHLIGHTS = [
     ),
   },
   {
-    label: "Kräuter",
     icon: (
       <svg {...iconProps}>
         <path d="M12 21V9" />
@@ -38,7 +38,6 @@ const HIGHLIGHTS = [
     ),
   },
   {
-    label: "Saisonale Produkte",
     icon: (
       <svg {...iconProps}>
         <circle cx="12" cy="12" r="4" />
@@ -48,14 +47,18 @@ const HIGHLIGHTS = [
   },
 ];
 
-export default function FreshProduce() {
+export default async function FreshProduce() {
+  const { t } = await getDictionary();
+  const labels = t.categories["obst-gemuese"].highlights;
+  const HIGHLIGHTS = ICONS.map((item, i) => ({ ...item, label: labels[i] }));
+
   return (
     <section className="bg-mist py-16 md:py-24" id="frisch">
       <div className="mx-auto max-w-6xl px-6">
         <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl shadow-xl shadow-ink/10 sm:aspect-[21/9]">
           <Image
             src="/images/obst-gemuese/obst-gemuese-02.webp"
-            alt="Frisches Obst- und Gemüseregal bei Ali Supermarkt in Flamatt"
+            alt={t.fresh.imageAlt}
             fill
             sizes="(min-width: 1152px) 1100px, 100vw"
             quality={65}
@@ -67,14 +70,13 @@ export default function FreshProduce() {
           />
           <div className="absolute inset-x-0 bottom-0 p-6 sm:p-10">
             <span className="text-sm font-semibold uppercase tracking-[0.14em] text-orange">
-              Frische Ware
+              {t.fresh.eyebrow}
             </span>
             <h2 className="mt-2 max-w-md font-heading text-2xl font-extrabold leading-tight tracking-tight text-white sm:text-3xl lg:text-4xl">
-              Jeden Tag frisch ausgewählt
+              {t.fresh.title}
             </h2>
             <p className="mt-2 max-w-md text-sm leading-relaxed text-white/80 sm:text-base">
-              Unsere Obst- und Gemüseauswahl wird täglich neu bestückt – für
-              Geschmack, der stimmt.
+              {t.fresh.lead}
             </p>
           </div>
         </div>
