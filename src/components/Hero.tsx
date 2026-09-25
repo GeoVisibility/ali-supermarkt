@@ -51,7 +51,7 @@ export default async function Hero() {
               {t.hero.ctaSortiment}
             </a>
             <a
-              href="#standort"
+              href="#kontakt"
               className="inline-flex items-center justify-center rounded-xl border border-smoke/15 bg-white px-6 py-3.5 text-base font-semibold text-ink transition hover:border-smoke/30"
             >
               {t.common.routePlan}
