@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Ali Supermarkt Flamatt | Viande halal et produits alimentaires internationaux",
-    "description": "Supermarché international à Flamatt : boucherie halal, fruits et légumes frais, boissons et spécialités du monde entier. Bernstrasse 25, ouvert également le dimanche.",
+    "title": "Ali Supermarkt Flamatt | Boucherie halal et produits alimentaires turcs",
+    "description": "Supermarché turc et international à Flamatt, près de Berne : boucherie halal avec comptoir de produits frais, fruits et légumes frais, spécialités du monde entier. Ouvert également le dimanche.",
     "keywords": [
       "Supermarché Flamatt",
       "Viande halal Flamatt",
@@ -10,7 +10,7 @@
       "Supermarché international district de la Singine",
       "Ouvert le dimanche Flamatt"
     ],
-    "ogDescription": "Supermarché international à Flamatt : boucherie halal, fruits et légumes frais et spécialités du monde entier. Ouvert également le dimanche.",
+    "ogDescription": "Supermarché turc et international à Flamatt, près de Berne : boucherie halal avec comptoir de produits frais, fruits et légumes frais, spécialités du monde entier. Ouvert également le dimanche.",
     "ogImageAlt": "Ali Supermarkt, Bernstrasse 25 à Flamatt",
     "twitterDescription": "Boucherie halal, fruits et légumes frais et spécialités internationales à Flamatt. Ouvert également le dimanche."
   },
@@ -28,7 +28,7 @@
     ]
   },
   "header": {
-    "halal": "Viande halal",
+    "halal": "Acheter de la viande halal – Boucherie halal près de Berne",
     "offers": "Offres",
     "about": "À propos",
     "cta": "Nous contacter",
@@ -79,7 +79,7 @@
     "cards": [
       {
         "title": "Viande halal fraîche",
-        "desc": "Une sélection quotidienne de produits de boucherie et des conseils personnalisés au comptoir."
+        "desc": "Une sélection quotidienne de produits de boucherie et des conseils personnalisés à notre comptoir de produits frais."
       },
       {
         "title": "Fruits et légumes frais",
@@ -107,7 +107,7 @@
     "eyebrow": "Notre boucherie",
     "title": "Viande halal fraîche à Flamatt",
     "imageAlt": "Sélection de viandes fraîches au comptoir halal d'Ali Supermarkt",
-    "lead": "À notre comptoir de boucherie, nous sélectionnons chaque jour des produits frais et certifiés halal. Notre équipe se fera un plaisir de vous conseiller personnellement, du choix du morceau à sa préparation.",
+    "lead": "Au comptoir de produits frais de notre boucherie halal, nous sélectionnons chaque jour des produits frais et certifiés halal. Notre équipe se fera un plaisir de vous conseiller personnellement, du choix du morceau adapté à la préparation.",
     "supplier": "Nous nous approvisionnons en viande de bœuf auprès de {link} (MELKA Viande Sàrl), à Moudon dans le canton de Vaud – un fournisseur suisse de viande halal.",
     "trust": [
       "Certifié halal",
@@ -159,6 +159,7 @@
   "location": {
     "eyebrow": "Rendez-nous visite",
     "title": "Ali Supermarkt à Flamatt",
+    "lead": "Flamatt se trouve entre Berne et Fribourg, juste à côté de l'autoroute A12 (sortie Flamatt) et sur la ligne de RER S1. Depuis Berne, vous êtes chez nous en 15 minutes environ avec la S1, et le trajet est également court depuis Neuenegg, Wünnewil, Ueberstorf, Schmitten, Laupen ou Guin. Des places de parking gratuites sont disponibles juste devant le magasin.",
     "mapTitle": "Emplacement d'Ali Supermarkt sur Google Maps"
   },
   "faq": {
@@ -178,6 +179,12 @@
         "hrefLabel": "Vers la boucherie"
       },
       {
+        "q": "Y a-t-il un supermarché avec boucherie à Flamatt ?",
+        "a": "Oui. Ali Supermarkt dispose de sa propre boucherie halal avec comptoir de produits frais. Vous y trouverez chaque jour du bœuf, du veau et de l'agneau frais, de la volaille et de la charcuterie, avec des conseils personnalisés.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Vers la boucherie"
+      },
+      {
         "q": "Ali Supermarkt est-il ouvert le dimanche ?",
         "a": "Oui. Nous sommes ouverts le dimanche de 10 h à 16 h – même lorsque les autres magasins sont fermés.",
         "href": "/#kontakt",
@@ -186,6 +193,12 @@
       {
         "q": "Où trouver des produits alimentaires turcs à Flamatt ?",
         "a": "Chez Ali Supermarkt, vous trouverez une sélection de spécialités turques et internationales – des antipasti à la salça en passant par les feuilles de vigne.",
+        "href": "/sortiment/internationale-spezialitaeten",
+        "hrefLabel": "Vers les spécialités internationales"
+      },
+      {
+        "q": "Y a-t-il un magasin turc près de Berne ?",
+        "a": "Oui. Ali Supermarkt, à Flamatt, propose des produits alimentaires turcs et internationaux : de la salça, du boulgour et des feuilles de vigne jusqu'au kaşar, à l'ayran et au café turc. Depuis Berne, vous êtes chez nous en 15 minutes environ avec la S1 ; des places de parking gratuites sont disponibles juste devant le magasin.",
         "href": "/sortiment/internationale-spezialitaeten",
         "hrefLabel": "Vers les spécialités internationales"
       },
@@ -228,6 +241,12 @@
       {
         "q": "Puis-je commander de la viande ou de grandes quantités à l'avance ?",
         "a": "Oui. Adressez-vous à notre équipe au comptoir ou écrivez-nous à l'avance sur WhatsApp au +41 79 648 30 72 – nous préparerons volontiers votre commande. La chèvre et le mouton sont disponibles sur commande.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Vers la boucherie"
+      },
+      {
+        "q": "Puis-je commander en ligne ou me faire livrer chez Ali Supermarkt ?",
+        "a": "Nous n'avons ni boutique en ligne ni service de livraison. Vous pouvez toutefois commander à l'avance de la viande et de grandes quantités via WhatsApp au +41 79 648 30 72 : nous préparons votre commande et vous venez la retirer au magasin à Flamatt.",
         "href": "/sortiment/halal-fleisch",
         "hrefLabel": "Vers la boucherie"
       },
@@ -295,11 +314,11 @@
     "relatedTitle": "Découvrez le reste de notre assortiment"
   },
   "halalPage": {
-    "metaTitle": "Viande halal",
-    "metaDescription": "Viande fraîche certifiée halal au comptoir d'Ali Supermarkt à Flamatt : bœuf, agneau, volaille et charcuterie – fraîche chaque jour, avec des conseils personnalisés.",
-    "eyebrow": "Frais chaque jour, certifié halal",
+    "metaTitle": "Acheter de la viande halal – Boucherie halal près de Berne",
+    "metaDescription": "Acheter de la viande halal à Flamatt, près de Berne : boucherie halal avec comptoir de produits frais – bœuf, veau, agneau, volaille et charcuterie, frais du jour. Commande à l'avance via WhatsApp.",
+    "eyebrow": "Boucherie halal · fraîche chaque jour",
     "title": "Viande halal fraîche à Flamatt",
-    "lead": "À notre comptoir de boucherie, nous sélectionnons chaque jour des produits frais et certifiés halal. Notre équipe se fera un plaisir de vous conseiller personnellement, du choix du morceau à sa préparation.",
+    "lead": "Au comptoir de produits frais de notre boucherie halal, nous sélectionnons chaque jour des produits frais et certifiés halal. Notre équipe se fera un plaisir de vous conseiller personnellement, du choix du morceau adapté à la préparation.",
     "whatsappCta": "Commander sur WhatsApp",
     "slides": [
       "Côtelettes d'agneau et viande emballée au comptoir",
@@ -363,12 +382,20 @@
         "a": "Oui, adressez-vous à notre équipe au comptoir ou écrivez-nous à l'avance sur WhatsApp – nous préparerons volontiers votre commande."
       },
       {
+        "q": "Puis-je commander de la viande halal en ligne ?",
+        "a": "Nous n'avons ni boutique en ligne ni service de livraison. Envoyez-nous votre commande par WhatsApp : nous préparons la viande et vous venez la retirer à notre comptoir à Flamatt."
+      },
+      {
         "q": "D'où provient votre viande de bœuf ?",
         "a": "Nous nous approvisionnons en viande de bœuf auprès de Melka Group (MELKA Viande Sàrl), à Moudon dans le canton de Vaud, un fournisseur suisse de viande halal."
       },
       {
         "q": "Proposez-vous aussi de la charcuterie ?",
         "a": "Oui, nous proposons une sélection de charcuterie à base de viande halal."
+      },
+      {
+        "q": "Y a-t-il une boucherie halal près de Berne ?",
+        "a": "Oui. Ali Supermarkt, à Flamatt, se trouve sur la ligne de RER S1 entre Berne et Fribourg ; depuis Berne, vous êtes chez nous en 15 minutes environ. À notre comptoir de produits frais, vous trouverez du bœuf, du veau, de l'agneau, de la volaille et de la charcuterie certifiés halal."
       }
     ]
   },
@@ -382,15 +409,15 @@
     "sortiment": "Vers l'assortiment"
   },
   "schema": {
-    "description": "Supermarché international à Flamatt avec boucherie halal, fruits et légumes frais et spécialités du monde entier. Ouvert également le dimanche.",
+    "description": "Supermarché turc et international à Flamatt, près de Berne, avec boucherie halal, fruits et légumes frais et spécialités du monde entier. Ouvert également le dimanche.",
     "founderTitle": "Propriétaire",
     "parking": "Places de parc gratuites"
   },
   "categories": {
     "halal-fleisch": {
       "title": "Viande halal fraîche",
-      "tagline": "Frais chaque jour, certifié halal",
-      "description": "À notre comptoir de boucherie, nous sélectionnons chaque jour des produits frais et certifiés halal.",
+      "tagline": "Boucherie halal · fraîche chaque jour",
+      "description": "Au comptoir de produits frais de notre boucherie halal, nous sélectionnons chaque jour des produits frais et certifiés halal.",
       "highlights": [
         "Bœuf",
         "Veau",

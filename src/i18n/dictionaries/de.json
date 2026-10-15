@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Ali Supermarkt Flamatt | Halal-Fleisch & internationale Lebensmittel",
-    "description": "Internationaler Supermarkt in Flamatt: Halal-Metzgerei, frisches Obst und Gemüse, Getränke und Spezialitäten aus aller Welt. Bernstrasse 25, auch sonntags geöffnet.",
+    "title": "Ali Supermarkt Flamatt | Halal-Metzgerei & türkische Lebensmittel",
+    "description": "Türkischer und internationaler Supermarkt in Flamatt bei Bern: Halal-Metzgerei mit Frischetheke, frisches Obst und Gemüse, Spezialitäten aus aller Welt. Auch sonntags geöffnet.",
     "keywords": [
       "Supermarkt Flamatt",
       "Halal Fleisch Flamatt",
@@ -10,7 +10,7 @@
       "internationaler Supermarkt Sensebezirk",
       "sonntags geöffnet Flamatt"
     ],
-    "ogDescription": "Internationaler Supermarkt in Flamatt: Halal-Metzgerei, frisches Obst und Gemüse und Spezialitäten aus aller Welt. Auch sonntags geöffnet.",
+    "ogDescription": "Türkischer und internationaler Supermarkt in Flamatt bei Bern: Halal-Metzgerei mit Frischetheke, frisches Obst und Gemüse, Spezialitäten aus aller Welt. Auch sonntags geöffnet.",
     "ogImageAlt": "Ali Supermarkt an der Bernstrasse 25 in Flamatt",
     "twitterDescription": "Halal-Metzgerei, frisches Obst und Gemüse und internationale Spezialitäten in Flamatt. Auch sonntags geöffnet."
   },
@@ -74,7 +74,7 @@
     "cards": [
       {
         "title": "Frisches Halal-Fleisch",
-        "desc": "Täglich ausgewählte Fleischprodukte und persönliche Beratung an der Theke."
+        "desc": "Täglich ausgewählte Fleischprodukte und persönliche Beratung an unserer Frischetheke."
       },
       {
         "title": "Frisches Obst & Gemüse",
@@ -102,7 +102,7 @@
     "eyebrow": "Unsere Metzgerei",
     "title": "Frisches Halal-Fleisch in Flamatt",
     "imageAlt": "Frische Fleischauswahl an der Halal-Theke von Ali Supermarkt",
-    "lead": "An unserer Fleischtheke wählen wir täglich aus, was frisch und Halal‑zertifiziert ist. Unser Team berät Sie gerne persönlich – vom passenden Stück bis zur Zubereitung.",
+    "lead": "An der Frischetheke unserer Halal-Metzgerei wählen wir täglich aus, was frisch und Halal-zertifiziert ist. Unser Team berät Sie gerne persönlich – vom passenden Stück bis zur Zubereitung.",
     "supplier": "Unser Rindfleisch beziehen wir von {link} (MELKA Viande Sàrl) aus Moudon im Kanton Waadt – einem Schweizer Lieferanten für Halal-Fleisch.",
     "trust": ["Halal-zertifiziert", "Täglich frisch", "Persönliche Beratung"],
     "cta": "Mehr über unsere Metzgerei"
@@ -145,6 +145,7 @@
   "location": {
     "eyebrow": "Besuchen Sie uns",
     "title": "Ali Supermarkt in Flamatt",
+    "lead": "Flamatt liegt zwischen Bern und Freiburg – direkt an der Autobahn A12 (Ausfahrt Flamatt) und an der S-Bahn-Linie S1. Ab Bern sind Sie mit der S1 in rund 15 Minuten bei uns, und auch aus Neuenegg, Wünnewil, Ueberstorf, Schmitten, Laupen oder Düdingen ist der Weg kurz. Direkt beim Laden gibt es kostenlose Parkplätze.",
     "mapTitle": "Standort von Ali Supermarkt auf Google Maps"
   },
   "faq": {
@@ -164,6 +165,12 @@
         "hrefLabel": "Zur Metzgerei"
       },
       {
+        "q": "Gibt es in Flamatt einen Supermarkt mit Metzgerei?",
+        "a": "Ja. Ali Supermarkt hat eine eigene Halal-Metzgerei mit Frischetheke. Dort erhalten Sie täglich frisches Rind-, Kalb- und Lammfleisch, Geflügel und Wurstwaren – mit persönlicher Beratung.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Zur Metzgerei"
+      },
+      {
         "q": "Hat Ali Supermarkt sonntags geöffnet?",
         "a": "Ja. Wir haben sonntags von 10:00 bis 16:00 Uhr für Sie geöffnet – auch wenn andere Geschäfte zu haben.",
         "href": "/#kontakt",
@@ -172,6 +179,12 @@
       {
         "q": "Wo gibt es türkische Lebensmittel in Flamatt?",
         "a": "Bei Ali Supermarkt finden Sie eine Auswahl an türkischen und internationalen Spezialitäten – von Antipasti über Salça bis zu Weinblättern.",
+        "href": "/sortiment/internationale-spezialitaeten",
+        "hrefLabel": "Zu den internationalen Spezialitäten"
+      },
+      {
+        "q": "Gibt es einen türkischen Laden in der Nähe von Bern?",
+        "a": "Ja. Ali Supermarkt in Flamatt führt türkische und internationale Lebensmittel – von Salça, Bulgur und Weinblättern bis zu Kaşar, Ayran und türkischem Kaffee. Ab Bern sind Sie mit der S1 in rund 15 Minuten bei uns, direkt beim Laden gibt es kostenlose Parkplätze.",
         "href": "/sortiment/internationale-spezialitaeten",
         "hrefLabel": "Zu den internationalen Spezialitäten"
       },
@@ -214,6 +227,12 @@
       {
         "q": "Kann ich Fleisch oder grössere Mengen vorbestellen?",
         "a": "Ja. Sprechen Sie unser Team an der Theke an oder schreiben Sie uns vorab über WhatsApp an +41 79 648 30 72 – wir bereiten Ihre Bestellung gerne vor. Ziege und Schaf führen wir auf Bestellung.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Zur Metzgerei"
+      },
+      {
+        "q": "Kann ich bei Ali Supermarkt online bestellen oder liefern lassen?",
+        "a": "Einen Onlineshop oder Lieferdienst haben wir nicht. Sie können Fleisch und grössere Mengen aber per WhatsApp an +41 79 648 30 72 vorbestellen – wir bereiten alles vor und Sie holen es im Laden in Flamatt ab.",
         "href": "/sortiment/halal-fleisch",
         "hrefLabel": "Zur Metzgerei"
       },
@@ -281,11 +300,11 @@
     "relatedTitle": "Entdecken Sie mehr aus unserem Sortiment"
   },
   "halalPage": {
-    "metaTitle": "Halal-Fleisch",
-    "metaDescription": "Frisches, Halal-zertifiziertes Fleisch an der Theke von Ali Supermarkt in Flamatt: Rind, Lamm, Geflügel und Wurstwaren – täglich frisch, persönlich beraten.",
-    "eyebrow": "Täglich frisch, Halal-zertifiziert",
+    "metaTitle": "Halal-Fleisch kaufen – Halal-Metzgerei bei Bern",
+    "metaDescription": "Halal-Fleisch kaufen in Flamatt bei Bern: Halal-Metzgerei mit Frischetheke – Rind, Kalb, Lamm, Geflügel und Wurstwaren, täglich frisch. Vorbestellung per WhatsApp.",
+    "eyebrow": "Halal-Metzgerei · täglich frisch",
     "title": "Frisches Halal-Fleisch in Flamatt",
-    "lead": "An unserer Fleischtheke wählen wir täglich aus, was frisch und Halal-zertifiziert ist. Unser Team berät Sie gerne persönlich – vom passenden Stück bis zur Zubereitung.",
+    "lead": "An der Frischetheke unserer Halal-Metzgerei wählen wir täglich aus, was frisch und Halal-zertifiziert ist. Unser Team berät Sie gerne persönlich – vom passenden Stück bis zur Zubereitung.",
     "whatsappCta": "Bestellung per WhatsApp",
     "slides": [
       "Lammkoteletts und abgepacktes Fleisch an der Theke",
@@ -349,12 +368,20 @@
         "a": "Ja, sprechen Sie unser Team an der Theke an oder schreiben Sie uns vorab über WhatsApp – wir bereiten Ihre Bestellung gerne vor."
       },
       {
+        "q": "Kann ich Halal-Fleisch online bestellen?",
+        "a": "Einen Onlineshop oder Lieferdienst haben wir nicht. Schreiben Sie uns Ihre Bestellung per WhatsApp – wir bereiten das Fleisch vor und Sie holen es an unserer Theke in Flamatt ab."
+      },
+      {
         "q": "Woher kommt Ihr Rindfleisch?",
         "a": "Unser Rindfleisch beziehen wir von Melka Group (MELKA Viande Sàrl) aus Moudon im Kanton Waadt, einem Schweizer Lieferanten für Halal-Fleisch."
       },
       {
         "q": "Bieten Sie auch Wurstwaren an?",
         "a": "Ja, wir führen eine Auswahl an Wurstwaren aus Halal-Fleisch."
+      },
+      {
+        "q": "Gibt es eine Halal-Metzgerei in der Nähe von Bern?",
+        "a": "Ja. Ali Supermarkt in Flamatt liegt an der S-Bahn-Linie S1 zwischen Bern und Freiburg; ab Bern sind Sie in rund 15 Minuten bei uns. An unserer Frischetheke finden Sie Halal-zertifiziertes Rind, Kalb, Lamm, Geflügel und Wurstwaren."
       }
     ]
   },
@@ -368,15 +395,15 @@
     "sortiment": "Zum Sortiment"
   },
   "schema": {
-    "description": "Internationaler Supermarkt in Flamatt mit Halal-Metzgerei, frischem Obst und Gemüse sowie Spezialitäten aus aller Welt. Auch sonntags geöffnet.",
+    "description": "Türkischer und internationaler Supermarkt in Flamatt bei Bern mit Halal-Metzgerei, frischem Obst und Gemüse sowie Spezialitäten aus aller Welt. Auch sonntags geöffnet.",
     "founderTitle": "Inhaberin",
     "parking": "Kostenlose Parkplätze"
   },
   "categories": {
     "halal-fleisch": {
       "title": "Frisches Halal-Fleisch",
-      "tagline": "Täglich frisch, Halal-zertifiziert",
-      "description": "An unserer Fleischtheke wählen wir täglich aus, was frisch und Halal-zertifiziert ist.",
+      "tagline": "Halal-Metzgerei · täglich frisch",
+      "description": "An der Frischetheke unserer Halal-Metzgerei wählen wir täglich aus, was frisch und Halal-zertifiziert ist.",
       "highlights": [
         "Rindfleisch",
         "Kalbfleisch",

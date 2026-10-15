@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Ali Supermarkt Flamatt | Mish halal dhe ushqime ndërkombëtare",
-    "description": "Supermarket ndërkombëtar në Flamatt: kasap halal, fruta dhe perime të freskëta, pije dhe specialitete nga e gjithë bota. Bernstrasse 25, i hapur edhe të dielave.",
+    "title": "Ali Supermarkt Flamatt | Kasap halal dhe ushqime turke",
+    "description": "Supermarket turk dhe ndërkombëtar në Flamatt, pranë Bernës: kasap halal me banak të freskët, fruta dhe perime të freskëta dhe specialitete nga e gjithë bota. I hapur edhe të dielave.",
     "keywords": [
       "Supermarket në Flamatt",
       "Mish halal në Flamatt",
@@ -11,7 +11,7 @@
       "Supermarket ndërkombëtar në Sensebezirk",
       "Hapur të dielave në Flamatt"
     ],
-    "ogDescription": "Supermarket ndërkombëtar në Flamatt: kasap halal, fruta dhe perime të freskëta dhe specialitete nga e gjithë bota. I hapur edhe të dielave.",
+    "ogDescription": "Supermarket turk dhe ndërkombëtar në Flamatt, pranë Bernës: kasap halal me banak të freskët, fruta dhe perime të freskëta dhe specialitete nga e gjithë bota. I hapur edhe të dielave.",
     "ogImageAlt": "Ali Supermarkt në Bernstrasse 25 në Flamatt",
     "twitterDescription": "Kasap halal, fruta dhe perime të freskëta dhe specialitete ndërkombëtare në Flamatt. Hapur edhe të dielave."
   },
@@ -29,7 +29,7 @@
     ]
   },
   "header": {
-    "halal": "Mish halal",
+    "halal": "Blini mish halal – Kasap halal pranë Bernës",
     "offers": "Oferta",
     "about": "Rreth nesh",
     "cta": "Na kontaktoni",
@@ -80,7 +80,7 @@
     "cards": [
       {
         "title": "Mish i freskët halal",
-        "desc": "Produkte mishi të përzgjedhura çdo ditë dhe këshilla personale në banak."
+        "desc": "Përzgjedhje e përditshme e mishit dhe këshilla personale në banakun tonë të freskët."
       },
       {
         "title": "Fruta dhe perime të freskëta",
@@ -108,7 +108,7 @@
     "eyebrow": "Kasapi ynë",
     "title": "Mish i freskët halal në Flamatt",
     "imageAlt": "Përzgjedhje mishi të freskët në banakun halal të Ali Supermarkt",
-    "lead": "Në banakun tonë të mishit, çdo ditë zgjedhim produkte të freskëta me certifikatë halal. Ekipi ynë ju këshillon me kënaqësi personalisht – nga zgjedhja e copës së duhur deri te mënyra e përgatitjes.",
+    "lead": "Në banakun e freskët të kasapit tonë halal, përzgjedhim çdo ditë mish të freskët me certifikatë halal. Ekipi ynë ju këshillon me kënaqësi personalisht – nga zgjedhja e copës së duhur deri te përgatitja.",
     "supplier": "Mishin e lopës e furnizojmë nga {link} (MELKA Viande Sàrl) në Moudon, në kantonin e Vaud – një furnizues zviceran i mishit halal.",
     "trust": [
       "Me certifikatë halal",
@@ -160,6 +160,7 @@
   "location": {
     "eyebrow": "Na vizitoni",
     "title": "Ali Supermarkt në Flamatt",
+    "lead": "Flamatt ndodhet midis Bernës dhe Fribourgut – pranë autostradës A12 (dalja Flamatt) dhe në linjën S1 të S-Bahn. Nga Berna arrini te ne me S1 për rreth 15 minuta, dhe rruga është e shkurtër edhe nga Neuenegg, Wünnewil, Ueberstorf, Schmitten, Laupen ose Düdingen. Parkim falas ka menjëherë pranë dyqanit.",
     "mapTitle": "Vendndodhja e Ali Supermarkt në Google Maps"
   },
   "faq": {
@@ -179,6 +180,12 @@
         "hrefLabel": "Te kasapi"
       },
       {
+        "q": "A ka në Flamatt ndonjë supermarket me kasap?",
+        "a": "Po. Ali Supermarkt ka kasapin e vet halal me banak të freskët. Aty gjeni çdo ditë mish të freskët lope, viçi dhe qengji, shpendë dhe sallam – me këshilla personale.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Te kasapi"
+      },
+      {
         "q": "A është Ali Supermarkt i hapur të dielave?",
         "a": "Po. Jemi të hapur të dielave nga ora 10:00 deri në 16:00 – edhe kur dyqanet e tjera janë të mbyllura.",
         "href": "/#kontakt",
@@ -187,6 +194,12 @@
       {
         "q": "Ku ka ushqime turke në Flamatt?",
         "a": "Te Ali Supermarkt gjeni një përzgjedhje specialitetesh turke dhe ndërkombëtare – nga antipastat te salça dhe gjethet e rrushit.",
+        "href": "/sortiment/internationale-spezialitaeten",
+        "hrefLabel": "Te specialitetet ndërkombëtare"
+      },
+      {
+        "q": "A ka ndonjë dyqan turk pranë Bernës?",
+        "a": "Po. Ali Supermarkt në Flamatt ofron ushqime turke dhe ndërkombëtare – nga salça, bulguri dhe gjethet e hardhisë deri te kaşari, ajrani dhe kafeja turke. Nga Berna arrini te ne me S1 për rreth 15 minuta, dhe parkim falas ka menjëherë pranë dyqanit.",
         "href": "/sortiment/internationale-spezialitaeten",
         "hrefLabel": "Te specialitetet ndërkombëtare"
       },
@@ -229,6 +242,12 @@
       {
         "q": "A mund të porosis paraprakisht mish ose sasi më të mëdha?",
         "a": "Po. Flisni me ekipin tonë në banak ose na shkruani paraprakisht në WhatsApp në +41 79 648 30 72 – e përgatisim me kënaqësi porosinë tuaj. Mish dhie dhe deleje kemi me porosi.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Te kasapi"
+      },
+      {
+        "q": "A mund të porosis online te Ali Supermarkt ose të më dërgohen blerjet në shtëpi?",
+        "a": "Nuk kemi dyqan online as shërbim dërgese. Megjithatë, mishin dhe sasi më të mëdha mund t'i porosisni paraprakisht me WhatsApp në +41 79 648 30 72 – ne i përgatisim të gjitha dhe ju i merrni në dyqanin tonë në Flamatt.",
         "href": "/sortiment/halal-fleisch",
         "hrefLabel": "Te kasapi"
       },
@@ -296,11 +315,11 @@
     "relatedTitle": "Zbuloni më shumë nga asortimenti ynë"
   },
   "halalPage": {
-    "metaTitle": "Mish halal",
-    "metaDescription": "Mish i freskët me certifikatë halal në banakun e Ali Supermarkt në Flamatt: lope, qengji, shpendë dhe sallam – i freskët çdo ditë, me këshilla personale.",
-    "eyebrow": "I freskët çdo ditë, me certifikatë halal",
+    "metaTitle": "Blini mish halal – Kasap halal pranë Bernës",
+    "metaDescription": "Blini mish halal në Flamatt, pranë Bernës: kasap halal me banak të freskët – mish lope, viçi, qengji, shpendë dhe sallam, të freskëta çdo ditë. Porositni paraprakisht me WhatsApp.",
+    "eyebrow": "Kasap halal · i freskët çdo ditë",
     "title": "Mish i freskët halal në Flamatt",
-    "lead": "Në banakun tonë të mishit, çdo ditë zgjedhim produkte të freskëta me certifikatë halal. Ekipi ynë ju këshillon me kënaqësi personalisht – nga zgjedhja e copës së duhur deri te mënyra e përgatitjes.",
+    "lead": "Në banakun e freskët të kasapit tonë halal, përzgjedhim çdo ditë mish të freskët me certifikatë halal. Ekipi ynë ju këshillon me kënaqësi personalisht – nga zgjedhja e copës së duhur deri te përgatitja.",
     "whatsappCta": "Porosisni në WhatsApp",
     "slides": [
       "Brinjë qengji dhe mish i paketuar në banak",
@@ -364,12 +383,20 @@
         "a": "Po, flisni me ekipin tonë në banak ose na shkruani paraprakisht në WhatsApp – e përgatisim me kënaqësi porosinë tuaj."
       },
       {
+        "q": "A mund të porosis mish halal online?",
+        "a": "Nuk kemi dyqan online as shërbim dërgese. Na dërgoni porosinë me WhatsApp – ne e përgatisim mishin dhe ju e merrni në banakun tonë në Flamatt."
+      },
+      {
         "q": "Nga vjen mishi juaj i lopës?",
         "a": "Mishin e lopës e furnizojmë nga Melka Group (MELKA Viande Sàrl) në Moudon, në kantonin e Vaud, një furnizues zviceran i mishit halal."
       },
       {
         "q": "A keni edhe sallam?",
         "a": "Po, kemi një përzgjedhje sallamesh nga mish halal."
+      },
+      {
+        "q": "A ka ndonjë kasap halal pranë Bernës?",
+        "a": "Po. Ali Supermarkt në Flamatt ndodhet në linjën S1 të S-Bahn midis Bernës dhe Fribourgut; nga Berna arrini te ne për rreth 15 minuta. Në banakun tonë të freskët gjeni mish lope, viçi, qengji, shpendë dhe sallam me certifikatë halal."
       }
     ]
   },
@@ -383,15 +410,15 @@
     "sortiment": "Te asortimenti"
   },
   "schema": {
-    "description": "Supermarket ndërkombëtar në Flamatt me kasap halal, fruta dhe perime të freskëta dhe specialitete nga e gjithë bota. I hapur edhe të dielave.",
+    "description": "Supermarket turk dhe ndërkombëtar në Flamatt, pranë Bernës, me kasap halal, fruta dhe perime të freskëta dhe specialitete nga e gjithë bota. I hapur edhe të dielave.",
     "founderTitle": "Pronare",
     "parking": "Parking falas"
   },
   "categories": {
     "halal-fleisch": {
       "title": "Mish i freskët halal",
-      "tagline": "I freskët çdo ditë, me certifikatë halal",
-      "description": "Në banakun tonë të mishit, çdo ditë zgjedhim produkte të freskëta me certifikatë halal.",
+      "tagline": "Kasap halal · i freskët çdo ditë",
+      "description": "Në banakun e freskët të kasapit tonë halal, përzgjedhim çdo ditë mish të freskët me certifikatë halal.",
       "highlights": [
         "Mish lope",
         "Mish viçi",

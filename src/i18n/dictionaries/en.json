@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Ali Supermarkt Flamatt | Halal meat & international food",
-    "description": "International supermarket in Flamatt: halal butcher’s, fresh fruit and vegetables, drinks and specialities from around the world. Bernstrasse 25, also open on Sundays.",
+    "title": "Ali Supermarkt Flamatt | Halal butcher’s & Turkish food",
+    "description": "Turkish and international supermarket in Flamatt near Bern: halal butcher’s with a fresh counter, fresh fruit and vegetables and specialities from around the world. Also open on Sundays.",
     "keywords": [
       "Supermarket Flamatt",
       "Halal meat Flamatt",
@@ -10,7 +10,7 @@
       "International supermarket Sense district",
       "Open on Sundays Flamatt"
     ],
-    "ogDescription": "International supermarket in Flamatt: halal butcher’s, fresh fruit and vegetables, and specialities from around the world. Also open on Sundays.",
+    "ogDescription": "Turkish and international supermarket in Flamatt near Bern: halal butcher’s with a fresh counter, fresh fruit and vegetables and specialities from around the world. Also open on Sundays.",
     "ogImageAlt": "Ali Supermarkt at Bernstrasse 25 in Flamatt",
     "twitterDescription": "Halal butcher’s, fresh fruit and vegetables, and international specialities in Flamatt. Open on Sundays too."
   },
@@ -28,7 +28,7 @@
     ]
   },
   "header": {
-    "halal": "Halal meat",
+    "halal": "Buy halal meat – Halal butcher’s near Bern",
     "offers": "Offers",
     "about": "About us",
     "cta": "Contact us",
@@ -79,7 +79,7 @@
     "cards": [
       {
         "title": "Fresh halal meat",
-        "desc": "A daily selection of meat products and personal advice at the counter."
+        "desc": "A daily selection of meat and personal advice at our fresh counter."
       },
       {
         "title": "Fresh fruit & vegetables",
@@ -107,7 +107,7 @@
     "eyebrow": "Our butcher’s counter",
     "title": "Fresh halal meat in Flamatt",
     "imageAlt": "A selection of fresh meat at the halal counter of Ali Supermarkt",
-    "lead": "At our meat counter, we select fresh, halal‑certified produce every day. Our team will be happy to advise you in person – from choosing the right cut to how to prepare it.",
+    "lead": "At the fresh counter of our halal butcher’s, we select fresh, halal-certified meat every day. Our team will be happy to advise you in person – from choosing the right cut to how to prepare it.",
     "supplier": "We source our beef from {link} (MELKA Viande Sàrl) in Moudon, in the canton of Vaud – a Swiss supplier of halal meat.",
     "trust": [
       "Halal-certified",
@@ -159,6 +159,7 @@
   "location": {
     "eyebrow": "Visit us",
     "title": "Ali Supermarkt in Flamatt",
+    "lead": "Flamatt lies between Bern and Fribourg – right by the A12 motorway (Flamatt exit) and on the S1 S-Bahn line. From Bern, the S1 gets you to us in around 15 minutes, and it’s also a short trip from Neuenegg, Wünnewil, Ueberstorf, Schmitten, Laupen or Düdingen. There is free parking right by the shop.",
     "mapTitle": "Location of Ali Supermarkt on Google Maps"
   },
   "faq": {
@@ -178,6 +179,12 @@
         "hrefLabel": "Visit our butcher’s counter"
       },
       {
+        "q": "Is there a supermarket with a butcher’s in Flamatt?",
+        "a": "Yes. Ali Supermarkt has its own halal butcher’s with a fresh counter. There you can buy fresh beef, veal and lamb, poultry and sausages every day – with personal advice.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Visit our butcher’s counter"
+      },
+      {
         "q": "Is Ali Supermarkt open on Sundays?",
         "a": "Yes. We’re open on Sundays from 10:00 to 16:00 – even when other shops are closed.",
         "href": "/#kontakt",
@@ -186,6 +193,12 @@
       {
         "q": "Where can I find Turkish food in Flamatt?",
         "a": "At Ali Supermarkt, you’ll find a selection of Turkish and international specialities – from antipasti to salça and vine leaves.",
+        "href": "/sortiment/internationale-spezialitaeten",
+        "hrefLabel": "See international specialities"
+      },
+      {
+        "q": "Is there a Turkish shop near Bern?",
+        "a": "Yes. Ali Supermarkt in Flamatt stocks Turkish and international food – from salça, bulgur and vine leaves to kaşar, ayran and Turkish coffee. From Bern, the S1 gets you to us in around 15 minutes, and there is free parking right by the shop.",
         "href": "/sortiment/internationale-spezialitaeten",
         "hrefLabel": "See international specialities"
       },
@@ -228,6 +241,12 @@
       {
         "q": "Can I pre-order meat or larger quantities?",
         "a": "Yes. Speak to our team at the counter or message us in advance on WhatsApp at +41 79 648 30 72 – we’ll be happy to prepare your order. Goat and mutton are available to order.",
+        "href": "/sortiment/halal-fleisch",
+        "hrefLabel": "Visit our butcher’s counter"
+      },
+      {
+        "q": "Can I order online from Ali Supermarkt or have my shopping delivered?",
+        "a": "We don’t have an online shop or a delivery service. However, you can pre-order meat and larger quantities via WhatsApp on +41 79 648 30 72 – we’ll prepare everything and you collect it from our shop in Flamatt.",
         "href": "/sortiment/halal-fleisch",
         "hrefLabel": "Visit our butcher’s counter"
       },
@@ -295,11 +314,11 @@
     "relatedTitle": "Discover more from our range"
   },
   "halalPage": {
-    "metaTitle": "Halal meat",
-    "metaDescription": "Fresh, halal-certified meat at the counter of Ali Supermarkt in Flamatt: beef, lamb, poultry and sausages – fresh every day, with personal advice.",
-    "eyebrow": "Fresh every day, halal-certified",
+    "metaTitle": "Buy halal meat – Halal butcher’s near Bern",
+    "metaDescription": "Buy halal meat in Flamatt near Bern: halal butcher’s with a fresh counter – beef, veal, lamb, poultry and sausages, fresh every day. Pre-order via WhatsApp.",
+    "eyebrow": "Halal butcher’s · fresh every day",
     "title": "Fresh halal meat in Flamatt",
-    "lead": "At our meat counter, we select fresh, halal-certified produce every day. Our team will be happy to advise you in person – from choosing the right cut to how to prepare it.",
+    "lead": "At the fresh counter of our halal butcher’s, we select fresh, halal-certified meat every day. Our team will be happy to advise you in person – from choosing the right cut to how to prepare it.",
     "whatsappCta": "Order on WhatsApp",
     "slides": [
       "Lamb chops and packaged meat at the counter",
@@ -363,12 +382,20 @@
         "a": "Yes, speak to our team at the counter or message us in advance on WhatsApp – we’ll be happy to prepare your order."
       },
       {
+        "q": "Can I order halal meat online?",
+        "a": "We don’t have an online shop or a delivery service. Send us your order via WhatsApp – we’ll prepare the meat and you collect it from our counter in Flamatt."
+      },
+      {
         "q": "Where does your beef come from?",
         "a": "We source our beef from Melka Group (MELKA Viande Sàrl) in Moudon, in the canton of Vaud, a Swiss supplier of halal meat."
       },
       {
         "q": "Do you also sell sausages?",
         "a": "Yes, we stock a selection of sausages made from halal meat."
+      },
+      {
+        "q": "Is there a halal butcher’s near Bern?",
+        "a": "Yes. Ali Supermarkt in Flamatt is on the S1 S-Bahn line between Bern and Fribourg; from Bern it takes around 15 minutes to get here. At our fresh counter you’ll find halal-certified beef, veal, lamb, poultry and sausages."
       }
     ]
   },
@@ -382,15 +409,15 @@
     "sortiment": "Go to our range"
   },
   "schema": {
-    "description": "International supermarket in Flamatt with a halal butcher’s, fresh fruit and vegetables and specialities from around the world. Also open on Sundays.",
+    "description": "Turkish and international supermarket in Flamatt near Bern with a halal butcher’s, fresh fruit and vegetables and specialities from around the world. Also open on Sundays.",
     "founderTitle": "Owner",
     "parking": "Free parking"
   },
   "categories": {
     "halal-fleisch": {
       "title": "Fresh halal meat",
-      "tagline": "Fresh every day, halal-certified",
-      "description": "At our meat counter, we select fresh, halal-certified produce every day.",
+      "tagline": "Halal butcher’s · fresh every day",
+      "description": "At the fresh counter of our halal butcher’s, we select fresh, halal-certified meat every day.",
       "highlights": [
         "Beef",
         "Veal",

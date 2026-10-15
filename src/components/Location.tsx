@@ -18,6 +18,9 @@ export default async function Location() {
           <h2 className="mt-3 font-heading text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
             {t.location.title}
           </h2>
+          <p className="mt-4 text-base leading-relaxed text-ink/70">
+            {t.location.lead}
+          </p>
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-[1.2fr_1fr]">
