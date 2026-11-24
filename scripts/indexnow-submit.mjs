@@ -3,7 +3,9 @@
 //   node scripts/indexnow-submit.mjs                 -> canlı sitemap'teki tüm URL'ler
 //   node scripts/indexnow-submit.mjs /sortiment /en  -> sadece verilen yollar
 //   node scripts/indexnow-submit.mjs --build         -> build adımı (npm postbuild): yeni derlenen
-//        sitemap'teki tüm URL'ler. Yalnız Vercel üretim derlemesinde çalışır, derlemeyi asla düşürmez.
+//        sitemap canlıdakiyle karşılaştırılır; yeni ve lastmod'u değişen URL'ler gönderilir
+//        (tarihler içerikten gelir: prebuild -> update-page-dates.mjs). Yalnız Vercel üretim
+//        derlemesinde çalışır, derlemeyi asla düşürmez.
 //
 // Göndermeden önce anahtar dosyasının canlıda olduğu kontrol edilir.
 // Uç nokta Bing: api.indexnow.org'a yapılan gönderimler Bing Webmaster Tools'ta görünmedi,
@@ -23,6 +25,16 @@ const paths = args.filter((arg) => !arg.startsWith("--"));
 
 const locs = (xml) => [...xml.matchAll(/<loc>\s*([^<]+?)\s*<\/loc>/g)].map((m) => m[1]);
 
+// URL -> lastmod. Derlenen sitemap'te köken farklı olabilir; kıyas yol üzerinden yapılır.
+function entries(xml) {
+  const map = new Map();
+  for (const [, block] of xml.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
+    const loc = block.match(/<loc>\s*([^<]+?)\s*<\/loc>/)?.[1];
+    if (loc) map.set(`${ORIGIN}${new URL(loc).pathname}`, block.match(/<lastmod>\s*([^<]+?)\s*<\/lastmod>/)?.[1] ?? "");
+  }
+  return map;
+}
+
 async function fetchText(url) {
   const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) throw new Error(`${url} -> HTTP ${res.status}`);
@@ -37,8 +49,12 @@ function toUrl(value) {
 
 async function collectUrls() {
   if (paths.length) return [...new Set(paths.map(toUrl))];
-  // Build sırasında yeni sitemap henüz canlıda değil; yeni sayfalar da gönderilsin diye derleneni oku.
-  if (buildMode) return locs(await readFile(BUILT_SITEMAP, "utf8"));
+  // Build sırasında yeni sitemap henüz canlıda değil: derleneni canlıyla karşılaştır.
+  if (buildMode) {
+    const live = entries(await fetchText(`${ORIGIN}/sitemap.xml`));
+    const built = entries(await readFile(BUILT_SITEMAP, "utf8"));
+    return [...built].filter(([loc, lastmod]) => live.get(loc) !== lastmod).map(([loc]) => loc);
+  }
   return locs(await fetchText(`${ORIGIN}/sitemap.xml`));
 }
 

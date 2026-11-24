@@ -2,12 +2,19 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/business";
 import { CATEGORY_SLUGS } from "@/lib/categories";
 import { DEFAULT_LOCALE, GERMAN_ONLY_PATHS, LOCALES, localizePath } from "@/i18n/config";
+import pageDates from "@/lib/page-dates.json";
 
 type Entry = MetadataRoute.Sitemap[number];
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
+/**
+ * Änderungsdatum aus src/lib/page-dates.json (prebuild → scripts/update-page-dates.mjs).
+ * Es ändert sich nur, wenn sich der Inhalt der Seite ändert, nicht bei jedem Build.
+ */
+function modified(key: string): string | undefined {
+  return (pageDates as Record<string, { date: string }>)[key]?.date;
+}
 
+export default function sitemap(): MetadataRoute.Sitemap {
   /** Ein Eintrag je Sprache, jeweils mit Verweisen auf alle Sprachfassungen. */
   const localized = (
     path: string,
@@ -20,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return LOCALES.map((locale) => ({
       url: `${SITE_URL}${localizePath(path, locale)}`,
-      lastModified,
+      lastModified: modified(`${locale}:${path}`),
       changeFrequency,
       priority,
       alternates: { languages },
@@ -36,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Rechtstexte nur auf Deutsch.
     ...GERMAN_ONLY_PATHS.map((path) => ({
       url: `${SITE_URL}${path}`,
-      lastModified,
+      lastModified: modified(path),
       changeFrequency: "yearly" as const,
       priority: 0.2,
     })),

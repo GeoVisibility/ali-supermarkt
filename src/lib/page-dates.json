@@ -1,0 +1,186 @@
+{
+  "de:/": {
+    "hash": "97b721aacc2b883afa8ea39ff934f440740193fa",
+    "date": "2026-10-15"
+  },
+  "de:/sortiment": {
+    "hash": "d3541e18eb2a773df6b02306fef6d226c8c70c28",
+    "date": "2026-10-15"
+  },
+  "de:/sortiment/halal-fleisch": {
+    "hash": "91427a8a441704e3e9364674bbfba85f92ada572",
+    "date": "2026-10-15"
+  },
+  "de:/sortiment/obst-gemuese": {
+    "hash": "2fdeba695de459f7f52f4b4ade8f78a514fa45ef",
+    "date": "2026-10-15"
+  },
+  "de:/sortiment/internationale-spezialitaeten": {
+    "hash": "1b9a0270cc5f69f6489c9ab049b44c09d8f6ef14",
+    "date": "2026-10-15"
+  },
+  "de:/sortiment/grundnahrungsmittel": {
+    "hash": "bab5d9f916a906fc17a51c581ad77e1b6c88317e",
+    "date": "2026-10-15"
+  },
+  "de:/sortiment/getraenke": {
+    "hash": "099a4b7172f53d0b5e949caa2f94551ab0a4ea85",
+    "date": "2026-10-15"
+  },
+  "de:/sortiment/suesses-knabbereien": {
+    "hash": "719f03781745225e16e8041eecab81ab4cd70376",
+    "date": "2026-10-15"
+  },
+  "de:/sortiment/milchprodukte": {
+    "hash": "8552b3f1840c33519cdc114c93604833cdab0c1b",
+    "date": "2026-10-15"
+  },
+  "de:/sortiment/tiefkuehlprodukte": {
+    "hash": "9634022eb6f56143b265ac4f2b602a0749786045",
+    "date": "2026-10-15"
+  },
+  "de:/sortiment/reinigung-haushalt": {
+    "hash": "3af7330e46cd600d337e7caa913ea0921a66410c",
+    "date": "2026-10-15"
+  },
+  "fr:/": {
+    "hash": "75b500e2a27996d857241601803ec2b28f21d903",
+    "date": "2026-10-15"
+  },
+  "fr:/sortiment": {
+    "hash": "d8e3d981a67f1556d33ef733e2144574ed669f76",
+    "date": "2026-10-15"
+  },
+  "fr:/sortiment/halal-fleisch": {
+    "hash": "4ba8b78d53946b8130f8cf485c6260887a5786cf",
+    "date": "2026-10-15"
+  },
+  "fr:/sortiment/obst-gemuese": {
+    "hash": "257c0deae5eba0979b0576510cabdf7bee99563f",
+    "date": "2026-10-15"
+  },
+  "fr:/sortiment/internationale-spezialitaeten": {
+    "hash": "fd2d1cc7e44feb032454b144c72707e0a0bcb25a",
+    "date": "2026-10-15"
+  },
+  "fr:/sortiment/grundnahrungsmittel": {
+    "hash": "fff4aad98815aee49d028bf471dc59ddac7520fe",
+    "date": "2026-10-15"
+  },
+  "fr:/sortiment/getraenke": {
+    "hash": "0f7641b7f509be53886034e5ef0648779869c58c",
+    "date": "2026-10-15"
+  },
+  "fr:/sortiment/suesses-knabbereien": {
+    "hash": "2a740bb33ee66d43eef179da7738d3224fec1c65",
+    "date": "2026-10-15"
+  },
+  "fr:/sortiment/milchprodukte": {
+    "hash": "606563821fd591b215822294f89e26efa55d851d",
+    "date": "2026-10-15"
+  },
+  "fr:/sortiment/tiefkuehlprodukte": {
+    "hash": "da40f4f4c43e75818f7cd577bfff5805f815a4c3",
+    "date": "2026-10-15"
+  },
+  "fr:/sortiment/reinigung-haushalt": {
+    "hash": "1a4cee7dc6932e9177c690e97034e98bb5b5154f",
+    "date": "2026-10-15"
+  },
+  "en:/": {
+    "hash": "b69d7974054ecba1f995dd0c54ecd85524373abc",
+    "date": "2026-10-15"
+  },
+  "en:/sortiment": {
+    "hash": "92a271d9650991ce2392d1ffd594888c920c83ca",
+    "date": "2026-10-15"
+  },
+  "en:/sortiment/halal-fleisch": {
+    "hash": "03c1d6af134c949f37bc32750ac15fa5a978390d",
+    "date": "2026-10-15"
+  },
+  "en:/sortiment/obst-gemuese": {
+    "hash": "49688b14259817622b2ddf621d317699f11ccb09",
+    "date": "2026-10-15"
+  },
+  "en:/sortiment/internationale-spezialitaeten": {
+    "hash": "b020cac25d9a51040ddb6c737740c74755c43bd0",
+    "date": "2026-10-15"
+  },
+  "en:/sortiment/grundnahrungsmittel": {
+    "hash": "74146843112bd6b4d2a4b3d42e956f3ffc915e5c",
+    "date": "2026-10-15"
+  },
+  "en:/sortiment/getraenke": {
+    "hash": "d29ea2585ea082051529d7b586a5dfd7f5ba2e43",
+    "date": "2026-10-15"
+  },
+  "en:/sortiment/suesses-knabbereien": {
+    "hash": "e27beceb55c90c69e89326c9873c888c2376be3e",
+    "date": "2026-10-15"
+  },
+  "en:/sortiment/milchprodukte": {
+    "hash": "e1684c4813980c05ee43adef5263410bc5e57551",
+    "date": "2026-10-15"
+  },
+  "en:/sortiment/tiefkuehlprodukte": {
+    "hash": "f22eda46542229f2e8ce703dc4bcd60c5cfa5429",
+    "date": "2026-10-15"
+  },
+  "en:/sortiment/reinigung-haushalt": {
+    "hash": "a9f3f79b8b328c2c3bf3f83e951c48d41cabe371",
+    "date": "2026-10-15"
+  },
+  "sq:/": {
+    "hash": "4f9adc121013c46bb223601c2a49132c0078eac2",
+    "date": "2026-10-15"
+  },
+  "sq:/sortiment": {
+    "hash": "9d1d7f5fc730c69c3258ed45e30e60bccecca3d9",
+    "date": "2026-10-15"
+  },
+  "sq:/sortiment/halal-fleisch": {
+    "hash": "6799915fffc6ba622462f5e7ec159e8a775735c3",
+    "date": "2026-10-15"
+  },
+  "sq:/sortiment/obst-gemuese": {
+    "hash": "848781f1d71301566dc2bbc1bf25084279afcce4",
+    "date": "2026-10-15"
+  },
+  "sq:/sortiment/internationale-spezialitaeten": {
+    "hash": "294e5d3934d86399c982481d0ecf6c93f3a9c908",
+    "date": "2026-10-15"
+  },
+  "sq:/sortiment/grundnahrungsmittel": {
+    "hash": "4c76ae79fbe6ec37cf2781f7acd021af3f5be87b",
+    "date": "2026-10-15"
+  },
+  "sq:/sortiment/getraenke": {
+    "hash": "b2746556f57286f2362168377014c0fda831304f",
+    "date": "2026-10-15"
+  },
+  "sq:/sortiment/suesses-knabbereien": {
+    "hash": "ed3491d07ab9973fd1653fc2fd6cf6c02a9932f2",
+    "date": "2026-10-15"
+  },
+  "sq:/sortiment/milchprodukte": {
+    "hash": "9ee34a68a6ead7c75adedda82a127cb1448a6094",
+    "date": "2026-10-15"
+  },
+  "sq:/sortiment/tiefkuehlprodukte": {
+    "hash": "120a1e930d6bd44cdfacf5ab29e0af635e0b68b0",
+    "date": "2026-10-15"
+  },
+  "sq:/sortiment/reinigung-haushalt": {
+    "hash": "83c9cce3d6823e1d380326997c49d2440c996a35",
+    "date": "2026-10-15"
+  },
+  "/impressum": {
+    "hash": "fad6949b3fd365f035924d1283839dcf5e9e637c",
+    "date": "2026-10-15"
+  },
+  "/datenschutz": {
+    "hash": "c5500aa47b3eadd9f0c9b60957557878e44020c8",
+    "date": "2026-10-15"
+  }
+}
